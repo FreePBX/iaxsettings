@@ -19,4 +19,4 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-sql("DROP TABLE `sipsettings`");
+sql("DROP TABLE `iaxsettings`");

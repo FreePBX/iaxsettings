@@ -23,7 +23,7 @@ global $db;
 global $amp_conf;
 
 $sql = <<< END
-CREATE TABLE `sipsettings` (
+CREATE TABLE `iaxsettings` (
   `keyword` VARCHAR (50) NOT NULL default '',
   `data`    VARCHAR (255) NOT NULL default '',
   `seq`     TINYINT (1),
