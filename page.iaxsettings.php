@@ -552,20 +552,27 @@ function iaxsettings_check_custom_files() {
   global $amp_conf;
   $errors = array();
 
+  $custom_files[] = $amp_conf['ASTETCDIR']."/iax.conf";
   $custom_files[] = $amp_conf['ASTETCDIR']."/iax_general_custom.conf";
   $custom_files[] = $amp_conf['ASTETCDIR']."/iax_custom.conf";
 
   foreach ($custom_files as $file) {
     if (file_exists($file)) {
-      $sip_conf = parse_ini_file($file,true);
-      foreach ($sip_conf as $item) {
+      $iax_conf = parse_ini_file($file,true);
+      $main = true; // 1 is iax.conf, after that don't care
+      foreach ($iax_conf as $section => $item) {
         // If setting is an array, then it is a subsection
         //
         if (!is_array($item)) {
-          $msg =  sprintf(_("Settings in %s may override these, they should be removed"),"<b>$file</b>");
+          $msg =  sprintf(_("Settings in %s may override these, the settings should be removed"),"<b>$file</b>");
+          $errors[] = array( 'js' => '', 'div' => $msg);
+          break;
+        } elseif ($main && is_array($item) && strtolower($section) == 'general' && !empty($item)) {
+          $msg =  sprintf(_("File %s should not have any settings in it, the settings should be removed"),"<b>$file</b>");
           $errors[] = array( 'js' => '', 'div' => $msg);
           break;
         }
+        $main = false;
       }
     }
   }
