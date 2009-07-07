@@ -41,8 +41,6 @@
     'lpc10'    => '',
     'speex'    => '',
     'g722'     => '',
-    'jpeg'     => '',
-    'png'      => '',
     );
   foreach (array_keys($codecs) as $codec) {
     $codecs[$codec] = isset($_POST[$codec]) ? $_POST[$codec] : '';
@@ -126,7 +124,7 @@ $error_displays = array_merge($error_displays,iaxsettings_check_custom_files());
 ?>
   <form autocomplete="off" name="editIax" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
   <input type="hidden" name="action" value="edit">
-  <table width="570px">
+  <table width="690px">
 
 <?php
   /* if there were erros on the submit then create error box */
