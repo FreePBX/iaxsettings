@@ -254,7 +254,7 @@ function iaxsettings_get($raw=false) {
   $iax_settings['forcejitterbuffer'] = 'no';
   $iax_settings['maxjitterbuffer']   = '200';
   $iax_settings['resyncthreshold']   = '1000';
-  $iax_settings['maxjitterinterps']  = '';
+  $iax_settings['maxjitterinterps']  = '10';
 
   $iax_settings['iax_language']      = '';
   $iax_settings['bindaddr']          = '';

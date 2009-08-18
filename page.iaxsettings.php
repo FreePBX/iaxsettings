@@ -68,7 +68,7 @@
   $iax_settings['forcejitterbuffer'] = isset($_POST['forcejitterbuffer']) ? $_POST['forcejitterbuffer'] : 'no';
   $iax_settings['maxjitterbuffer']   = isset($_POST['maxjitterbuffer']) ? htmlspecialchars($_POST['maxjitterbuffer']) : '200';
   $iax_settings['resyncthreshold']   = isset($_POST['resyncthreshold']) ? htmlspecialchars($_POST['resyncthreshold']) : '1000';
-  $iax_settings['maxjitterinterps']  = isset($_POST['maxjitterinterps']) ? htmlspecialchars($_POST['maxjitterinterps']) : '';
+  $iax_settings['maxjitterinterps']  = isset($_POST['maxjitterinterps']) ? htmlspecialchars($_POST['maxjitterinterps']) : '10';
 
   $iax_settings['iax_language']      = isset($_POST['iax_language']) ? htmlspecialchars($_POST['iax_language']) : '';
   $iax_settings['bindaddr']          = isset($_POST['bindaddr']) ? htmlspecialchars($_POST['bindaddr']) : '';
@@ -562,11 +562,11 @@ function iaxsettings_check_custom_files() {
         // If setting is an array, then it is a subsection
         //
         if (!is_array($item)) {
-          $msg =  sprintf(_("Settings in %s may override these, the settings should be removed"),"<b>$file</b>");
+          $msg =  sprintf(_("Settings in %s may override these. Those settings should be removed."),"<b>$file</b>");
           $errors[] = array( 'js' => '', 'div' => $msg);
           break;
         } elseif ($main && is_array($item) && strtolower($section) == 'general' && !empty($item)) {
-          $msg =  sprintf(_("File %s should not have any settings in it, the settings should be removed"),"<b>$file</b>");
+          $msg =  sprintf(_("File %s should not have any settings in it. Those settings should be removed."),"<b>$file</b>");
           $errors[] = array( 'js' => '', 'div' => $msg);
           break;
         }
