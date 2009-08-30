@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-21 14:02+0200\n"
+"POT-Creation-Date: 2009-08-30 00:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,30 @@ msgstr ""
 
 #: functions.inc.php:353
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
+msgstr ""
+
+#: install.php:47
+msgid "checking for iaxsettings table.."
+msgstr ""
+
+#: install.php:51
+msgid "none, creating table"
+msgstr ""
+
+#: install.php:55
+msgid "populating default codecs.."
+msgstr ""
+
+#: install.php:76
+msgid "fatal error occured populating defaults, check module"
+msgstr ""
+
+#: install.php:78
+msgid "ulaw, alaw, gsm added"
+msgstr ""
+
+#: install.php:81
+msgid "already exists"
 msgstr ""
 
 #: page.iaxsettings.php:108
@@ -281,4 +305,21 @@ msgid ""
 "entered as:<br /> [setting] = [value]<br /> in the boxes below. Click the "
 "Add Field box to add additional fields. Blank boxes will be deleted when "
 "submitted."
+msgstr ""
+
+#: page.iaxsettings.php:565
+#, php-format
+msgid "Settings in %s may override these. Those settings should be removed."
+msgstr ""
+
+#: page.iaxsettings.php:569
+#, php-format
+msgid ""
+"File %s should not have any settings in it. Those settings should be removed."
+msgstr ""
+
+msgstr "Add field"
+msgstr ""
+
+msgid "Submit Changes"
 msgstr ""
