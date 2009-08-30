@@ -263,7 +263,7 @@ msgstr "Inställningar i %s kan åsidosätta inställningarna du gör här. Du b
 msgid "File %s should not have any settings in it. Those settings should be removed."
 msgstr "Filen %s ska inte ha några inställningar alls. Dessa inställningar måste tas bort"
 
-msgid "Add field"
+msgid "Add Field"
 msgstr "Lägg till fält"
 
 msgid "Submit Changes"

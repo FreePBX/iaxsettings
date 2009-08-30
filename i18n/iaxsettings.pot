@@ -318,7 +318,7 @@ msgid ""
 "File %s should not have any settings in it. Those settings should be removed."
 msgstr ""
 
-msgstr "Add field"
+msgid "Add Field"
 msgstr ""
 
 msgid "Submit Changes"
