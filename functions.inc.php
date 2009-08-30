@@ -163,7 +163,7 @@ function iaxsettings_hookGet_config($engine) {
         /* next figure out what we need to write out (deal with things like nat combos, etc. */
 
         $jitterbuffer = $interim_settings['jitterbuffer'];
-        foreach ($interim_settings as $key => $value) {
+        if (is_array($interim_settings)) foreach ($interim_settings as $key => $value) {
           switch ($key) {
             case 'videosupport':
             break;
@@ -194,7 +194,7 @@ function iaxsettings_hookGet_config($engine) {
             }
           }
           unset($interim_settings);
-          foreach ($iax_settings as $entry) {
+          if (is_array($iax_settings)) foreach ($iax_settings as $entry) {
             if ($entry[1] != '') {
               $core_conf->addIaxGeneral($entry[0],$entry[1]);
             }
