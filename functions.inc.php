@@ -172,7 +172,7 @@ function iaxsettings_hookGet_config($engine) {
             case 'maxjitterinterps':
             case 'resyncthreshold':
             case 'forcejitterbuffer':
-              if ($jitterbuffer == 'yes' && $key != '') {
+              if ($jitterbuffer == 'yes' && $value != '') {
                 $iax_settings[] = array($key, $value);
               }
             break;
@@ -184,7 +184,7 @@ function iaxsettings_hookGet_config($engine) {
             break;
 
             case 'iax_language':
-              if ($key != '') {
+              if ($value != '') {
                 $iax_settings[] = array('language', $value);
               }
             break;
