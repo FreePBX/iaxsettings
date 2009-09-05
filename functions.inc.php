@@ -24,10 +24,10 @@
 //
 
 /* Field Values for type field */
-define('NORMAL','0');
-define('CODEC','1');
-define('VIDEO_CODEC','2');
-define('CUSTOM','9');
+define('IAX_NORMAL','0');
+define('IAX_CODEC','1');
+define('IAX_VIDEO_CODEC','2');
+define('IAX_CUSTOM','9');
 
 class iaxsettings_validate {
   var $errors = array();
@@ -121,19 +121,19 @@ function iaxsettings_hookGet_config($engine) {
 
         foreach ($raw_settings as $var) {
           switch ($var['type']) {
-            case NORMAL:
+            case IAX_NORMAL:
               $interim_settings[$var['keyword']] = $var['data'];
             break;
 
-            case CODEC:
+            case IAX_CODEC:
               $codecs[$var['keyword']] = $var['data'];
             break;
 
-            case VIDEO_CODEC:
+            case IAX_VIDEO_CODEC:
               $video_codecs[$var['keyword']] = $var['data'];
             break;
 
-            case CUSTOM:
+            case IAX_CUSTOM:
               $iax_settings[] = array($var['keyword'], $var['data']);
             break;
           default:
@@ -266,19 +266,19 @@ function iaxsettings_get($raw=false) {
 
   foreach ($raw_settings as $var) {
     switch ($var['type']) {
-      case NORMAL:
+      case IAX_NORMAL:
         $iax_settings[$var['keyword']]                 = $var['data'];
       break;
 
-      case CODEC:
+      case IAX_CODEC:
         $iax_settings['codecs'][$var['keyword']]       = $var['data'];
       break;
 
-      case VIDEO_CODEC:
+      case IAX_VIDEO_CODEC:
         $iax_settings['video_codecs'][$var['keyword']] = $var['data'];
       break;
 
-      case CUSTOM:
+      case IAX_CUSTOM:
         $iax_settings['iax_custom_key_'.$var['seq']]   = $var['keyword'];
         $iax_settings['iax_custom_val_'.$var['seq']]   = $var['data'];
       break;
@@ -310,62 +310,62 @@ function iaxsettings_edit($iax_settings) {
     switch ($key) {
       case 'bindaddr':
         $msg = _("Bind Address (bindaddr) must be an IP address.");
-        $save_settings[] = array($key,$db->escapeSimple($vd->is_ip($val,$key,$msg)),'2',NORMAL);
+        $save_settings[] = array($key,$db->escapeSimple($vd->is_ip($val,$key,$msg)),'2',IAX_NORMAL);
       break;
 
       case 'bindport':
         $msg = _("Bind Port (bindport) must be between 1024..65535, default 5060");
-        $save_settings[] = array($key,$db->escapeSimple($vd->is_ip_port($val, $key, $msg)),'1',NORMAL);
+        $save_settings[] = array($key,$db->escapeSimple($vd->is_ip_port($val, $key, $msg)),'1',IAX_NORMAL);
       break;
 
       case 'minregexpire':
       case 'maxregexpire':
         $msg = sprintf($integer_msg,$key);
-        $save_settings[] = array($key,$db->escapeSimple($vd->is_int($val,$key,$msg)),'10',NORMAL);
+        $save_settings[] = array($key,$db->escapeSimple($vd->is_int($val,$key,$msg)),'10',IAX_NORMAL);
       break;
 
       case 'iax_language':
         $msg = ("Language must be alphanumeric and installed");
-        $save_settings[] = array($key,$db->escapeSimple($vd->is_alphanumeric($val,$key,$msg)),'0',NORMAL);
+        $save_settings[] = array($key,$db->escapeSimple($vd->is_alphanumeric($val,$key,$msg)),'0',IAX_NORMAL);
       break;
 
       case 'codecpriority':
       case 'delayreject':
       case 'bandwidth':
-        $save_settings[] = array($key,$val,'0',NORMAL);
+        $save_settings[] = array($key,$val,'0',IAX_NORMAL);
       break;
 
       case 'jitterbuffer':
-        $save_settings[] = array($key,$val,'4',NORMAL);
+        $save_settings[] = array($key,$val,'4',IAX_NORMAL);
       break;
 
       case 'forcejitterbuffer':
-        $save_settings[] = array($key,$val,'5',NORMAL);
+        $save_settings[] = array($key,$val,'5',IAX_NORMAL);
       break;
 
       case 'maxjitterbuffer':
       case 'maxjitterinterps':
         $msg = sprintf($integer_msg,$key);
-        $save_settings[] = array($key,$db->escapeSimple($vd->is_int($val,$key,$msg)),'5',NORMAL);
+        $save_settings[] = array($key,$db->escapeSimple($vd->is_int($val,$key,$msg)),'5',IAX_NORMAL);
       break;
 
       case 'resyncthreshold':
         $msg = _("resyncthreshold must be a non-negative integer or -1 to disable");
-        $save_settings[] = array($key,$db->escapeSimple($vd->is_int($val,$key,$msg,true)),'5',NORMAL);
+        $save_settings[] = array($key,$db->escapeSimple($vd->is_int($val,$key,$msg,true)),'5',IAX_NORMAL);
       break;
 
       case 'videosupport':
-        $save_settings[] = array($key,$val,'10',NORMAL);
+        $save_settings[] = array($key,$val,'10',IAX_NORMAL);
       break;
 
     default:
       if (substr($key,0,15) == "iax_custom_key_") {
         $seq = substr($key,15);
-        $save_settings[] = array($db->escapeSimple($val),$db->escapeSimple($iax_settings["iax_custom_val_$seq"]),($seq),CUSTOM); 
+        $save_settings[] = array($db->escapeSimple($val),$db->escapeSimple($iax_settings["iax_custom_val_$seq"]),($seq),IAX_CUSTOM); 
       } else if (substr($key,0,15) == "iax_custom_val_") {
         // skip it, we will seek it out when we see the iax_custom_key
       } else {
-        $save_settings[] = array($key,$val,'0',NORMAL);
+        $save_settings[] = array($key,$val,'0',IAX_NORMAL);
       }
     }
   }
@@ -376,11 +376,11 @@ function iaxsettings_edit($iax_settings) {
   } else {
     $seq = 0;
     foreach ($codecs as $key => $val) {
-      $save_settings[] = array($db->escapeSimple($key),$db->escapeSimple($val),$seq++,CODEC);
+      $save_settings[] = array($db->escapeSimple($key),$db->escapeSimple($val),$seq++,IAX_CODEC);
     }
     $seq = 0;
     foreach ($video_codecs as $key => $val) {
-      $save_settings[] = array($db->escapeSimple($key),$db->escapeSimple($val),$seq++,VIDEO_CODEC); 
+      $save_settings[] = array($db->escapeSimple($key),$db->escapeSimple($val),$seq++,IAX_VIDEO_CODEC); 
     }
 
     // TODO: normally don't like doing delete/insert but otherwise we would have do update for each
