@@ -22,6 +22,6 @@
 		*2.6.0beta1.1* install script 'if not exists' missing
 		*2.6.0beta1.0* lots of tweaks, fixed install.php error
 	</changelog>
-	<location>release/2.6/iaxsettings-2.6.0.4.tgz</location>
-	<md5sum>bb328a0e3262eb6870efc916c609d49c</md5sum>
+	<location>release/2.6/iaxsettings-2.6.0.5.tgz</location>
+	<md5sum>ab5778eb4e31f98673d2e17b669abd35</md5sum>
 </module>
