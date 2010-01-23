@@ -16,12 +16,11 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-30 00:07+0200\n"
+"POT-Creation-Date: 2010-01-23 00:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +58,7 @@ msgid "populating default codecs.."
 msgstr ""
 
 #: install.php:76
-msgid "fatal error occured populating defaults, check module"
+msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 
 #: install.php:78

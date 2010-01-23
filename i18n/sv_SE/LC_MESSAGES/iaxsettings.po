@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: FreePBX iaxsettings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-30 00:07+0200\n"
-"PO-Revision-Date: 2009-08-30 10:51+0100\n"
+"PO-Revision-Date: 2010-01-23 23:08+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: SWEDISH\n"
 "MIME-Version: 1.0\n"
@@ -60,7 +60,7 @@ msgid "populating default codecs.."
 msgstr "skriver standard codecs.."
 
 #: install.php:76
-msgid "fatal error occured populating defaults, check module"
+msgid "fatal error occurred populating defaults, check module"
 msgstr "allvarligt fel inträffade när standardvärde skrevs, kontrollera modulen"
 
 #: install.php:78
@@ -191,7 +191,7 @@ msgstr "Storlek på jitterbuffer"
 
 #: page.iaxsettings.php:353
 msgid "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds.<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a significant change in delay that continues over a few frames, it will resync, assuming that the change in delay was caused by a timestamping mix-up. The threshold for noticing a change in delay is measured as twice the measured jitter plus this resync threshold. Resyncing can be disabled by setting this parameter to -1."
-msgstr ""
+msgstr "Asterisk: maxjitterbuffer. Maxlängden på jitterbuffern i millisekunder.<br> Asterisk: resyncthreshold. En återsynkning kommer att ske om jitterbuffern detekterar en signifikant ändring i fördröjning som fortsätter över ett par ramar, under förutsättning att ändringen i förseningen orsakades av en sammanblandning av tidsstämplar. Spärren för detektering av fördröjning mäts som två gånger den uppmätta jittern plus denna spärr för återsynk. Återsynk kan avaktiveras genom att sätta denna parameter till -1."
 
 #: page.iaxsettings.php:363
 msgid "Max Interpolations"
@@ -199,7 +199,7 @@ msgstr "Max interpolation"
 
 #: page.iaxsettings.php:363
 msgid "Asterisk: maxjitterinterps. The maximum number of interpolation frames the jitterbuffer should return in a row. Since some clients do not send CNG/DTX frames to indicate silence, the jitterbuffer will assume silence has begun after returning this many interpolations. This prevents interpolating throughout a long silence."
-msgstr ""
+msgstr "Asterisk: maxjitterinterps. Det maximala antal interpoleringsramar som jitterbuffern ska returnera på en rad. Eftersom vissa enheter inte skickar CNG/DTX-ramar för att indikera tystnad, kommer jitterbuffern att anta tystnad har startars efter att returnerat dessa interpoleringar. Detta förhindrar interpoleringar under en längre tystnad."
 
 #: page.iaxsettings.php:371
 msgid "Advanced General Settings"
