@@ -1,26 +1,26 @@
 # This file is part of FreePBX.
-# Original Release by Philippe Lindheimer
-# Copyright Philippe Lindheimer (2009)
-# Copyright Bandwidth.com (2009)
 #
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
 #
-#    This program is distributed in the hope that it will be useful,
+#    FreePBX is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
+#    GNU General Public License for more details.
 #
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for iaxsettings
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-23 00:00+0200\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,74 +28,96 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:308
+#: iaxsettings/functions.inc.php:308
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr ""
 
-#: functions.inc.php:312
+#: iaxsettings/functions.inc.php:312
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr ""
 
-#: functions.inc.php:317
+#: iaxsettings/functions.inc.php:317
 msgid "Bind Port (bindport) must be between 1024..65535, default 5060"
 msgstr ""
 
-#: functions.inc.php:353
+#: iaxsettings/functions.inc.php:353
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 
-#: install.php:47
+#: iaxsettings/iaxsettings.i18n.php:5 iaxsettings/iaxsettings.i18n.php:11
+msgid "Asterisk IAX Settings"
+msgstr ""
+
+#: iaxsettings/iaxsettings.i18n.php:7
+msgid "System Administration"
+msgstr ""
+
+#: iaxsettings/iaxsettings.i18n.php:9
+msgid ""
+"Use to configure Various Asterisk IAX Settings in the General section of iax."
+"conf. The module assumes Asterisk version 1.4 or higher. Some settings may "
+"not exist in Asterisk 1.2 and will be ignored by Asterisk."
+msgstr ""
+
+#: iaxsettings/install.php:47
 msgid "checking for iaxsettings table.."
 msgstr ""
 
-#: install.php:51
+#: iaxsettings/install.php:51
 msgid "none, creating table"
 msgstr ""
 
-#: install.php:55
+#: iaxsettings/install.php:55
 msgid "populating default codecs.."
 msgstr ""
 
-#: install.php:76
+#: iaxsettings/install.php:76
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 
-#: install.php:78
+#: iaxsettings/install.php:78
 msgid "ulaw, alaw, gsm added"
 msgstr ""
 
-#: install.php:81
+#: iaxsettings/install.php:81
 msgid "already exists"
 msgstr ""
 
-#: page.iaxsettings.php:108
+#: iaxsettings/page.iaxsettings.php:122
 msgid "Edit Settings"
 msgstr ""
 
-#: page.iaxsettings.php:136
+#: iaxsettings/page.iaxsettings.php:153
 msgid "ERRORS"
 msgstr ""
 
-#: page.iaxsettings.php:151
+#: iaxsettings/page.iaxsettings.php:168
 msgid "Audio Codecs"
 msgstr ""
 
-#: page.iaxsettings.php:154
+#: iaxsettings/page.iaxsettings.php:171
 msgid "Codecs"
 msgstr ""
 
-#: page.iaxsettings.php:154
+#: iaxsettings/page.iaxsettings.php:171
 msgid ""
 "Check the desired codecs, all others will be disabled unless explicitly "
 "enabled in a device or trunks configuration."
 msgstr ""
 
-#: page.iaxsettings.php:184
+#: iaxsettings/page.iaxsettings.php:171 iaxsettings/page.iaxsettings.php:263
+msgid ""
+" If you clear each codec and then add them one at a time, submitting with "
+"each addition, they will be added in order which will effect the codec "
+"priority."
+msgstr ""
+
+#: iaxsettings/page.iaxsettings.php:203
 msgid "Codec Priority"
 msgstr ""
 
-#: page.iaxsettings.php:184
+#: iaxsettings/page.iaxsettings.php:203
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -109,76 +131,76 @@ msgid ""
 "requested format is available."
 msgstr ""
 
-#: page.iaxsettings.php:212
+#: iaxsettings/page.iaxsettings.php:231
 msgid "Bandwidth"
 msgstr ""
 
-#: page.iaxsettings.php:212
+#: iaxsettings/page.iaxsettings.php:231
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
 msgstr ""
 
-#: page.iaxsettings.php:219
+#: iaxsettings/page.iaxsettings.php:238
 msgid "low"
 msgstr ""
 
-#: page.iaxsettings.php:223
+#: iaxsettings/page.iaxsettings.php:242
 msgid "medium"
 msgstr ""
 
-#: page.iaxsettings.php:227
+#: iaxsettings/page.iaxsettings.php:246
 msgid "high"
 msgstr ""
 
-#: page.iaxsettings.php:231
+#: iaxsettings/page.iaxsettings.php:250
 msgid "unset"
 msgstr ""
 
-#: page.iaxsettings.php:239
+#: iaxsettings/page.iaxsettings.php:258
 msgid "Video Codecs"
 msgstr ""
 
-#: page.iaxsettings.php:244
+#: iaxsettings/page.iaxsettings.php:263
 msgid "Video Support"
 msgstr ""
 
-#: page.iaxsettings.php:244
+#: iaxsettings/page.iaxsettings.php:263
 msgid "Check to enable and then choose allowed codecs."
 msgstr ""
 
-#: page.iaxsettings.php:251 page.iaxsettings.php:318
+#: iaxsettings/page.iaxsettings.php:270 iaxsettings/page.iaxsettings.php:339
 msgid "Enabled"
 msgstr ""
 
-#: page.iaxsettings.php:255 page.iaxsettings.php:322
+#: iaxsettings/page.iaxsettings.php:274 iaxsettings/page.iaxsettings.php:343
 msgid "Disabled"
 msgstr ""
 
-#: page.iaxsettings.php:292
+#: iaxsettings/page.iaxsettings.php:313
 msgid "Registration Settings"
 msgstr ""
 
-#: page.iaxsettings.php:297
+#: iaxsettings/page.iaxsettings.php:318
 msgid "Registration Times"
 msgstr ""
 
-#: page.iaxsettings.php:297
+#: iaxsettings/page.iaxsettings.php:318
 msgid ""
 "Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
 "that IAX peers can request as a registration expiration interval (in "
 "seconds)."
 msgstr ""
 
-#: page.iaxsettings.php:306
+#: iaxsettings/page.iaxsettings.php:327
 msgid "Jitter Buffer Settings"
 msgstr ""
 
-#: page.iaxsettings.php:311
+#: iaxsettings/page.iaxsettings.php:332
 msgid "Jitter Buffer"
 msgstr ""
 
-#: page.iaxsettings.php:311
+#: iaxsettings/page.iaxsettings.php:332
 msgid ""
 "Asterisk: jitterbuffer. You can adjust several parameters relating to the "
 "jitter buffer. The jitter buffer's function is to compensate for varying "
@@ -186,11 +208,11 @@ msgid ""
 "audio will be dejittered by the jitter buffer at the other end."
 msgstr ""
 
-#: page.iaxsettings.php:332
+#: iaxsettings/page.iaxsettings.php:353
 msgid "Force Jitter Buffer"
 msgstr ""
 
-#: page.iaxsettings.php:332
+#: iaxsettings/page.iaxsettings.php:353
 msgid ""
 "Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive "
 "side of an IAX channel. Normally the jitter buffer will not be used if "
@@ -201,19 +223,19 @@ msgid ""
 "the stream."
 msgstr ""
 
-#: page.iaxsettings.php:339
+#: iaxsettings/page.iaxsettings.php:360
 msgid "Yes"
 msgstr ""
 
-#: page.iaxsettings.php:343
+#: iaxsettings/page.iaxsettings.php:364
 msgid "No"
 msgstr ""
 
-#: page.iaxsettings.php:353
+#: iaxsettings/page.iaxsettings.php:374
 msgid "Jitter Buffer Size"
 msgstr ""
 
-#: page.iaxsettings.php:353
+#: iaxsettings/page.iaxsettings.php:374
 msgid ""
 "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds."
 "<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a "
@@ -224,11 +246,11 @@ msgid ""
 "setting this parameter to -1."
 msgstr ""
 
-#: page.iaxsettings.php:363
+#: iaxsettings/page.iaxsettings.php:384
 msgid "Max Interpolations"
 msgstr ""
 
-#: page.iaxsettings.php:363
+#: iaxsettings/page.iaxsettings.php:384
 msgid ""
 "Asterisk: maxjitterinterps. The maximum number of interpolation frames the "
 "jitterbuffer should return in a row. Since some clients do not send CNG/DTX "
@@ -237,23 +259,23 @@ msgid ""
 "throughout a long silence."
 msgstr ""
 
-#: page.iaxsettings.php:371
+#: iaxsettings/page.iaxsettings.php:392
 msgid "Advanced General Settings"
 msgstr ""
 
-#: page.iaxsettings.php:376
+#: iaxsettings/page.iaxsettings.php:397
 msgid "Language"
 msgstr ""
 
-#: page.iaxsettings.php:376
+#: iaxsettings/page.iaxsettings.php:397
 msgid "Default Language for a channel, Asterisk: language"
 msgstr ""
 
-#: page.iaxsettings.php:385
+#: iaxsettings/page.iaxsettings.php:406
 msgid "Bind Address"
 msgstr ""
 
-#: page.iaxsettings.php:385
+#: iaxsettings/page.iaxsettings.php:406
 msgid ""
 "Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
 "Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
@@ -262,41 +284,41 @@ msgid ""
 "is recommended to leave this blank."
 msgstr ""
 
-#: page.iaxsettings.php:394
+#: iaxsettings/page.iaxsettings.php:415
 msgid "Bind Port"
 msgstr ""
 
-#: page.iaxsettings.php:394
+#: iaxsettings/page.iaxsettings.php:415
 msgid ""
 "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
 "what you want. It is recommended to leave this blank."
 msgstr ""
 
-#: page.iaxsettings.php:403
+#: iaxsettings/page.iaxsettings.php:424
 msgid "Delay Auth Rejects"
 msgstr ""
 
-#: page.iaxsettings.php:403
+#: iaxsettings/page.iaxsettings.php:424
 msgid ""
 "Asterisk: delayreject. For increased security against brute force password "
 "attacks enable this which will delay the sending of authentication reject "
 "for REGREQ or AUTHREP if there is a password."
 msgstr ""
 
-#: page.iaxsettings.php:410
+#: iaxsettings/page.iaxsettings.php:431
 msgid "Enable"
 msgstr ""
 
-#: page.iaxsettings.php:414
+#: iaxsettings/page.iaxsettings.php:435
 msgid "Disable"
 msgstr ""
 
-#: page.iaxsettings.php:426
+#: iaxsettings/page.iaxsettings.php:447
 msgid "Other IAX Settings"
 msgstr ""
 
-#: page.iaxsettings.php:426
+#: iaxsettings/page.iaxsettings.php:447
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -306,19 +328,13 @@ msgid ""
 "submitted."
 msgstr ""
 
-#: page.iaxsettings.php:565
+#: iaxsettings/page.iaxsettings.php:586
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 
-#: page.iaxsettings.php:569
+#: iaxsettings/page.iaxsettings.php:590
 #, php-format
 msgid ""
 "File %s should not have any settings in it. Those settings should be removed."
-msgstr ""
-
-msgid "Add Field"
-msgstr ""
-
-msgid "Submit Changes"
 msgstr ""
