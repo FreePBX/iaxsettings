@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,96 +28,75 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: iaxsettings/functions.inc.php:308
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr ""
 
-#: iaxsettings/functions.inc.php:312
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr ""
 
-#: iaxsettings/functions.inc.php:317
 msgid "Bind Port (bindport) must be between 1024..65535, default 5060"
 msgstr ""
 
-#: iaxsettings/functions.inc.php:353
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 
-#: iaxsettings/iaxsettings.i18n.php:5 iaxsettings/iaxsettings.i18n.php:11
 msgid "Asterisk IAX Settings"
 msgstr ""
 
-#: iaxsettings/iaxsettings.i18n.php:7
 msgid "System Administration"
 msgstr ""
 
-#: iaxsettings/iaxsettings.i18n.php:9
 msgid ""
 "Use to configure Various Asterisk IAX Settings in the General section of iax."
 "conf. The module assumes Asterisk version 1.4 or higher. Some settings may "
 "not exist in Asterisk 1.2 and will be ignored by Asterisk."
 msgstr ""
 
-#: iaxsettings/install.php:47
 msgid "checking for iaxsettings table.."
 msgstr ""
 
-#: iaxsettings/install.php:51
 msgid "none, creating table"
 msgstr ""
 
-#: iaxsettings/install.php:55
 msgid "populating default codecs.."
 msgstr ""
 
-#: iaxsettings/install.php:76
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 
-#: iaxsettings/install.php:78
 msgid "ulaw, alaw, gsm added"
 msgstr ""
 
-#: iaxsettings/install.php:81
 msgid "already exists"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:122
 msgid "Edit Settings"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:153
 msgid "ERRORS"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:168
 msgid "Audio Codecs"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:171
 msgid "Codecs"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:171
 msgid ""
 "Check the desired codecs, all others will be disabled unless explicitly "
 "enabled in a device or trunks configuration."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:171 iaxsettings/page.iaxsettings.php:263
 msgid ""
 " If you clear each codec and then add them one at a time, submitting with "
 "each addition, they will be added in order which will effect the codec "
 "priority."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:203
 msgid "Codec Priority"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:203
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -131,76 +110,59 @@ msgid ""
 "requested format is available."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:231
 msgid "Bandwidth"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:231
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:238
 msgid "low"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:242
 msgid "medium"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:246
 msgid "high"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:250
 msgid "unset"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:258
 msgid "Video Codecs"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:263
 msgid "Video Support"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:263
 msgid "Check to enable and then choose allowed codecs."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:270 iaxsettings/page.iaxsettings.php:339
 msgid "Enabled"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:274 iaxsettings/page.iaxsettings.php:343
 msgid "Disabled"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:313
 msgid "Registration Settings"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:318
 msgid "Registration Times"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:318
 msgid ""
 "Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
 "that IAX peers can request as a registration expiration interval (in "
 "seconds)."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:327
 msgid "Jitter Buffer Settings"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:332
 msgid "Jitter Buffer"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:332
 msgid ""
 "Asterisk: jitterbuffer. You can adjust several parameters relating to the "
 "jitter buffer. The jitter buffer's function is to compensate for varying "
@@ -208,11 +170,9 @@ msgid ""
 "audio will be dejittered by the jitter buffer at the other end."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:353
 msgid "Force Jitter Buffer"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:353
 msgid ""
 "Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive "
 "side of an IAX channel. Normally the jitter buffer will not be used if "
@@ -223,19 +183,15 @@ msgid ""
 "the stream."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:360
 msgid "Yes"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:364
 msgid "No"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:374
 msgid "Jitter Buffer Size"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:374
 msgid ""
 "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds."
 "<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a "
@@ -246,11 +202,9 @@ msgid ""
 "setting this parameter to -1."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:384
 msgid "Max Interpolations"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:384
 msgid ""
 "Asterisk: maxjitterinterps. The maximum number of interpolation frames the "
 "jitterbuffer should return in a row. Since some clients do not send CNG/DTX "
@@ -259,23 +213,18 @@ msgid ""
 "throughout a long silence."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:392
 msgid "Advanced General Settings"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:397
 msgid "Language"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:397
 msgid "Default Language for a channel, Asterisk: language"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:406
 msgid "Bind Address"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:406
 msgid ""
 "Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
 "Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
@@ -284,41 +233,33 @@ msgid ""
 "is recommended to leave this blank."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:415
 msgid "Bind Port"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:415
 msgid ""
 "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
 "what you want. It is recommended to leave this blank."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:424
 msgid "Delay Auth Rejects"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:424
 msgid ""
 "Asterisk: delayreject. For increased security against brute force password "
 "attacks enable this which will delay the sending of authentication reject "
 "for REGREQ or AUTHREP if there is a password."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:431
 msgid "Enable"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:435
 msgid "Disable"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:447
 msgid "Other IAX Settings"
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:447
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -328,12 +269,10 @@ msgid ""
 "submitted."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:586
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 
-#: iaxsettings/page.iaxsettings.php:590
 #, php-format
 msgid ""
 "File %s should not have any settings in it. Those settings should be removed."
