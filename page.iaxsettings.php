@@ -246,7 +246,7 @@ END;
             <label for="bandwidth-high"><?php echo _("high") ?></label>
           </td>
           <td width="25%">
-            <input id="bandwidth-unset" type="radio" name="bandwidth" value="" tabindex="<?php echo ++$tabindex;?>"<?php echo $bandwidth=="unset"?"checked=\"unset\"":""?>/>
+            <input id="bandwidth-unset" type="radio" name="bandwidth" value="unset" tabindex="<?php echo ++$tabindex;?>"<?php echo $bandwidth=="unset"?"checked=\"unset\"":""?>/>
             <label for="bandwidth-unset"><?php echo _("unset") ?></label>
           </td>
         </tr>
