@@ -144,6 +144,7 @@ function iaxsettings_hookGet_config($engine) {
 
         /* Codecs First */
         $core_conf->addIaxGeneral('disallow','all');
+        asort($codecs);
         foreach ($codecs as $codec => $enabled) {
           if ($enabled != '') {
             $core_conf->addIaxGeneral('allow',$codec);
@@ -152,6 +153,7 @@ function iaxsettings_hookGet_config($engine) {
         unset($codecs);
 
         if ($interim_settings['videosupport'] == 'yes') {
+          asort($video_codecs);
           foreach ($video_codecs as $codec => $enabled) {
             if ($enabled != '') {
               $core_conf->addIaxGeneral('allow',$codec);

@@ -24,9 +24,10 @@
   $tabindex       = 0;
   $dispnum        = "iaxsettings";
   $error_displays = array();
-
   $action                            = isset($_POST['action'])?$_POST['action']:'';
-
+	$post_codec = isset($_POST['codec']) ? $_POST['codec'] : ''; 
+	$post_vcodec = isset($_POST['vcodec']) ? $_POST['vcodec'] : ''; 
+	
   $codecs = array(
     'ulaw'     => '',
     'alaw'     => '',
@@ -42,10 +43,13 @@
     'speex'    => '',
     'g722'     => '',
     );
-  foreach (array_keys($codecs) as $codec) {
-    $codecs[$codec] = isset($_POST[$codec]) ? $_POST[$codec] : '';
+
+  // With the new sorting, the vars should come to us in the sorted order so just use that
+  //
+  $pri = 1;
+  foreach (array_keys($post_codec) as $codec) {
+    $codecs[$codec] = $pri++;
   }
-  uasort($codecs, 'cmp');
   $iax_settings['codecs']            = $codecs;
 
   $video_codecs = array(
@@ -54,10 +58,13 @@
     'h263p' => '',
     'h264'  => '',
     );
-  foreach (array_keys($video_codecs) as $codec) {
-    $video_codecs[$codec] = isset($_POST[$codec]) ? $_POST[$codec] : '';
+
+  // With the new sorting, the vars should come to us in the sorted order so just use that
+  //
+  $pri = 1;
+  foreach (array_keys($post_vcodec) as $vcodec) {
+    $video_codecs[$vcodec] = $pri++;
   }
-  uasort($video_codecs, 'cmp');
   $iax_settings['codecpriority']     = isset($_POST['codecpriority']) ? $_POST['codecpriority'] : 'host';
   $iax_settings['bandwidth']         = isset($_POST['bandwidth']) ? $_POST['bandwidth'] : 'unset';
   $iax_settings['video_codecs']      = $video_codecs;
@@ -168,33 +175,31 @@ $error_displays = array_merge($error_displays,iaxsettings_check_custom_files());
     <td colspan="2"><h5><?php echo _("Audio Codecs")?><hr></h5></td>
   </tr>
   <tr>
-    <td valign='top'><a href="#" class="info"><?php echo _("Codecs")?><span><?php echo _("Check the desired codecs, all others will be disabled unless explicitly enabled in a device or trunks configuration.")._(" If you clear each codec and then add them one at a time, submitting with each addition, they will be added in order which will effect the codec priority.")?></span></a></td>
+    <td valign='top'><a href="#" class="info"><?php echo _("Codecs")?><span><?php echo _("Check the desired codecs, all others will be disabled unless explicitly enabled in a device or trunks configuration. Drag to re-order.")?></span></a></td>
     <td>
-      <table width="100%">
-        <tr>
 <?php
-  $cols = $cols_per_row;
   $seq = 1;
+echo '<ul class="sortable">';
   foreach ($codecs as $codec => $codec_state) {
-    if ($cols == 0) {
-      echo "</tr><tr>\n";
-      $cols = $cols_per_row;
-    }
-    $cols--;
     $tabindex++;
     $codec_trans = _($codec);
     $codec_checked = $codec_state ? 'checked' : '';
-    echo <<< END
-          <td width="$width%">
-            <input type="checkbox" value="$seq" name="$codec" id="$codec" class="audio-codecs" tabindex="$tabindex" $codec_checked />
-            <label for="$codec"> <small>$codec_trans</small> </label>
-          </td>
-END;
-    $seq++;
+	echo '<li>'
+		. '<img src="assets/'.$dispnum.'/images/arrow_up_down.png" height="16" width="16" border="0" alt="move" style="float:none; margin-left:-6px; margin-bottom:-3px;cursor:move" /> '
+		. '<input type="checkbox" '
+		. ($codec_checked ? 'value="'. $seq++ . '" ' : '')
+		. 'name="codec[' . $codec . ']" '
+		. 'id="'. $codec . '" '
+		. 'class="audio-codecs" tabindex="' . $tabindex. '" '
+		. $codec_checked
+		. ' />'
+		. '<label for="'. $codec . '"> '
+		. '<small>' . $codec_trans . '</small>'
+		. ' </label></li>';
   }
+echo '</ul>';
 ?>
-        </tr>
-      </table>
+
     </td>
   </tr>
 
@@ -284,25 +289,26 @@ END;
       <table width="100%">
         <tr>
 <?php
-  $cols = $cols_per_row;
-  $seq = 1;
-  foreach ($video_codecs as $codec => $codec_state) {
-    if ($cols == 0) {
-      echo "</tr><tr class=\"video-codecs\">\n";
-      $cols = $cols_per_row;
-    }
-    $cols--;
+echo '<ul  class="sortable video-codecs">';
+   foreach ($video_codecs as $codec => $codec_state) {
     $tabindex++;
     $codec_trans = _($codec);
     $codec_checked = $codec_state ? 'checked' : '';
-    echo <<< END
-          <td width="$width%">
-            <input type="checkbox" value="$seq" name="$codec" id="$codec" class="video-codecs" tabindex="$tabindex" $codec_checked />
-            <label for="$codec"><small> $codec_trans </small></label>
-          </td>
-END;
-  $seq++;
-  }
+	echo '<li>'
+		. '<img src="assets/'.$dispnum.'/images/arrow_up_down.png" height="16" width="16" border="0" alt="move" style="float:none; margin-left:-6px; margin-bottom:-3px;cursor:move" /> '
+		. '<input type="checkbox" '
+		. ($codec_checked ? 'value="'. $seq++ . '" ' : '')
+		. 'name="vcodec[' . $codec . ']" '
+		. 'id="'. $codec . '" '
+		. 'class="audio-codecs" tabindex="' . $tabindex. '" '
+		. $codec_checked
+		. ' />'
+		. '<label for="'. $codec . '"> '
+		. '<small>' . $codec_trans . '</small>'
+		. ' </label></li>';
+  	}
+echo '</ul>';
+
 ?>
         </tr>
       </table>
