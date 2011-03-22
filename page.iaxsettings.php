@@ -211,20 +211,16 @@ echo '</ul>';
       <table width="100%">
         <tr>
           <td width="25%">
+				<span class="radioset">
             <input id="codecpriority-host" type="radio" name="codecpriority" value="host" tabindex="<?php echo ++$tabindex;?>"<?php echo $codecpriority=="host"?"checked=\"host\"":""?>/>
             <label for="codecpriority-host">host</label>
-          </td>
-          <td width="25%">
             <input id="codecpriority-caller" type="radio" name="codecpriority" value="caller" tabindex="<?php echo ++$tabindex;?>"<?php echo $codecpriority=="caller"?"checked=\"caller\"":""?>/>
             <label for="codecpriority-caller">caller</label>
-          </td>
-          <td width="25%">
             <input id="codecpriority-disabled" type="radio" name="codecpriority" value="disabled" tabindex="<?php echo ++$tabindex;?>"<?php echo $codecpriority=="disabled"?"checked=\"disabled\"":""?>/>
             <label for="codecpriority-disabled">disabled</label>
-          </td>
-          <td width="25%">
             <input id="codecpriority-regonly" type="radio" name="codecpriority" value="regonly" tabindex="<?php echo ++$tabindex;?>"<?php echo $codecpriority=="regonly"?"checked=\"regonly\"":""?>/>
             <label for="codecpriority-regonly">regonly</label>
+				</span>
           </td>
         </tr>
       </table>
@@ -239,20 +235,16 @@ echo '</ul>';
       <table width="100%">
         <tr>
           <td width="25%">
+			<span class="radioset">
             <input id="bandwidth-low" type="radio" name="bandwidth" value="low" tabindex="<?php echo ++$tabindex;?>"<?php echo $bandwidth=="low"?"checked=\"low\"":""?>/>
             <label for="bandwidth-low"><?php echo _("low") ?></label>
-          </td>
-          <td width="25%">
             <input id="bandwidth-medium" type="radio" name="bandwidth" value="medium" tabindex="<?php echo ++$tabindex;?>"<?php echo $bandwidth=="medium"?"checked=\"medium\"":""?>/>
             <label for="bandwidth-medium"><?php echo _("medium") ?></label>
-          </td>
-          <td width="25%">
             <input id="bandwidth-high" type="radio" name="bandwidth" value="high" tabindex="<?php echo ++$tabindex;?>"<?php echo $bandwidth=="high"?"checked=\"high\"":""?>/>
             <label for="bandwidth-high"><?php echo _("high") ?></label>
-          </td>
-          <td width="25%">
             <input id="bandwidth-unset" type="radio" name="bandwidth" value="unset" tabindex="<?php echo ++$tabindex;?>"<?php echo $bandwidth=="unset"?"checked=\"unset\"":""?>/>
             <label for="bandwidth-unset"><?php echo _("unset") ?></label>
+			</span>
           </td>
         </tr>
       </table>
@@ -271,12 +263,12 @@ echo '</ul>';
       <table width="100%">
         <tr>
           <td width="25%">
+			<span class="radioset">
             <input id="videosupport-yes" type="radio" name="videosupport" value="yes" tabindex="<?php echo ++$tabindex;?>"<?php echo $videosupport=="yes"?"checked=\"yes\"":""?>/>
             <label for="videosupport-yes"><?php echo _("Enabled") ?></label>
-          </td>
-          <td width="25%">
             <input id="videosupport-no" type="radio" name="videosupport" value="no" tabindex="<?php echo ++$tabindex;?>"<?php echo $videosupport=="no"?"checked=\"no\"":""?>/>
             <label for="videosupport-no"><?php echo _("Disabled") ?></label>
+			</span>
           </td>
           <td width="25%"> </td><td width="25%"></td>
         </tr>
@@ -341,12 +333,12 @@ echo '</ul>';
       <table width="100%">
         <tr>
           <td width="25%">
+			<span class="radioset">
             <input id="jitterbuffer-yes" type="radio" name="jitterbuffer" value="yes" tabindex="<?php echo ++$tabindex;?>"<?php echo $jitterbuffer=="yes"?"checked=\"yes\"":""?>/>
             <label for="jitterbuffer-yes"><?php echo _("Enabled") ?></label>
-          </td>
-          <td width="25%">
             <input id="jitterbuffer-no" type="radio" name="jitterbuffer" value="no" tabindex="<?php echo ++$tabindex;?>"<?php echo $jitterbuffer=="no"?"checked=\"no\"":""?>/>
             <label for="jitterbuffer-no"><?php echo _("Disabled") ?></label>
+			</span>
           </td>
           <td width="25%"> </td><td width="25%"></td>
         </tr>
@@ -362,12 +354,12 @@ echo '</ul>';
       <table width="100%">
         <tr>
           <td width="25%">
+			<span class="radioset">
             <input id="forcejitterbuffer-yes" type="radio" name="forcejitterbuffer" class="jitter-buffer" value="yes" tabindex="<?php echo ++$tabindex;?>"<?php echo $forcejitterbuffer=="yes"?"checked=\"yes\"":""?>/>
             <label for="forcejitterbuffer-yes"><?php echo _("Yes") ?></label>
-          </td>
-          <td width="25%">
             <input id="forcejitterbuffer-no" type="radio" name="forcejitterbuffer" class="jitter-buffer" value="no" tabindex="<?php echo ++$tabindex;?>"<?php echo $forcejitterbuffer=="no"?"checked=\"no\"":""?>/>
             <label for="forcejitterbuffer-no"><?php echo _("No") ?></label>
+			<span>
           </td>
           <td width="25%"> </td><td width="25%"></td>
         </tr>
@@ -433,12 +425,12 @@ echo '</ul>';
       <table width="100%">
         <tr>
           <td width="25%">
+			<span class="radioset">
             <input id="delayreject-yes" type="radio" name="delayreject" value="yes" tabindex="<?php echo ++$tabindex;?>"<?php echo $delayreject=="yes"?"checked=\"yes\"":""?>/>
             <label for="delayreject-yes"><?php echo _("Enable") ?></label>
-          </td>
-          <td width="25%">
             <input id="delayreject-no" type="radio" name="delayreject" value="no" tabindex="<?php echo ++$tabindex;?>"<?php echo $delayreject=="no"?"checked=\"no\"":""?>/>
             <label for="delayreject-no"><?php echo _("Disable") ?></label>
+			</span>
           </td>
           <td width="25%"> </td><td width="25%"></td>
         </tr>
