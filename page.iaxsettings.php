@@ -25,8 +25,8 @@
   $dispnum        = "iaxsettings";
   $error_displays = array();
   $action                            = isset($_POST['action'])?$_POST['action']:'';
-	$post_codec = isset($_POST['codec']) ? $_POST['codec'] : ''; 
-	$post_vcodec = isset($_POST['vcodec']) ? $_POST['vcodec'] : ''; 
+	$post_codec = isset($_POST['codec']) ? $_POST['codec'] : array(); 
+	$post_vcodec = isset($_POST['vcodec']) ? $_POST['vcodec'] : array(); 
 	
   $codecs = array(
     'ulaw'     => '',
