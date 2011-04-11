@@ -316,7 +316,7 @@ function iaxsettings_edit($iax_settings) {
       break;
 
       case 'bindport':
-        $msg = _("Bind Port (bindport) must be between 1024..65535, default 5060");
+        $msg = _("Bind Port (bindport) must be between 1024..65535, default 4569");
         $save_settings[] = array($key,$db->escapeSimple($vd->is_ip_port($val, $key, $msg)),'1',IAX_NORMAL);
       break;
 
