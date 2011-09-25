@@ -235,7 +235,9 @@ function iaxsettings_get($raw=false) {
     'speex'    => '',
     'g722'     => '',
     'siren7'   => '',
-    'siren14'  => '',
+    'siren14' 	=> '',
+    'jpen'   	=> '',
+    'png'  		=> '',
     );
 
   $iax_settings['video_codecs']      = array(
