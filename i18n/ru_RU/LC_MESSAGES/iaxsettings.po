@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-18 08:25+0100\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2011-04-06 20:46+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -38,7 +38,7 @@ msgstr "%s должен быть неотрицательным целым чи�
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Адрес (bindaddr) должен быть в виде четырёх октетов ИП адреса"
 
-msgid "Bind Port (bindport) must be between 1024..65535, default 5060"
+msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
 # This message is mistake. Probably penetrated from sipsettings (5060)
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Asterisk IAX Settings"
 msgstr "Установки Asterisk для IAX "
 
-msgid "Advanced Administration"
+msgid "Settings"
 msgstr ""
 
 msgid ""
