@@ -152,7 +152,7 @@ function iaxsettings_hookGet_config($engine) {
         }
         unset($codecs);
 
-        if ($interim_settings['videosupport'] == 'yes') {
+        if (isset($interim_settings['videosupport']) && $interim_settings['videosupport'] == 'yes') {
           asort($video_codecs);
           foreach ($video_codecs as $codec => $enabled) {
             if ($enabled != '') {
@@ -164,43 +164,48 @@ function iaxsettings_hookGet_config($engine) {
 
         /* next figure out what we need to write out (deal with things like nat combos, etc. */
 
-        $jitterbuffer = $interim_settings['jitterbuffer'];
-        if (is_array($interim_settings)) foreach ($interim_settings as $key => $value) {
-          switch ($key) {
-            case 'videosupport':
-            break;
+        $jitterbuffer = isset($interim_settings['jitterbuffer']) && $interim_settings['jitterbuffer'] 
+						? $interim_settings['jitterbuffer'] : '';
+        if (isset($interim_settings) && is_array($interim_settings)){
+			 foreach ($interim_settings as $key => $value) {
+	          switch ($key) {
+	            case 'videosupport':
+	            break;
 
-            case 'maxjitterbuffer':
-            case 'maxjitterinterps':
-            case 'resyncthreshold':
-            case 'forcejitterbuffer':
-              if ($jitterbuffer == 'yes' && $value != '') {
-                $iax_settings[] = array($key, $value);
-              }
-            break;
+	            case 'maxjitterbuffer':
+	            case 'maxjitterinterps':
+	            case 'resyncthreshold':
+	            case 'forcejitterbuffer':
+	              if ($jitterbuffer == 'yes' && $value != '') {
+	                $iax_settings[] = array($key, $value);
+	              }
+	            break;
 
-            case 'bandwidth':
-              if ($value != 'unset') {
-                $iax_settings[] = array($key, $value);
-              }
-            break;
+	            case 'bandwidth':
+	              if ($value != 'unset') {
+	                $iax_settings[] = array($key, $value);
+	              }
+	            break;
 
-            case 'iax_language':
-              if ($value != '') {
-                $iax_settings[] = array('language', $value);
-              }
-            break;
+	            case 'iax_language':
+	              if ($value != '') {
+	                $iax_settings[] = array('language', $value);
+	              }
+	            break;
 
-            default:
-              $iax_settings[] = array($key, $value);
-            }
-          }
-          unset($interim_settings);
-          if (is_array($iax_settings)) foreach ($iax_settings as $entry) {
+	            default:
+	              $iax_settings[] = array($key, $value);
+	            }
+	          }
+		}
+        unset($interim_settings);
+          if (isset($iax_settings) && is_array($iax_settings)){
+			foreach ($iax_settings as $entry) {
             if ($entry[1] != '') {
               $core_conf->addIaxGeneral($entry[0],$entry[1]);
             }
           }
+		} 
       }
     break;
   }
