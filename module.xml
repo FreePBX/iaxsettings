@@ -24,4 +24,4 @@
 	</changelog>
 	<location>release/2.10/iaxsettings-2.10.0.2.tgz</location>
 	<md5sum>19918586cae2a6994b73e027424366c8</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
