@@ -25,4 +25,4 @@
 	</changelog>
 	<location>release/2.11/iaxsettings-2.10.0.3.tgz</location>
 	<md5sum>5b05869aff9a40150f1d685b0e6285d5</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
