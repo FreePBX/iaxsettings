@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2012-10-30 00:04+0400\n"
 "PO-Revision-Date: 2011-04-06 20:46+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -39,7 +39,7 @@ msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Адрес (bindaddr) должен быть в виде четырёх октетов ИП адреса"
 
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
-msgstr ""
+msgstr "Порт (bindport) должен быть между 1024 и 65535, по умолчанию 4569"
 
 # This message is mistake. Probably penetrated from sipsettings (5060)
 #
@@ -47,13 +47,13 @@ msgstr ""
 # msgstr "Порт (bindport) должен быть иметь значение между 1024 и 65535, дефолтное значение - 5060"
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
-"resyncthreshold должен быть неотрицательным целым числом или указать -1 для "
+"resyncthreshold должен быть неотрицательным целым числом или указать -1 для отключения"
 
 msgid "Asterisk IAX Settings"
 msgstr "Установки Asterisk для IAX "
 
 msgid "Settings"
-msgstr ""
+msgstr "Установки"
 
 msgid ""
 "Use to configure Various Asterisk IAX Settings in the General section of iax."
@@ -101,6 +101,9 @@ msgid ""
 "Check the desired codecs, all others will be disabled unless explicitly "
 "enabled in a device or trunks configuration. Drag to re-order."
 msgstr ""
+"Отметье выбранные кодеки, все остальные кодеки будут отключены "
+"пока не будут явно активированны в устройстве или конфигурации транка. "
+"Тащите для изменения порядка."
 
 msgid "Codec Priority"
 msgstr "Приоритет кодеков"
@@ -347,6 +350,12 @@ msgstr ""
 "построчно в формате: параметр = значение<br /> [setting] = [value]<br /> в "
 "поле ниже. Кликните на Добавить поле чтобы указать ещё параметры. Пустые "
 "поля будут удалены при применении."
+
+msgid "Add Field"
+msgstr "Добавить поле"
+
+msgid "Submit Changes"
+msgstr "Применить изменения"
 
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
