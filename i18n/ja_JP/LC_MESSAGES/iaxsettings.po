@@ -1,0 +1,368 @@
+# CREDITS for JAPANESE TRANSLATION
+# ================================
+# Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
+# Inquiries: info@qloog.com / www.qloog.com
+# 
+# This translation is a culmination of the hard work of
+# several outstanding individuals, which started in 2009 with the 
+# first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
+# and Kazuhiro Tokuyama (FreePBX Japanized Project).
+#
+# Beginning in 2013, with the approval of the original authors, 
+# QLOOG undertook a large scale overhaul of the translation to 
+# expand it for compatibility with FreePBX 2.11. Our work is, 
+# of course, released under the same GPLv2 license as FreePBX. 
+# We only ask that you kindly retain these credits in honor of 
+# the time and effort that all of us have contributed. Enjoy!
+# 
+# This file is part of FreePBX.
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for iaxsettings
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.10.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-05 19:32+0900\n"
+"PO-Revision-Date: 2014-02-20 21:47+0200\n"
+"Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
+"Language-Team: Japanese "
+"<http://example.com/projects/freepbx/iaxsettings/ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 1.8\n"
+
+msgid "checking for iaxsettings table.."
+msgstr "iaxsettingsテーブルのチェック中.."
+
+msgid "none, creating table"
+msgstr "なし,テーブルを作成"
+
+msgid "populating default codecs.."
+msgstr "デフォルトのコーデックを移入中.."
+
+msgid "fatal error occurred populating defaults, check module"
+msgstr ""
+"デフォルトのコーデックを移入中に致命的なエラーが発生、モジュールをチェックし"
+"てください"
+
+msgid "ulaw, alaw, gsm added"
+msgstr "ulaw, alaw, gsm が追加されました"
+
+msgid "already exists"
+msgstr "既存します"
+
+msgid "Edit Settings"
+msgstr "設定を編集"
+
+msgid "ERRORS"
+msgstr "エラー"
+
+msgid "Audio Codecs"
+msgstr "オーディオコーデック"
+
+msgid "Codecs"
+msgstr "コーデック"
+
+msgid ""
+"Check the desired codecs, all others will be disabled unless explicitly "
+"enabled in a device or trunks configuration. Drag to re-order."
+msgstr ""
+"目的のコーデックを確認してください、明示的にデバイスまたはトランクの設定で有"
+"効にしない限り、他のすべてが無効になります。再オーダーにドラッグしてくださ"
+"い。"
+
+msgid "Codec Priority"
+msgstr "コーデック優先度"
+
+msgid ""
+"Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
+"call. This option is inherited to all user entities.  It can also be defined "
+"in each user entity separately which will override the setting here. The "
+"valid values are:<br />host - Consider the host's preferred order ahead of "
+"the caller's.<br />caller - Consider the callers preferred order ahead of "
+"the host's.<br /> disabled - Disable the consideration of codec preference "
+"altogether. (this is the original behavior before preferences were added)"
+"<br />reqonly  - Same as disabled, only do not consider capabilities if the "
+"requested format is not available the call will only be accepted if the "
+"requested format is available."
+msgstr ""
+"Asterisk: コーデック優先度。インバウンドIAXコールのコーデックネゴシエーション"
+"を制御します。このオプションは、すべてのユーザエンティティに継承されます。ま"
+"た、ここで個別に各ユーザエンティティで定義することができ、設定を上書きしま"
+"す。有効な値は次のとおりです:<br/>ホスト - 呼出し側の都合の前に、ホストの優先"
+"順位を考慮します。<br/>無効 - コーデックの優先順位の考慮を無効にします。(これ"
+"は優先順位が追加される前のオリジナルな挙動です)<br/> 要求のみ - 無効と同じで"
+"す、要求されたフォーマットが無効なかどうかを考慮せず、要求された形式が使用可"
+"能である時のみ、コールが受け入れられます。"
+
+msgid "Bandwidth"
+msgstr "帯域"
+
+msgid ""
+"Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
+"which codecs are used in general."
+msgstr ""
+"Asterisk：帯域幅。通常どのコーデックが使用されるかを制御するために、低、中、"
+"高帯域幅を指定します。"
+
+msgid "low"
+msgstr "低"
+
+msgid "medium"
+msgstr "中"
+
+msgid "high"
+msgstr "高"
+
+msgid "unset"
+msgstr "設定しない"
+
+msgid "Video Codecs"
+msgstr "ビデオコーデック"
+
+msgid "Video Support"
+msgstr "ビデオサポート"
+
+msgid "Check to enable and then choose allowed codecs."
+msgstr "有効にチェックを入れ、許可されたコーデックを選択してください。"
+
+msgid ""
+" If you clear each codec and then add them one at a time, submitting with "
+"each addition, they will be added in order which will effect the codec "
+"priority."
+msgstr ""
+"もし各コーデックをクリアした後に、それらを一つずつ追加し更新した場合、コー"
+"デックの優先度順として追加されます"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Registration Settings"
+msgstr "レジスト設定"
+
+msgid "Registration Times"
+msgstr "レジスト時間"
+
+msgid ""
+"Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
+"that IAX peers can request as a registration expiration interval (in "
+"seconds)."
+msgstr ""
+"Asterisk: minregexpire, maxregexpire.IAXピアが登録有効期間間隔(秒単位)として"
+"リクエストすることができる時間の最大値と最小値"
+
+msgid "Jitter Buffer Settings"
+msgstr "ジッタバッファ設定"
+
+msgid "Jitter Buffer"
+msgstr "ジッタバッファ"
+
+msgid ""
+"Asterisk: jitterbuffer. You can adjust several parameters relating to the "
+"jitter buffer. The jitter buffer's function is to compensate for varying "
+"network delay. The jitter buffer works for INCOMING audio - the outbound "
+"audio will be dejittered by the jitter buffer at the other end."
+msgstr ""
+"sterisk: jitterbuffer.ジッタバッファに関連するいくつかのパラメータを調整する"
+"ことができます。ジッタバッファの機能は、ネットワーク遅延の変化を補うです。"
+"ジッタバッファは、受信音声に効果を発揮します - 送信音声はもう一方の端でジッタ"
+"バッファによって調整されます。"
+
+msgid "Force Jitter Buffer"
+msgstr "ジッタバッファを強制する"
+
+msgid ""
+"Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive "
+"side of an IAX channel. Normally the jitter buffer will not be used if "
+"receiving a jittery channel but sending it off to another channel such as a "
+"SIP channel to an endpoint, since there is typically a jitter buffer at the "
+"far end. This will force the use of the jitter buffer before sending the "
+"stream on. This is not typically desired as it adds additional latency into "
+"the stream."
+msgstr ""
+"Asterisk: forcejitterbuffer. 強制的にIAXチャネルの受信側のジッタバッファを使"
+"用します。遠隔地のエンド特有のジッタバッファがあるため、通常、ジッタチャネル"
+"を受信した際はジッタバッファは使用されずにSIPチャネルからエンドポイントへと"
+"いった形で他のチャネルに切り替えて送信しますこの設定はストリームを送信する前"
+"に強制的にジッタバッファを使用します。これはストリームに追加のレイテンシー(待"
+"ち時間)を加えるため通常望ましくありません。"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "Jitter Buffer Size"
+msgstr "ジッタバッファサイズ"
+
+msgid ""
+"Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds."
+"<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a "
+"significant change in delay that continues over a few frames, it will "
+"resync, assuming that the change in delay was caused by a timestamping mix-"
+"up. The threshold for noticing a change in delay is measured as twice the "
+"measured jitter plus this resync threshold. Resyncing can be disabled by "
+"setting this parameter to -1."
+msgstr ""
+"Asterisk: maxjitterbuffer. ジッタバッファの最大長(ミリ秒)。<br />Asterisk: "
+"resyncthreshold.ジッタバッファが複数フレームにまたがって継続する膨大な変化を"
+"察知した際には、タイムスタンプのミックスアップによって引き起こされた変化を想"
+"定して再同期が行われます。ディレイの変化を察知する閾値は計測されたジッタにプ"
+"ラスしてこの再同期の閾値の２計計測されます。ここのパラメータを -1 に設定する"
+"ことにより再同期を無効にすることができます。"
+
+msgid "Max Interpolations"
+msgstr "最大補間"
+
+msgid ""
+"Asterisk: maxjitterinterps. The maximum number of interpolation frames the "
+"jitterbuffer should return in a row. Since some clients do not send CNG/DTX "
+"frames to indicate silence, the jitterbuffer will assume silence has begun "
+"after returning this many interpolations. This prevents interpolating "
+"throughout a long silence."
+msgstr ""
+"Asterisk: maxjitterinterps. ジッタバッファが続けて戻す補間フレームの最大数。"
+"無音を指し示すCNG/DTXフレームを送らないクライアントも存在するため、ジッタバッ"
+"ファはこの補間フレームを数多く戻した後に無音が開始されたとみなします。これは"
+"長い沈黙を通じて補間を防ぎます。"
+
+msgid "Advanced General Settings"
+msgstr "高度な一般設定"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Default Language for a channel, Asterisk: language"
+msgstr "チャネルのデフォルト言語、Asterisk: 言語"
+
+msgid "Bind Address"
+msgstr "バインドアドレス"
+
+msgid ""
+"Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
+"Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
+"to multiple IP addresses or ports, use the Other 'IAX Settings' fields where "
+"you can put settings such as:<br /> bindaddr=192.168.10.100:4555.<br />  It "
+"is recommended to leave this blank."
+msgstr ""
+"Asterisk: bindaddr. バインドポートでコールを待ち受けるためにbindしlistenする"
+"IPアドレス。0.0.0.0にセットした場合、Asteriskは全てのアドレスでlistenします。"
+"複数IPアドレスやポートでbindするには、他の'IAX設定'フィールドを使用してくださ"
+"い、次のような設定が可能です:<br />bindaddr=192.168.10.100:4555.<br />ここは"
+"空白のままにしておくことを推奨します。"
+
+msgid "Bind Port"
+msgstr "バインドポート"
+
+msgid ""
+"Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
+"listen for IAX messages. The IAX standard is 4569 and in most cases this is "
+"what you want. It is recommended to leave this blank."
+msgstr ""
+"Asterisk: bindport. AsteriskがIAXメッセージを待ち受けてbindしlistenするローカ"
+"ルの受信UDPポートです。IAXの標準ポートは4569番で、大抵のケースではこの設定で"
+"事足ります。ここは空白にしておくことを推奨いたします。"
+
+msgid "Delay Auth Rejects"
+msgstr "遅延した認証を拒否"
+
+msgid ""
+"Asterisk: delayreject. For increased security against brute force password "
+"attacks enable this which will delay the sending of authentication reject "
+"for REGREQ or AUTHREP if there is a password."
+msgstr ""
+"Asterisk: delayreject. ブルーとフォースパスワード攻撃に対するセキュリティの強"
+"化のため、これを有効にすると、パスワードが要求される場合にREGREQやAUTHREPのパ"
+"スワード認証拒否送信を遅らせます。"
+
+msgid "Enable"
+msgstr "有効"
+
+msgid "Disable"
+msgstr "無効"
+
+msgid "Other IAX Settings"
+msgstr "その他IAX設定"
+
+msgid ""
+"You may set any other IAX settings not present here that are allowed to be "
+"configured in the General section of iax.conf. There will be no error "
+"checking against these settings so check them carefully. They should be "
+"entered as:<br /> [setting] = [value]<br /> in the boxes below. Click the "
+"Add Field box to add additional fields. Blank boxes will be deleted when "
+"submitted."
+msgstr ""
+"ここには存在しないがiax.confのGeneralセクションで設定することが可能なその他"
+"IAX設定をすることができます。これらの設定に対するエラーチェックがないため、慎"
+"重にチェックしてください。以下のボックスに次のように入力します:<br /> "
+"[setting] = [value]<br /> フィールドボックスを追加をクリックしてフィールドを"
+"追加します。ボックスがブランクの場合は更新時に無視されます。"
+
+msgid "Add Field"
+msgstr "フィールドを追加"
+
+msgid "Submit Changes"
+msgstr "変更を適用"
+
+#, php-format
+msgid "Settings in %s may override these. Those settings should be removed."
+msgstr " %s 内の設定はこれらを上書きします。それらの設定は削除されるべきです。"
+
+#, php-format
+msgid ""
+"File %s should not have any settings in it. Those settings should be removed."
+msgstr ""
+"ファイル %s 内には設定が記述されるべきではありません。それらの設定は削除され"
+"ます。"
+
+#, php-format
+msgid "%s must be a non-negative integer"
+msgstr "%sは負でない整数でなければなりません"
+
+msgid "Bind Address (bindaddr) must be an IP address."
+msgstr "バインドアドレス (bindaddr) はIPアドレスでなければなりません。"
+
+msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
+msgstr ""
+"バインドポート (bindport) は 1024..65536の間でなければなりません、デフォルト"
+"値 5060"
+
+msgid "resyncthreshold must be a non-negative integer or -1 to disable"
+msgstr ""
+"resyncthresholdの値は、負でない整数または無効にするには-1でなければなりませ"
+
+msgid "Asterisk IAX Settings"
+msgstr "Asterisk IAX 設定"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid ""
+"Use to configure Various Asterisk IAX Settings in the General section of iax."
+"conf. The module assumes Asterisk version 1.4 or higher. Some settings may "
+"not exist in Asterisk 1.2 and will be ignored by Asterisk."
+msgstr ""
+"iax.confの一般セクションでさまざまなAsteriskのIAX設定を構成するために使用しま"
+"す。モジュールは、Asteriskのバージョン1.4以降を前提としています。いくつかの設"
+"定は、Asterisk1.2では存在しない場合があり、Asteriskに無視されます。"
