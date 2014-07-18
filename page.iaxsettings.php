@@ -26,9 +26,9 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
   $dispnum        = "iaxsettings";
   $error_displays = array();
   $action                            = isset($_POST['action'])?$_POST['action']:'';
-	$post_codec = isset($_POST['codec']) ? $_POST['codec'] : array(); 
-	$post_vcodec = isset($_POST['vcodec']) ? $_POST['vcodec'] : array(); 
-	
+	$post_codec = isset($_POST['codec']) ? $_POST['codec'] : array();
+	$post_vcodec = isset($_POST['vcodec']) ? $_POST['vcodec'] : array();
+
   $codecs = array(
     'ulaw'     => '',
     'alaw'     => '',
@@ -94,7 +94,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
       $iax_settings["iax_custom_key_$n_idx"] = htmlspecialchars($_POST["iax_custom_key_$p_idx"]);
       $iax_settings["iax_custom_val_$n_idx"] = htmlspecialchars($_POST["iax_custom_val_$p_idx"]);
       $n_idx++;
-    } 
+    }
     $p_idx++;
   }
   function cmp($a, $b) {
@@ -146,7 +146,7 @@ $error_displays = array_merge($error_displays,iaxsettings_check_custom_files());
   extract($iax_settings);
 
 ?>
-  <form autocomplete="off" name="editIax" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+  <form autocomplete="off" name="editIax" action="" method="post">
   <input type="hidden" name="action" value="edit">
   <table width="690px">
 
@@ -547,7 +547,7 @@ function addCustomField(key, val) {
 //-->
 </script>
 </form>
-<?php		
+<?php
 
 /********** UTILITY FUNCTIONS **********/
 
