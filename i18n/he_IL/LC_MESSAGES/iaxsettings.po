@@ -20,77 +20,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:58-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:242
+msgid ""
+" If you clear each codec and then add them one at a time, submitting with "
+"each addition, they will be added in order which will effect the codec "
+"priority."
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/functions.inc.php:301
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr ""
 
-msgid "Bind Address (bindaddr) must be an IP address."
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:461
+msgid "Add Field"
 msgstr ""
 
-msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:369
+msgid "Advanced General Settings"
 msgstr ""
 
-msgid "resyncthreshold must be a non-negative integer or -1 to disable"
-msgstr ""
-
-msgid "Asterisk IAX Settings"
-msgstr ""
-
-msgid "Settings"
-msgstr ""
-
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:214
 msgid ""
-"Use to configure Various Asterisk IAX Settings in the General section of iax."
-"conf. The module assumes Asterisk version 1.4 or higher. Some settings may "
-"not exist in Asterisk 1.2 and will be ignored by Asterisk."
+"Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
+"which codecs are used in general."
 msgstr ""
 
-msgid "checking for iaxsettings table.."
-msgstr ""
-
-msgid "none, creating table"
-msgstr ""
-
-msgid "populating default codecs.."
-msgstr ""
-
-msgid "fatal error occurred populating defaults, check module"
-msgstr ""
-
-msgid "ulaw, alaw, gsm added"
-msgstr ""
-
-msgid "already exists"
-msgstr ""
-
-msgid "Edit Settings"
-msgstr ""
-
-msgid "ERRORS"
-msgstr ""
-
-msgid "Audio Codecs"
-msgstr ""
-
-msgid "Codecs"
-msgstr ""
-
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:383
 msgid ""
-"Check the desired codecs, all others will be disabled unless explicitly "
-"enabled in a device or trunks configuration. Drag to re-order."
+"Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
+"Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
+"to multiple IP addresses or ports, use the Other 'IAX Settings' fields where "
+"you can put settings such as:<br /> bindaddr=192.168.10.100:4555.<br />  It "
+"is recommended to leave this blank."
 msgstr ""
 
-msgid "Codec Priority"
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:392
+msgid ""
+"Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
+"listen for IAX messages. The IAX standard is 4569 and in most cases this is "
+"what you want. It is recommended to leave this blank."
 msgstr ""
 
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:190
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -104,75 +84,14 @@ msgid ""
 "requested format is available."
 msgstr ""
 
-msgid "Bandwidth"
-msgstr ""
-
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:401
 msgid ""
-"Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
-"which codecs are used in general."
+"Asterisk: delayreject. For increased security against brute force password "
+"attacks enable this which will delay the sending of authentication reject "
+"for REGREQ or AUTHREP if there is a password."
 msgstr ""
 
-msgid "low"
-msgstr ""
-
-msgid "medium"
-msgstr ""
-
-msgid "high"
-msgstr ""
-
-msgid "unset"
-msgstr ""
-
-msgid "Video Codecs"
-msgstr ""
-
-msgid "Video Support"
-msgstr ""
-
-msgid "Check to enable and then choose allowed codecs."
-msgstr ""
-
-msgid ""
-" If you clear each codec and then add them one at a time, submitting with "
-"each addition, they will be added in order which will effect the codec "
-"priority."
-msgstr ""
-
-msgid "Enabled"
-msgstr ""
-
-msgid "Disabled"
-msgstr ""
-
-msgid "Registration Settings"
-msgstr ""
-
-msgid "Registration Times"
-msgstr ""
-
-msgid ""
-"Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
-"that IAX peers can request as a registration expiration interval (in "
-"seconds)."
-msgstr ""
-
-msgid "Jitter Buffer Settings"
-msgstr ""
-
-msgid "Jitter Buffer"
-msgstr ""
-
-msgid ""
-"Asterisk: jitterbuffer. You can adjust several parameters relating to the "
-"jitter buffer. The jitter buffer's function is to compensate for varying "
-"network delay. The jitter buffer works for INCOMING audio - the outbound "
-"audio will be dejittered by the jitter buffer at the other end."
-msgstr ""
-
-msgid "Force Jitter Buffer"
-msgstr ""
-
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:331
 msgid ""
 "Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive "
 "side of an IAX channel. Normally the jitter buffer will not be used if "
@@ -183,15 +102,15 @@ msgid ""
 "the stream."
 msgstr ""
 
-msgid "Yes"
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:311
+msgid ""
+"Asterisk: jitterbuffer. You can adjust several parameters relating to the "
+"jitter buffer. The jitter buffer's function is to compensate for varying "
+"network delay. The jitter buffer works for INCOMING audio - the outbound "
+"audio will be dejittered by the jitter buffer at the other end."
 msgstr ""
 
-msgid "No"
-msgstr ""
-
-msgid "Jitter Buffer Size"
-msgstr ""
-
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:351
 msgid ""
 "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds."
 "<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a "
@@ -202,9 +121,7 @@ msgid ""
 "setting this parameter to -1."
 msgstr ""
 
-msgid "Max Interpolations"
-msgstr ""
-
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:361
 msgid ""
 "Asterisk: maxjitterinterps. The maximum number of interpolation frames the "
 "jitterbuffer should return in a row. Since some clients do not send CNG/DTX "
@@ -213,53 +130,157 @@ msgid ""
 "throughout a long silence."
 msgstr ""
 
-msgid "Advanced General Settings"
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:297
+msgid ""
+"Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
+"that IAX peers can request as a registration expiration interval (in "
+"seconds)."
 msgstr ""
 
-msgid "Language"
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:157
+msgid "Audio Codecs"
 msgstr ""
 
-msgid "Default Language for a channel, Asterisk: language"
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:214
+msgid "Bandwidth"
 msgstr ""
 
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:383
 msgid "Bind Address"
 msgstr ""
 
-msgid ""
-"Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
-"Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
-"to multiple IP addresses or ports, use the Other 'IAX Settings' fields where "
-"you can put settings such as:<br /> bindaddr=192.168.10.100:4555.<br />  It "
-"is recommended to leave this blank."
+#: /usr/src/freepbx/iaxsettings/functions.inc.php:305
+msgid "Bind Address (bindaddr) must be an IP address."
 msgstr ""
 
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:392
 msgid "Bind Port"
 msgstr ""
 
-msgid ""
-"Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
-"listen for IAX messages. The IAX standard is 4569 and in most cases this is "
-"what you want. It is recommended to leave this blank."
+#: /usr/src/freepbx/iaxsettings/functions.inc.php:310
+msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:160
+msgid ""
+"Check the desired codecs, all others will be disabled unless explicitly "
+"enabled in a device or trunks configuration. Drag to re-order."
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:242
+msgid "Check to enable and then choose allowed codecs."
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:190
+msgid "Codec Priority"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:160
+msgid "Codecs"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:374
+msgid "Default Language for a channel, Asterisk: language"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:401
 msgid "Delay Auth Rejects"
 msgstr ""
 
-msgid ""
-"Asterisk: delayreject. For increased security against brute force password "
-"attacks enable this which will delay the sending of authentication reject "
-"for REGREQ or AUTHREP if there is a password."
-msgstr ""
-
-msgid "Enable"
-msgstr ""
-
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:411
 msgid "Disable"
 msgstr ""
 
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:252
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:321
+msgid "Disabled"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:142
+msgid "ERRORS"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:111
+msgid "Edit Settings"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:409
+msgid "Enable"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:250
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:319
+msgid "Enabled"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:566
+#, php-format
+msgid ""
+"File %s should not have any settings in it. Those settings should be removed."
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:331
+msgid "Force Jitter Buffer"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:311
+msgid "Jitter Buffer"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:306
+msgid "Jitter Buffer Settings"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:351
+msgid "Jitter Buffer Size"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:374
+msgid "Language"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:361
+msgid "Max Interpolations"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:341
+msgid "No"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:423
 msgid "Other IAX Settings"
 msgstr ""
 
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:292
+msgid "Registration Settings"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:297
+msgid "Registration Times"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:562
+#, php-format
+msgid "Settings in %s may override these. Those settings should be removed."
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:466
+msgid "Submit Changes"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:237
+msgid "Video Codecs"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:242
+msgid "Video Support"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:339
+msgid "Yes"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:423
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -269,11 +290,46 @@ msgid ""
 "submitted."
 msgstr ""
 
-#, php-format
-msgid "Settings in %s may override these. Those settings should be removed."
+#: /usr/src/freepbx/iaxsettings/install.php:52
+msgid "already exists"
 msgstr ""
 
-#, php-format
-msgid ""
-"File %s should not have any settings in it. Those settings should be removed."
+#: /usr/src/freepbx/iaxsettings/install.php:18
+msgid "checking for iaxsettings table.."
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/install.php:47
+msgid "fatal error occurred populating defaults, check module"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:226
+msgid "high"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:222
+msgid "low"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:224
+msgid "medium"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/install.php:22
+msgid "none, creating table"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/install.php:26
+msgid "populating default codecs.."
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/functions.inc.php:346
+msgid "resyncthreshold must be a non-negative integer or -1 to disable"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/install.php:49
+msgid "ulaw, alaw, gsm added"
+msgstr ""
+
+#: /usr/src/freepbx/iaxsettings/page.iaxsettings.php:228
+msgid "unset"
 msgstr ""
