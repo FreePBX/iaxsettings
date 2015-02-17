@@ -43,8 +43,5 @@ function addCustomField(key, val) {
 	var idx = $(".iax-custom").size();
 	var idxp = idx - 1;
 
-	$("#iax-custom-buttons").before('\
-		<input type="text" id="iax_custom_key_'+idx+'" name="iax_custom_key_'+idx+'" class="iax-custom form-control" value="'+key+'"> =\
-		<input type="text" id="iax_custom_val_'+idx+'" name="iax_custom_val_'+idx+'" class="form-control value="'+val+'">\
-	');
-	}
+	$("#iax-custom-buttons").prepend('<div class="form-inline"><input type="text" id="iax_custom_key_'+idx+'" name="iax_custom_key_'+idx+'" class="iax-custom form-control" value="'+key+'"> = <input type="text" id="iax_custom_val_'+idx+'" name="iax_custom_val_'+idx+'" class="form-control" value="'+val+'"></div>');
+}

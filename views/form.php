@@ -314,8 +314,8 @@ $vcodeclist .=  '</ul>';
 									<label class="control-label" for="iaxcustomw"><?php echo _("Other IAX Settings") ?></label>
 									<i class="fa fa-question-circle fpbx-help-icon" data-for="iaxcustomw"></i>
 								</div>
-								<div class="col-md-9 form-horizontal">
-									<input type="text" id="iax_custom_key_0" name="iax_custom_key_0" class="iax-custom" value="<?php echo $iax_custom_key_0 ?>"> =
+								<div class="col-md-9 form-horizontal" id="iax-custom-buttons">
+									<input type="text" id="iax_custom_key_0" name="iax_custom_key_0" class="iax-custom" value="<?php echo $iax_custom_key_0 ?>"> = 
 									<input type="text" id="iax_custom_val_0" name="iax_custom_val_0" value="<?php echo $iax_custom_val_0 ?>">
 									<?php echo $iaxcinputs ?>
 									<input type="button" id="iax-custom-add" class="btn btn-default" value="<?php echo _("Add Field")?>" />
