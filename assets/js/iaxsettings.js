@@ -30,10 +30,10 @@ $(document).ready(function(){
 		$(".jitter-buffer").hide();
 	}
 	$("#jitterbuffer-yes").click(function(){
-		$(".jitter-buffer").show();
+		$("#jitterbuffer").removeClass("hidden");
 	});
 	$("#jitterbuffer-no").click(function(){
-		$(".jitter-buffer").hide();
+		$("#jitterbuffer").addClass("hidden");
 	});
 });
 
