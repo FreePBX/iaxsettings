@@ -13,6 +13,7 @@ msgstr ""
 "PO-Revision-Date: 2015-02-20 19:35-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +32,7 @@ msgstr ""
 
 #: views/form.php:321
 msgid "Add Field"
-msgstr ""
+msgstr "添加值域"
 
 #: views/form.php:61
 msgid "Advanced Settings"
@@ -39,7 +40,7 @@ msgstr ""
 
 #: iaxsettings.i18n.php:3 iaxsettings.i18n.php:6
 msgid "Asterisk IAX Settings"
-msgstr ""
+msgstr "Asterisk IAX设置"
 
 #: views/form.php:396
 msgid ""
@@ -132,15 +133,15 @@ msgstr ""
 
 #: views/form.php:336
 msgid "Audio Codecs"
-msgstr ""
+msgstr "语音编码"
 
 #: views/form.php:377
 msgid "Bandwidth"
-msgstr ""
+msgstr "带宽"
 
 #: views/form.php:239
 msgid "Bind Address"
-msgstr ""
+msgstr "绑定地址"
 
 #: functions.inc.php:305
 msgid "Bind Address (bindaddr) must be an IP address."
@@ -148,7 +149,7 @@ msgstr ""
 
 #: views/form.php:263
 msgid "Bind Port"
-msgstr ""
+msgstr "绑定端口"
 
 #: functions.inc.php:310
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
@@ -156,11 +157,11 @@ msgstr ""
 
 #: views/form.php:423
 msgid "Check to enable and then choose allowed codecs."
-msgstr ""
+msgstr "开启选项，选择支持的语音编码"
 
 #: views/form.php:346
 msgid "Codec Priority"
-msgstr ""
+msgstr "编码优先级"
 
 #: views/form.php:66
 msgid "Codec Settings"
@@ -168,11 +169,11 @@ msgstr ""
 
 #: views/form.php:227
 msgid "Default Language for a channel, Asterisk: language"
-msgstr ""
+msgstr "通道的默认语言，asterisk：language"
 
 #: views/form.php:287
 msgid "Delay Auth Rejects"
-msgstr ""
+msgstr "延迟认证拒绝"
 
 #: views/form.php:408
 msgid "Enable Video Support"
@@ -186,7 +187,7 @@ msgstr ""
 
 #: views/form.php:134
 msgid "Force Jitter Buffer"
-msgstr ""
+msgstr "强制使用缓存"
 
 #: views/form.php:56
 msgid "General Settings"
@@ -202,11 +203,11 @@ msgstr ""
 
 #: views/form.php:161
 msgid "Jitter Buffer Size"
-msgstr ""
+msgstr "缓存大小"
 
 #: views/form.php:215
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 #: views/form.php:188
 msgid "Max Interpolations"
@@ -214,15 +215,15 @@ msgstr ""
 
 #: views/form.php:113 views/form.php:141 views/form.php:294 views/form.php:415
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: views/form.php:314
 msgid "Other IAX Settings"
-msgstr ""
+msgstr "其他IAX设置"
 
 #: views/form.php:79
 msgid "Registration Times"
-msgstr ""
+msgstr "注册时间"
 
 #: Iaxsettings.class.php:123
 msgid "Reset"
@@ -230,7 +231,7 @@ msgstr ""
 
 #: iaxsettings.i18n.php:4
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: functions.inc.php:407
 #, php-format
@@ -250,7 +251,7 @@ msgstr ""
 
 #: views/form.php:111 views/form.php:139 views/form.php:292 views/form.php:413
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #: views/form.php:329
 msgid ""
@@ -264,11 +265,11 @@ msgstr ""
 
 #: install.php:52
 msgid "already exists"
-msgstr ""
+msgstr "已存在"
 
 #: install.php:18
 msgid "checking for iaxsettings table.."
-msgstr ""
+msgstr "检查IAX设置表"
 
 #: install.php:47
 msgid "fatal error occurred populating defaults, check module"
@@ -276,19 +277,19 @@ msgstr ""
 
 #: views/form.php:386
 msgid "high"
-msgstr ""
+msgstr "高"
 
 #: views/form.php:382
 msgid "low"
-msgstr ""
+msgstr "低"
 
 #: views/form.php:384
 msgid "medium"
-msgstr ""
+msgstr "中"
 
 #: install.php:22
 msgid "none, creating table"
-msgstr ""
+msgstr "无，创建表"
 
 #: install.php:26
 msgid "populating default codecs.."
@@ -300,8 +301,8 @@ msgstr ""
 
 #: install.php:49
 msgid "ulaw, alaw, gsm added"
-msgstr ""
+msgstr "添加的ulaw, alaw, gsm"
 
 #: views/form.php:388
 msgid "unset"
-msgstr ""
+msgstr "未设置"
