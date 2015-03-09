@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:35-0500\n"
+"POT-Creation-Date: 2015-03-09 12:45-0400\n"
 "PO-Revision-Date: 2011-04-06 20:46+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -53,7 +53,7 @@ msgstr "Добавить поле"
 msgid "Advanced Settings"
 msgstr ""
 
-#: iaxsettings.i18n.php:3 iaxsettings.i18n.php:6
+#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
 msgid "Asterisk IAX Settings"
 msgstr "Установки Asterisk для IAX "
 
@@ -302,7 +302,7 @@ msgstr "Время регистрации"
 msgid "Reset"
 msgstr ""
 
-#: iaxsettings.i18n.php:4
+#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
 msgid "Settings"
 msgstr "Установки"
 
@@ -317,16 +317,11 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: iaxsettings.i18n.php:5
+#: iaxsettings.i18n.php:8
 msgid ""
 "Use to configure Various Asterisk IAX Settings in the General section of iax."
-"conf. The module assumes Asterisk version 1.4 or higher. Some settings may "
-"not exist in Asterisk 1.2 and will be ignored by Asterisk."
+"conf."
 msgstr ""
-"Используется для конфигурации различных дополнительных настроек Asterisk для "
-"IAX которые допусимы в секции [general] файла iax.conf. Модуль предполагает "
-"наличие Asterisk версий 1.4 и выше. Некоторые параметры просто не существуют "
-"в версии 1.2 и будут игнорироваться Asterisk."
 
 #: views/form.php:111 views/form.php:139 views/form.php:292 views/form.php:413
 msgid "Yes"
@@ -399,6 +394,16 @@ msgstr "добавлены ulaw, alaw, gsm"
 #: views/form.php:388
 msgid "unset"
 msgstr "не указано"
+
+#~ msgid ""
+#~ "Use to configure Various Asterisk IAX Settings in the General section of "
+#~ "iax.conf. The module assumes Asterisk version 1.4 or higher. Some "
+#~ "settings may not exist in Asterisk 1.2 and will be ignored by Asterisk."
+#~ msgstr ""
+#~ "Используется для конфигурации различных дополнительных настроек Asterisk "
+#~ "для IAX которые допусимы в секции [general] файла iax.conf. Модуль "
+#~ "предполагает наличие Asterisk версий 1.4 и выше. Некоторые параметры "
+#~ "просто не существуют в версии 1.2 и будут игнорироваться Asterisk."
 
 #~ msgid "Advanced General Settings"
 #~ msgstr "Дополнительные основные настройки"

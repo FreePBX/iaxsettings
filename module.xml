@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>2.11.0.3</version>
+	<version>13.0.1alpha1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -10,10 +10,9 @@
 	<menuitems>
 		<iaxsettings>Asterisk IAX Settings</iaxsettings>
 	</menuitems>
-	<description>
-		Use to configure Various Asterisk IAX Settings in the General section of iax.conf. The module assumes Asterisk version 1.4 or higher. Some settings may not exist in Asterisk 1.2 and will be ignored by Asterisk.
-	</description>
+	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
 	<changelog>
+		*13.0.1alpha1* Visual Changes
 		*2.11.0.3* Include license file
 		*2.11.0.1* Updated CSS to look decent
 		*2.11.0.0* bump version
@@ -28,7 +27,7 @@
 		*2.9.0.0* #4681
 	</changelog>
 	<supported>
-		<version>2.10</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/iaxsettings-2.11.0.0.tgz</location>
 	<md5sum>cb70c12fe397182a6a27dd785c90e0c4</md5sum>

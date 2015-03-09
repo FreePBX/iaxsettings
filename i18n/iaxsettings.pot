@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:35-0500\n"
+"POT-Creation-Date: 2015-03-09 12:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,8 @@ msgstr ""
 msgid "Advanced Settings"
 msgstr ""
 
-#: iaxsettings.i18n.php:3
-#: iaxsettings.i18n.php:6
+#: iaxsettings.i18n.php:4
+#: iaxsettings.i18n.php:10
 msgid "Asterisk IAX Settings"
 msgstr ""
 
@@ -232,7 +232,8 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: iaxsettings.i18n.php:4
+#: iaxsettings.i18n.php:6
+#: iaxsettings.i18n.php:12
 msgid "Settings"
 msgstr ""
 
@@ -245,11 +246,10 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: iaxsettings.i18n.php:5
+#: iaxsettings.i18n.php:8
 msgid ""
 "Use to configure Various Asterisk IAX Settings in the General section of iax."
-"conf. The module assumes Asterisk version 1.4 or higher. Some settings may "
-"not exist in Asterisk 1.2 and will be ignored by Asterisk."
+"conf."
 msgstr ""
 
 #: views/form.php:111
