@@ -10,14 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:35-0500\n"
-"PO-Revision-Date: 2015-02-20 19:35-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-03-31 08:08+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/iaxsettings/es_ES/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/form.php:423
 msgid ""
@@ -39,7 +41,7 @@ msgstr "Agregar Campo"
 
 #: views/form.php:61
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Configuración Avanzada"
 
 #: iaxsettings.i18n.php:3 iaxsettings.i18n.php:6
 msgid "Asterisk IAX Settings"
@@ -220,7 +222,7 @@ msgstr "Prioridad de Codec"
 
 #: views/form.php:66
 msgid "Codec Settings"
-msgstr ""
+msgstr "Configuración  de Codec"
 
 #: views/form.php:227
 msgid "Default Language for a channel, Asterisk: language"
@@ -232,7 +234,7 @@ msgstr "Retardo Autenticación Rechazada"
 
 #: views/form.php:408
 msgid "Enable Video Support"
-msgstr ""
+msgstr "Habilitar soporte de Video"
 
 #: functions.inc.php:411
 #, php-format
@@ -247,15 +249,15 @@ msgstr "Forzar Jitter Buffer"
 
 #: views/form.php:56
 msgid "General Settings"
-msgstr ""
+msgstr "Configuración General"
 
 #: page.iaxsettings.php:8
 msgid "IAX Settings"
-msgstr ""
+msgstr "Configuración IAX"
 
 #: views/form.php:106
 msgid "Jitter Buffer Enable"
-msgstr ""
+msgstr "Habilitar Jitter Biffer"
 
 #: views/form.php:161
 msgid "Jitter Buffer Size"
@@ -283,11 +285,11 @@ msgstr "Tiempos de Registro"
 
 #: Iaxsettings.class.php:123
 msgid "Reset"
-msgstr ""
+msgstr "Reinicio"
 
 #: iaxsettings.i18n.php:4
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
 #: functions.inc.php:407
 #, php-format
@@ -298,7 +300,7 @@ msgstr ""
 
 #: Iaxsettings.class.php:118
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: iaxsettings.i18n.php:5
 msgid ""
