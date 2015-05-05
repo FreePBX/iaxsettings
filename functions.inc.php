@@ -150,7 +150,7 @@ function iaxsettings_hookGet_config($engine) {
 
         /* next figure out what we need to write out (deal with things like nat combos, etc. */
 
-        $jitterbuffer = isset($interim_settings['jitterbuffer']) && $interim_settings['jitterbuffer'] 
+        $jitterbuffer = isset($interim_settings['jitterbuffer']) && $interim_settings['jitterbuffer']
 						? $interim_settings['jitterbuffer'] : '';
         if (isset($interim_settings) && is_array($interim_settings)){
 			 foreach ($interim_settings as $key => $value) {
@@ -191,7 +191,7 @@ function iaxsettings_hookGet_config($engine) {
               $core_conf->addIaxGeneral($entry[0],$entry[1]);
             }
           }
-		} 
+		}
       }
     break;
   }
@@ -354,7 +354,7 @@ function iaxsettings_edit($iax_settings) {
     default:
       if (substr($key,0,15) == "iax_custom_key_") {
         $seq = substr($key,15);
-        $save_settings[] = array($db->escapeSimple($val),$db->escapeSimple($iax_settings["iax_custom_val_$seq"]),($seq),IAX_CUSTOM); 
+        $save_settings[] = array($db->escapeSimple($val),$db->escapeSimple($iax_settings["iax_custom_val_$seq"]),($seq),IAX_CUSTOM);
       } else if (substr($key,0,15) == "iax_custom_val_") {
         // skip it, we will seek it out when we see the iax_custom_key
       } else {
@@ -373,7 +373,7 @@ function iaxsettings_edit($iax_settings) {
     }
     $seq = 0;
     foreach ($video_codecs as $key => $val) {
-      $save_settings[] = array($db->escapeSimple($key),$db->escapeSimple($val),$seq++,IAX_VIDEO_CODEC); 
+      $save_settings[] = array($db->escapeSimple($key),$db->escapeSimple($val),$seq++,IAX_VIDEO_CODEC);
     }
 
     // TODO: normally don't like doing delete/insert but otherwise we would have do update for each
@@ -392,14 +392,12 @@ function iaxsettings_check_custom_files() {
   global $amp_conf;
   $errors = array();
 
-  $custom_files[] = $amp_conf['ASTETCDIR']."/iax.conf";
   $custom_files[] = $amp_conf['ASTETCDIR']."/iax_general_custom.conf";
   $custom_files[] = $amp_conf['ASTETCDIR']."/iax_custom.conf";
 
   foreach ($custom_files as $file) {
     if (file_exists($file)) {
       $iax_conf = @parse_ini_file($file,true);
-      $main = true; // 1 is iax.conf, after that don't care
       foreach ($iax_conf as $section => $item) {
         // If setting is an array, then it is a subsection
         //
@@ -407,12 +405,7 @@ function iaxsettings_check_custom_files() {
           $msg =  sprintf(_("Settings in %s may override these. Those settings should be removed."),"<b>$file</b>");
           $errors[] = array( 'js' => '', 'div' => $msg);
           break;
-        } elseif ($main && is_array($item) && strtolower($section) == 'general' && !empty($item)) {
-          $msg =  sprintf(_("File %s should not have any settings in it. Those settings should be removed."),"<b>$file</b>");
-          $errors[] = array( 'js' => '', 'div' => $msg);
-          break;
         }
-        $main = false;
       }
     }
   }

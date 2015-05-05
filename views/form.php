@@ -2,13 +2,13 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 $iaxsettings = iaxsettings_get();
-
 extract($iaxsettings);
 
 //Custom Fields
 $idx = 1;
 $var_iax_custom_key = "iax_custom_key_$idx";
 $var_iax_custom_val = "iax_custom_val_$idx";
+$iaxcinputs = '';
 while (isset($$var_iax_custom_key)) {
 	if ($$var_iax_custom_key != '') {
 		$iaxcinputs .= <<< END
@@ -110,7 +110,7 @@ $vcodeclist .=  '</ul>';
 									<input id="jitterbuffer-yes" type="radio" name="jitterbuffer" value="yes" <?php echo $jitterbuffer=="yes"?"checked=\"yes\"":""?>/>
 									<label for="jitterbuffer-yes"><?php echo _("Yes") ?></label>
 									<input id="jitterbuffer-no" type="radio" name="jitterbuffer" value="no" <?php echo $jitterbuffer=="no"?"checked=\"no\"":""?>/>
-									<label for="jitterbuffer-no"><?php echo _("No") ?></label>									
+									<label for="jitterbuffer-no"><?php echo _("No") ?></label>
 								</div>
 							</div>
 						</div>
@@ -288,9 +288,9 @@ $vcodeclist .=  '</ul>';
 									<i class="fa fa-question-circle fpbx-help-icon" data-for="delayreject"></i>
 								</div>
 								<div class="col-md-9 radioset">
-									<input id="delayreject-yes" type="radio" name="delayreject" value="yes" tabindex="<?php echo ++$tabindex;?>"<?php echo $delayreject=="yes"?"checked=\"yes\"":""?>/>
+									<input id="delayreject-yes" type="radio" name="delayreject" value="yes" <?php echo $delayreject=="yes"?"checked=\"yes\"":""?>/>
 									<label for="delayreject-yes"><?php echo _("Yes") ?></label>
-									<input id="delayreject-no" type="radio" name="delayreject" value="no" tabindex="<?php echo ++$tabindex;?>"<?php echo $delayreject=="no"?"checked=\"no\"":""?>/>
+									<input id="delayreject-no" type="radio" name="delayreject" value="no" <?php echo $delayreject=="no"?"checked=\"no\"":""?>/>
 									<label for="delayreject-no"><?php echo _("No") ?></label>
 								</div>
 							</div>
@@ -315,7 +315,7 @@ $vcodeclist .=  '</ul>';
 									<i class="fa fa-question-circle fpbx-help-icon" data-for="iaxcustomw"></i>
 								</div>
 								<div class="col-md-9 form-horizontal" id="iax-custom-buttons">
-									<input type="text" id="iax_custom_key_0" name="iax_custom_key_0" class="iax-custom" value="<?php echo $iax_custom_key_0 ?>"> = 
+									<input type="text" id="iax_custom_key_0" name="iax_custom_key_0" class="iax-custom" value="<?php echo $iax_custom_key_0 ?>"> =
 									<input type="text" id="iax_custom_val_0" name="iax_custom_val_0" value="<?php echo $iax_custom_val_0 ?>">
 									<?php echo $iaxcinputs ?>
 									<input type="button" id="iax-custom-add" class="btn btn-default" value="<?php echo _("Add Field")?>" />

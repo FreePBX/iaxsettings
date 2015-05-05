@@ -15,12 +15,12 @@ class Iaxsettings implements \BMO {
 
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
+		$error_displays = array();
 		$action                            = isset($request['action'])?$request['action']:'';
-		$post_codec = isset($request['codec']) ? $request['codec'] : array(); 
-		$post_vcodec = isset($request['vcodec']) ? $request['vcodec'] : array(); 
+		$post_codec = isset($request['codec']) ? $request['codec'] : array();
+		$post_vcodec = isset($request['vcodec']) ? $request['vcodec'] : array();
 		$iax_settings['codecpriority']     = isset($request['codecpriority']) ? $request['codecpriority'] : 'host';
 		$iax_settings['bandwidth']         = isset($request['bandwidth']) ? $request['bandwidth'] : 'unset';
-		$iax_settings['video_codecs']      = $video_codecs;
 		$iax_settings['videosupport']      = isset($request['videosupport']) ? $request['videosupport'] : 'no';
 
 		$iax_settings['maxregexpire']      = isset($request['maxregexpire']) ? htmlspecialchars($request['maxregexpire']) : '3600';
@@ -67,16 +67,19 @@ class Iaxsettings implements \BMO {
 			'h263p' => '',
 			'h264'  => '',
 		);
+		$iax_settings['video_codecs']      = $video_codecs;
+
 		$pri = 1;
 		foreach (array_keys($post_vcodec) as $vcodec) {
 			$video_codecs[$vcodec] = $pri++;
 		}
+		$p_idx = $n_idx = 0;
 		while (isset($request["iax_custom_key_$p_idx"])) {
 			if ($request["iax_custom_key_$p_idx"] != '') {
 				$iax_settings["iax_custom_key_$n_idx"] = htmlspecialchars($request["iax_custom_key_$p_idx"]);
 				$iax_settings["iax_custom_val_$n_idx"] = htmlspecialchars($request["iax_custom_val_$p_idx"]);
 				$n_idx++;
-			} 
+			}
 			$p_idx++;
 		}
 		switch ($action) {
