@@ -51,3 +51,9 @@ if(DB::IsError($check)) {
 } else {
 	out(_("already exists"));
 }
+
+/* Convert language to custom field */
+$sql = "SELECT MAX(seq) FROM iaxsettings WHERE type = 9";
+$seq = sql($sql,'getOne');
+$sql = "UPDATE iaxsettings SET keyword = 'language', type = 9, seq = " . ($seq !== NULL ? $seq + 1 : 0) . " WHERE keyword = 'iax_language'";
+sql($sql);

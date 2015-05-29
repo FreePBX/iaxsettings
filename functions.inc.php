@@ -173,12 +173,6 @@ function iaxsettings_hookGet_config($engine) {
 	              }
 	            break;
 
-	            case 'iax_language':
-	              if ($value != '') {
-	                $iax_settings[] = array('language', $value);
-	              }
-	            break;
-
 	            default:
 	              $iax_settings[] = array($key, $value);
 	            }
@@ -249,7 +243,6 @@ function iaxsettings_get($raw=false) {
   $iax_settings['resyncthreshold']   = '1000';
   $iax_settings['maxjitterinterps']  = '10';
 
-  $iax_settings['iax_language']      = '';
   $iax_settings['bindaddr']          = '';
   $iax_settings['bindport']          = '';
   $iax_settings['delayreject']       = 'yes';
@@ -315,11 +308,6 @@ function iaxsettings_edit($iax_settings) {
       case 'maxregexpire':
         $msg = sprintf($integer_msg,$key);
         $save_settings[] = array($key,$db->escapeSimple($vd->is_int($val,$key,$msg)),'10',IAX_NORMAL);
-      break;
-
-      case 'iax_language':
-        $msg = ("Language must be alphanumeric and installed");
-        $save_settings[] = array($key,$db->escapeSimple($vd->is_alphanumeric($val,$key,$msg)),'0',IAX_NORMAL);
       break;
 
       case 'codecpriority':

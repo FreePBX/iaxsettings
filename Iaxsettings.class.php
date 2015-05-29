@@ -32,7 +32,6 @@ class Iaxsettings implements \BMO {
 		$iax_settings['resyncthreshold']   = isset($request['resyncthreshold']) ? htmlspecialchars($request['resyncthreshold']) : '1000';
 		$iax_settings['maxjitterinterps']  = isset($request['maxjitterinterps']) ? htmlspecialchars($request['maxjitterinterps']) : '10';
 
-		$iax_settings['iax_language']      = isset($request['iax_language']) ? htmlspecialchars($request['iax_language']) : '';
 		$iax_settings['bindaddr']          = isset($request['bindaddr']) ? htmlspecialchars($request['bindaddr']) : '';
 		$iax_settings['bindport']          = isset($request['bindport']) ? htmlspecialchars($request['bindport']) : '';
 		$iax_settings['delayreject']       = isset($request['delayreject']) ? htmlspecialchars($request['delayreject']) : 'yes';
