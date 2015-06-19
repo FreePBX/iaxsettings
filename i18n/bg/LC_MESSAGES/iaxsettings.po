@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:45-0400\n"
+"POT-Creation-Date: 2015-06-19 18:49-0400\n"
 "PO-Revision-Date: 2014-07-22 15:43+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -32,19 +32,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: views/form.php:423
+#: views/form.php:399
 msgid ""
 " If you clear each codec and then add them one at a time, submitting with "
 "each addition, they will be added in order which will effect the codec "
 "priority."
 msgstr ""
 
-#: functions.inc.php:301
+#: functions.inc.php:294
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s трябва да е положително цяло число"
 
-#: views/form.php:321
+#: views/form.php:297
 msgid "Add Field"
 msgstr ""
 
@@ -52,17 +52,13 @@ msgstr ""
 msgid "Advanced Settings"
 msgstr ""
 
-#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
-msgid "Asterisk IAX Settings"
-msgstr ""
-
-#: views/form.php:396
+#: views/form.php:372
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
 msgstr ""
 
-#: views/form.php:251
+#: views/form.php:227
 msgid ""
 "Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
 "Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
@@ -71,14 +67,14 @@ msgid ""
 "is recommended to leave this blank."
 msgstr ""
 
-#: views/form.php:275
+#: views/form.php:251
 msgid ""
 "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
 "what you want. It is recommended to leave this blank."
 msgstr ""
 
-#: views/form.php:365
+#: views/form.php:341
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -92,7 +88,7 @@ msgid ""
 "requested format is available."
 msgstr ""
 
-#: views/form.php:302
+#: views/form.php:278
 msgid ""
 "Asterisk: delayreject. For increased security against brute force password "
 "attacks enable this which will delay the sending of authentication reject "
@@ -145,35 +141,35 @@ msgid ""
 "seconds)."
 msgstr ""
 
-#: views/form.php:336
+#: views/form.php:312
 msgid "Audio Codecs"
 msgstr ""
 
-#: views/form.php:377
+#: views/form.php:353
 msgid "Bandwidth"
 msgstr ""
 
-#: views/form.php:239
+#: views/form.php:215
 msgid "Bind Address"
 msgstr ""
 
-#: functions.inc.php:305
+#: functions.inc.php:298
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr ""
 
-#: views/form.php:263
+#: views/form.php:239
 msgid "Bind Port"
 msgstr ""
 
-#: functions.inc.php:310
+#: functions.inc.php:303
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
-#: views/form.php:423
+#: views/form.php:399
 msgid "Check to enable and then choose allowed codecs."
 msgstr ""
 
-#: views/form.php:346
+#: views/form.php:322
 msgid "Codec Priority"
 msgstr ""
 
@@ -181,22 +177,12 @@ msgstr ""
 msgid "Codec Settings"
 msgstr ""
 
-#: views/form.php:227
-msgid "Default Language for a channel, Asterisk: language"
-msgstr ""
-
-#: views/form.php:287
+#: views/form.php:263
 msgid "Delay Auth Rejects"
 msgstr ""
 
-#: views/form.php:408
+#: views/form.php:384
 msgid "Enable Video Support"
-msgstr ""
-
-#: functions.inc.php:411
-#, php-format
-msgid ""
-"File %s should not have any settings in it. Those settings should be removed."
 msgstr ""
 
 #: views/form.php:134
@@ -219,19 +205,15 @@ msgstr ""
 msgid "Jitter Buffer Size"
 msgstr ""
 
-#: views/form.php:215
-msgid "Language"
-msgstr ""
-
 #: views/form.php:188
 msgid "Max Interpolations"
 msgstr ""
 
-#: views/form.php:113 views/form.php:141 views/form.php:294 views/form.php:415
+#: views/form.php:113 views/form.php:141 views/form.php:270 views/form.php:391
 msgid "No"
 msgstr ""
 
-#: views/form.php:314
+#: views/form.php:290
 msgid "Other IAX Settings"
 msgstr ""
 
@@ -239,34 +221,24 @@ msgstr ""
 msgid "Registration Times"
 msgstr ""
 
-#: Iaxsettings.class.php:123
+#: Iaxsettings.class.php:125
 msgid "Reset"
 msgstr ""
 
-#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
-msgid "Settings"
-msgstr ""
-
-#: functions.inc.php:407
+#: functions.inc.php:393
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 
-#: Iaxsettings.class.php:118
+#: Iaxsettings.class.php:120
 msgid "Submit"
 msgstr ""
 
-#: iaxsettings.i18n.php:8
-msgid ""
-"Use to configure Various Asterisk IAX Settings in the General section of iax."
-"conf."
-msgstr ""
-
-#: views/form.php:111 views/form.php:139 views/form.php:292 views/form.php:413
+#: views/form.php:111 views/form.php:139 views/form.php:268 views/form.php:389
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:329
+#: views/form.php:305
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -288,15 +260,15 @@ msgstr ""
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 
-#: views/form.php:386
+#: views/form.php:362
 msgid "high"
 msgstr ""
 
-#: views/form.php:382
+#: views/form.php:358
 msgid "low"
 msgstr ""
 
-#: views/form.php:384
+#: views/form.php:360
 msgid "medium"
 msgstr ""
 
@@ -308,7 +280,7 @@ msgstr ""
 msgid "populating default codecs.."
 msgstr ""
 
-#: functions.inc.php:346
+#: functions.inc.php:334
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 
@@ -316,6 +288,6 @@ msgstr ""
 msgid "ulaw, alaw, gsm added"
 msgstr ""
 
-#: views/form.php:388
+#: views/form.php:364
 msgid "unset"
 msgstr ""

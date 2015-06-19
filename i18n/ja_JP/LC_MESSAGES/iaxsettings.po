@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:45-0400\n"
+"POT-Creation-Date: 2015-06-19 18:49-0400\n"
 "PO-Revision-Date: 2014-06-03 09:48+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/iaxsettings/"
@@ -48,7 +48,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: views/form.php:423
+#: views/form.php:399
 msgid ""
 " If you clear each codec and then add them one at a time, submitting with "
 "each addition, they will be added in order which will effect the codec "
@@ -57,12 +57,12 @@ msgstr ""
 " すべてのコーデックをクリアし、その後一つずつ追加する毎に変更を適用すると、追"
 "加した順番でコーデック優先順位が設定されます。"
 
-#: functions.inc.php:301
+#: functions.inc.php:294
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s は非負の整数でなければなりません。"
 
-#: views/form.php:321
+#: views/form.php:297
 msgid "Add Field"
 msgstr "フィールドを追加"
 
@@ -70,11 +70,7 @@ msgstr "フィールドを追加"
 msgid "Advanced Settings"
 msgstr ""
 
-#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
-msgid "Asterisk IAX Settings"
-msgstr "Asterisk IAX 設定"
-
-#: views/form.php:396
+#: views/form.php:372
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
@@ -82,7 +78,7 @@ msgstr ""
 "対応するAsterisk設定: bandwidth。使用するコーデックをコントロールするために、"
 "低、中または高の帯域幅を指定します。"
 
-#: views/form.php:251
+#: views/form.php:227
 msgid ""
 "Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
 "Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
@@ -95,7 +91,7 @@ msgstr ""
 "に割り当てられているすべての IP アドレスで listen します。空に設定することを"
 "推奨します。"
 
-#: views/form.php:275
+#: views/form.php:251
 msgid ""
 "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
@@ -105,7 +101,7 @@ msgstr ""
 "ポート。SIPの標準ポートは5060で、通常変更する必要はありません。空に設定するこ"
 "とを推奨します。"
 
-#: views/form.php:365
+#: views/form.php:341
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -127,7 +123,7 @@ msgstr ""
 "が、リクエストされたフォーマットに対応していない場合には、コールを受理しな"
 "い。リクエストされたフォーマットに対応している場合にのみコールを受理する。"
 
-#: views/form.php:302
+#: views/form.php:278
 msgid ""
 "Asterisk: delayreject. For increased security against brute force password "
 "attacks enable this which will delay the sending of authentication reject "
@@ -204,39 +200,39 @@ msgstr ""
 "対応するAsterisk設定: minregexpire, maxregexpire。IAX ピアがリクエストできる"
 "登録の最小・最大時間 (秒)。"
 
-#: views/form.php:336
+#: views/form.php:312
 msgid "Audio Codecs"
 msgstr "音声コーデック"
 
-#: views/form.php:377
+#: views/form.php:353
 msgid "Bandwidth"
 msgstr "帯域幅"
 
-#: views/form.php:239
+#: views/form.php:215
 msgid "Bind Address"
 msgstr "バインドIPアドレス"
 
-#: functions.inc.php:305
+#: functions.inc.php:298
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "バインドアドレス (bindaddr) はIPアドレスでなければなりません。"
 
-#: views/form.php:263
+#: views/form.php:239
 msgid "Bind Port"
 msgstr "バインドポート"
 
-#: functions.inc.php:310
+#: functions.inc.php:303
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 "バインドポート (bindport)。1024 ～ 65535 でなければなりません。デフォルト: "
 "5060。"
 
-#: views/form.php:423
+#: views/form.php:399
 msgid "Check to enable and then choose allowed codecs."
 msgstr ""
 "ビデオサポートを使用するには、有効を選択し、使用するコーデックを選択してくだ"
 "さい。"
 
-#: views/form.php:346
+#: views/form.php:322
 msgid "Codec Priority"
 msgstr "コーデックの優先順位"
 
@@ -244,23 +240,13 @@ msgstr "コーデックの優先順位"
 msgid "Codec Settings"
 msgstr ""
 
-#: views/form.php:227
-msgid "Default Language for a channel, Asterisk: language"
-msgstr "チャネルのデフォルト言語。対応するAsterisk設定: language。"
-
-#: views/form.php:287
+#: views/form.php:263
 msgid "Delay Auth Rejects"
 msgstr "認証否定応答を遅延する"
 
-#: views/form.php:408
+#: views/form.php:384
 msgid "Enable Video Support"
 msgstr ""
-
-#: functions.inc.php:411
-#, php-format
-msgid ""
-"File %s should not have any settings in it. Those settings should be removed."
-msgstr "%s に設定を記述できません。このファイルの設定を削除してください。"
 
 #: views/form.php:134
 msgid "Force Jitter Buffer"
@@ -282,19 +268,15 @@ msgstr ""
 msgid "Jitter Buffer Size"
 msgstr "ジッターバッファーのサイズ"
 
-#: views/form.php:215
-msgid "Language"
-msgstr "言語"
-
 #: views/form.php:188
 msgid "Max Interpolations"
 msgstr "最大補間回数"
 
-#: views/form.php:113 views/form.php:141 views/form.php:294 views/form.php:415
+#: views/form.php:113 views/form.php:141 views/form.php:270 views/form.php:391
 msgid "No"
 msgstr "いいえ"
 
-#: views/form.php:314
+#: views/form.php:290
 msgid "Other IAX Settings"
 msgstr "その他IAX設定"
 
@@ -302,35 +284,25 @@ msgstr "その他IAX設定"
 msgid "Registration Times"
 msgstr "登録回数"
 
-#: Iaxsettings.class.php:123
+#: Iaxsettings.class.php:125
 msgid "Reset"
 msgstr ""
 
-#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
-msgid "Settings"
-msgstr "設定"
-
-#: functions.inc.php:407
+#: functions.inc.php:393
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "%s の設定はこれら設定をオーバーライドする可能性があるため、削除を推奨します。"
 
-#: Iaxsettings.class.php:118
+#: Iaxsettings.class.php:120
 msgid "Submit"
 msgstr ""
 
-#: iaxsettings.i18n.php:8
-msgid ""
-"Use to configure Various Asterisk IAX Settings in the General section of iax."
-"conf."
-msgstr ""
-
-#: views/form.php:111 views/form.php:139 views/form.php:292 views/form.php:413
+#: views/form.php:111 views/form.php:139 views/form.php:268 views/form.php:389
 msgid "Yes"
 msgstr "はい"
 
-#: views/form.php:329
+#: views/form.php:305
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -359,15 +331,15 @@ msgstr ""
 "コーデック追加中に致命的なエラーが発生しました。モジュールを確認してくださ"
 "い。"
 
-#: views/form.php:386
+#: views/form.php:362
 msgid "high"
 msgstr "高"
 
-#: views/form.php:382
+#: views/form.php:358
 msgid "low"
 msgstr "低"
 
-#: views/form.php:384
+#: views/form.php:360
 msgid "medium"
 msgstr "中"
 
@@ -379,7 +351,7 @@ msgstr "ありません、テーブルを作成しています。"
 msgid "populating default codecs.."
 msgstr "デフォルトのコーデック追加中..."
 
-#: functions.inc.php:346
+#: functions.inc.php:334
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold は非負の整数でなければなりません。無効にするには、-1 に設定し"
@@ -389,9 +361,26 @@ msgstr ""
 msgid "ulaw, alaw, gsm added"
 msgstr "ulaw, alaw, gsm を追加しました。"
 
-#: views/form.php:388
+#: views/form.php:364
 msgid "unset"
 msgstr "未設定"
+
+#~ msgid "Asterisk IAX Settings"
+#~ msgstr "Asterisk IAX 設定"
+
+#~ msgid "Default Language for a channel, Asterisk: language"
+#~ msgstr "チャネルのデフォルト言語。対応するAsterisk設定: language。"
+
+#~ msgid ""
+#~ "File %s should not have any settings in it. Those settings should be "
+#~ "removed."
+#~ msgstr "%s に設定を記述できません。このファイルの設定を削除してください。"
+
+#~ msgid "Language"
+#~ msgstr "言語"
+
+#~ msgid "Settings"
+#~ msgstr "設定"
 
 #~ msgid ""
 #~ "Use to configure Various Asterisk IAX Settings in the General section of "
