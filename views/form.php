@@ -2,7 +2,7 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 $iaxsettings = iaxsettings_get();
-extract($iaxsettings);
+extract($iaxsettings, EXTR_SKIP);
 
 //Custom Fields
 $idx = 1;
@@ -21,18 +21,25 @@ END;
 	$var_iax_custom_val = "iax_custom_val_$idx";
 }
 $seq = 1;
-$acodeclist =  '<ul class="sortable" id="acodeclist">';
+$rows = array();
+$c = (max(array_values($codecs)) + 1);
+$c++;
+$rows[0] =  '<ul class="sortable" id="acodeclist">';
 foreach ($codecs as $codec => $codec_state) {
 	$codec_trans = _($codec);
 	$codec_checked = $codec_state ? 'checked' : '';
-	$acodeclist .= '<li><a href="#">'
+	$count = !empty($codec_state)?$codec_state:$c++;
+	$rows[$count] = '<li><a href="#">'
 	. '<b>'.$codec_trans.'&nbsp;</b>'
-	. '<input type="checkbox" name="'.$codec.'" id="'.$codec.'" value="1" '
+	. '<input type="checkbox" name="codec['.$codec.']" id="'.$codec.'" value="1" '
 	. ($codec_state?"checked":"")
 	. '>'
 	. '</a></li>';
 }
-$acodeclist .=  '</ul>';
+$rows[$c++] = '</ul>';
+ksort($rows);
+$acodeclist =  implode(PHP_EOL, $rows);
+unset($rows);
 $seq = 1;
 $vcodeclist =  '<ul class="sortable video-codecs">';
 foreach ($video_codecs as $codec => $codec_state) {
