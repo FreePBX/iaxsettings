@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-28 16:29-0700\n"
-"PO-Revision-Date: 2016-01-22 08:41+0200\n"
-"Last-Translator: Nicolas <forums@riendeau.org>\n"
+"PO-Revision-Date: 2016-02-01 03:06+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/iaxsettings/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -180,11 +180,11 @@ msgstr ""
 
 #: views/form.php:63
 msgid "General Settings"
-msgstr ""
+msgstr "Paramètres généraux"
 
 #: page.iaxsettings.php:8
 msgid "IAX Settings"
-msgstr ""
+msgstr "Paramètres IAX"
 
 #: views/form.php:113
 msgid "Jitter Buffer Enable"
@@ -200,11 +200,11 @@ msgstr ""
 
 #: views/form.php:120 views/form.php:148 views/form.php:277 views/form.php:398
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: views/form.php:297
 msgid "Other IAX Settings"
-msgstr ""
+msgstr "Autres paramètres IAX"
 
 #: views/form.php:86
 msgid "Registration Times"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: Iaxsettings.class.php:125
 msgid "Reset"
-msgstr ""
+msgstr "Remise à 0"
 
 #: functions.inc.php:393
 #, php-format
@@ -221,11 +221,11 @@ msgstr ""
 
 #: Iaxsettings.class.php:120
 msgid "Submit"
-msgstr ""
+msgstr "Soumettre"
 
 #: views/form.php:118 views/form.php:146 views/form.php:275 views/form.php:396
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #: views/form.php:312
 msgid ""
@@ -239,7 +239,7 @@ msgstr ""
 
 #: install.php:52
 msgid "already exists"
-msgstr ""
+msgstr "existe déjà"
 
 #: install.php:18
 msgid "checking for iaxsettings table.."
