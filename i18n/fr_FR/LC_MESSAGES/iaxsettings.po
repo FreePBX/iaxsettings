@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-28 16:29-0700\n"
-"PO-Revision-Date: 2016-02-01 03:06+0200\n"
+"PO-Revision-Date: 2016-02-04 23:07+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/iaxsettings/fr_FR/>\n"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: Iaxsettings.class.php:125
 msgid "Reset"
-msgstr "Remise à 0"
+msgstr "Réinitialiser"
 
 #: functions.inc.php:393
 #, php-format
