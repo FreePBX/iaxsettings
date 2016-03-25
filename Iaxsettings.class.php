@@ -66,12 +66,13 @@ class Iaxsettings implements \BMO {
 			'h263p' => '',
 			'h264'  => '',
 		);
-		$iax_settings['video_codecs']      = $video_codecs;
 
 		$pri = 1;
 		foreach (array_keys($post_vcodec) as $vcodec) {
 			$video_codecs[$vcodec] = $pri++;
 		}
+		$iax_settings['video_codecs']      = $video_codecs;
+
 		$p_idx = $n_idx = 0;
 		while (isset($request["iax_custom_key_$p_idx"])) {
 			if ($request["iax_custom_key_$p_idx"] != '') {
