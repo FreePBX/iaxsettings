@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 16:29-0700\n"
+"POT-Creation-Date: 2016-04-04 17:28-0700\n"
 "PO-Revision-Date: 2015-03-31 08:09+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -42,6 +42,10 @@ msgstr "Agregar Campo"
 #: views/form.php:68
 msgid "Advanced Settings"
 msgstr "Configuración Avanzada"
+
+#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
+msgid "Asterisk IAX Settings"
+msgstr "Configuración IAX Asterisk"
 
 #: views/form.php:379
 msgid ""
@@ -264,9 +268,13 @@ msgstr "Otras Configuraciones IAX"
 msgid "Registration Times"
 msgstr "Tiempos de Registro"
 
-#: Iaxsettings.class.php:125
+#: Iaxsettings.class.php:126
 msgid "Reset"
 msgstr "Reinicio"
+
+#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
+msgid "Settings"
+msgstr "Configuración"
 
 #: functions.inc.php:393
 #, php-format
@@ -275,9 +283,15 @@ msgstr ""
 "Ajustes en %s pueden anular estos valores. Estos valores deben ser "
 "eliminados."
 
-#: Iaxsettings.class.php:120
+#: Iaxsettings.class.php:121
 msgid "Submit"
 msgstr "Enviar"
+
+#: iaxsettings.i18n.php:8
+msgid ""
+"Use to configure Various Asterisk IAX Settings in the General section of iax."
+"conf."
+msgstr ""
 
 #: views/form.php:118 views/form.php:146 views/form.php:275 views/form.php:396
 msgid "Yes"
@@ -343,9 +357,6 @@ msgstr "agregado ulaw, alaw, gsm"
 msgid "unset"
 msgstr "Sin configurar"
 
-#~ msgid "Asterisk IAX Settings"
-#~ msgstr "Configuración IAX Asterisk"
-
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "Lenguaje por defecto para este canal, Asterisk: language"
 
@@ -358,9 +369,6 @@ msgstr "Sin configurar"
 
 #~ msgid "Language"
 #~ msgstr "Lenguaje"
-
-#~ msgid "Settings"
-#~ msgstr "Configuración"
 
 #~ msgid ""
 #~ "Use to configure Various Asterisk IAX Settings in the General section of "

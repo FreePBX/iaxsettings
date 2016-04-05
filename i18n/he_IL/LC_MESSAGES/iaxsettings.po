@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 16:29-0700\n"
+"POT-Creation-Date: 2016-04-04 17:28-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,10 @@ msgstr ""
 
 #: views/form.php:68
 msgid "Advanced Settings"
+msgstr ""
+
+#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
+msgid "Asterisk IAX Settings"
 msgstr ""
 
 #: views/form.php:379
@@ -217,8 +221,12 @@ msgstr ""
 msgid "Registration Times"
 msgstr ""
 
-#: Iaxsettings.class.php:125
+#: Iaxsettings.class.php:126
 msgid "Reset"
+msgstr ""
+
+#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
+msgid "Settings"
 msgstr ""
 
 #: functions.inc.php:393
@@ -226,8 +234,14 @@ msgstr ""
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 
-#: Iaxsettings.class.php:120
+#: Iaxsettings.class.php:121
 msgid "Submit"
+msgstr ""
+
+#: iaxsettings.i18n.php:8
+msgid ""
+"Use to configure Various Asterisk IAX Settings in the General section of iax."
+"conf."
 msgstr ""
 
 #: views/form.php:118 views/form.php:146 views/form.php:275 views/form.php:396

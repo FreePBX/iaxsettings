@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 16:29-0700\n"
+"POT-Creation-Date: 2016-04-04 17:28-0700\n"
 "PO-Revision-Date: 2014-06-03 09:48+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/iaxsettings/"
@@ -69,6 +69,10 @@ msgstr "フィールドを追加"
 #: views/form.php:68
 msgid "Advanced Settings"
 msgstr ""
+
+#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
+msgid "Asterisk IAX Settings"
+msgstr "Asterisk IAX 設定"
 
 #: views/form.php:379
 msgid ""
@@ -284,9 +288,13 @@ msgstr "その他IAX設定"
 msgid "Registration Times"
 msgstr "登録回数"
 
-#: Iaxsettings.class.php:125
+#: Iaxsettings.class.php:126
 msgid "Reset"
 msgstr ""
+
+#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
+msgid "Settings"
+msgstr "設定"
 
 #: functions.inc.php:393
 #, php-format
@@ -294,8 +302,14 @@ msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "%s の設定はこれら設定をオーバーライドする可能性があるため、削除を推奨します。"
 
-#: Iaxsettings.class.php:120
+#: Iaxsettings.class.php:121
 msgid "Submit"
+msgstr ""
+
+#: iaxsettings.i18n.php:8
+msgid ""
+"Use to configure Various Asterisk IAX Settings in the General section of iax."
+"conf."
 msgstr ""
 
 #: views/form.php:118 views/form.php:146 views/form.php:275 views/form.php:396
@@ -365,9 +379,6 @@ msgstr "ulaw, alaw, gsm を追加しました。"
 msgid "unset"
 msgstr "未設定"
 
-#~ msgid "Asterisk IAX Settings"
-#~ msgstr "Asterisk IAX 設定"
-
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "チャネルのデフォルト言語。対応するAsterisk設定: language。"
 
@@ -378,9 +389,6 @@ msgstr "未設定"
 
 #~ msgid "Language"
 #~ msgstr "言語"
-
-#~ msgid "Settings"
-#~ msgstr "設定"
 
 #~ msgid ""
 #~ "Use to configure Various Asterisk IAX Settings in the General section of "

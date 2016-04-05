@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 16:29-0700\n"
+"POT-Creation-Date: 2016-04-04 17:28-0700\n"
 "PO-Revision-Date: 2015-02-20 19:35-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -37,6 +37,10 @@ msgstr "添加值域"
 #: views/form.php:68
 msgid "Advanced Settings"
 msgstr ""
+
+#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
+msgid "Asterisk IAX Settings"
+msgstr "Asterisk IAX设置"
 
 #: views/form.php:379
 msgid ""
@@ -207,17 +211,27 @@ msgstr "其他IAX设置"
 msgid "Registration Times"
 msgstr "注册时间"
 
-#: Iaxsettings.class.php:125
+#: Iaxsettings.class.php:126
 msgid "Reset"
 msgstr ""
+
+#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
+msgid "Settings"
+msgstr "设置"
 
 #: functions.inc.php:393
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 
-#: Iaxsettings.class.php:120
+#: Iaxsettings.class.php:121
 msgid "Submit"
+msgstr ""
+
+#: iaxsettings.i18n.php:8
+msgid ""
+"Use to configure Various Asterisk IAX Settings in the General section of iax."
+"conf."
 msgstr ""
 
 #: views/form.php:118 views/form.php:146 views/form.php:275 views/form.php:396
@@ -278,14 +292,8 @@ msgstr "添加的ulaw, alaw, gsm"
 msgid "unset"
 msgstr "未设置"
 
-#~ msgid "Asterisk IAX Settings"
-#~ msgstr "Asterisk IAX设置"
-
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "通道的默认语言，asterisk：language"
 
 #~ msgid "Language"
 #~ msgstr "语言"
-
-#~ msgid "Settings"
-#~ msgstr "设置"

@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 16:29-0700\n"
+"POT-Creation-Date: 2016-04-04 17:28-0700\n"
 "PO-Revision-Date: 2015-04-25 18:48+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -57,6 +57,10 @@ msgstr "Добавить поле"
 #: views/form.php:68
 msgid "Advanced Settings"
 msgstr "Дополнительные настройки"
+
+#: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
+msgid "Asterisk IAX Settings"
+msgstr "Установки Asterisk для IAX"
 
 #: views/form.php:379
 msgid ""
@@ -284,9 +288,13 @@ msgstr "Другие установки IAX"
 msgid "Registration Times"
 msgstr "Время регистрации"
 
-#: Iaxsettings.class.php:125
+#: Iaxsettings.class.php:126
 msgid "Reset"
 msgstr "Сброс"
+
+#: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
+msgid "Settings"
+msgstr "Установки"
 
 #: functions.inc.php:393
 #, php-format
@@ -295,9 +303,15 @@ msgstr ""
 "Параметры, указанные в %s могут перебить эти. Такие параметры должны быть "
 "удалены."
 
-#: Iaxsettings.class.php:120
+#: Iaxsettings.class.php:121
 msgid "Submit"
 msgstr "Сохранить"
+
+#: iaxsettings.i18n.php:8
+msgid ""
+"Use to configure Various Asterisk IAX Settings in the General section of iax."
+"conf."
+msgstr ""
 
 #: views/form.php:118 views/form.php:146 views/form.php:275 views/form.php:396
 msgid "Yes"
@@ -371,9 +385,6 @@ msgstr "добавлены ulaw, alaw, gsm"
 msgid "unset"
 msgstr "не указано"
 
-#~ msgid "Asterisk IAX Settings"
-#~ msgstr "Установки Asterisk для IAX"
-
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "Дефолтный язык в канале, параметр Asterisk: language"
 
@@ -385,9 +396,6 @@ msgstr "не указано"
 
 #~ msgid "Language"
 #~ msgstr "Язык"
-
-#~ msgid "Settings"
-#~ msgstr "Установки"
 
 #~ msgid ""
 #~ "Use to configure Various Asterisk IAX Settings in the General section of "
