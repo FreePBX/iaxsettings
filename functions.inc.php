@@ -204,32 +204,7 @@ function iaxsettings_get($raw=false) {
   }
 
   /* Initialize first, then replace with DB, to make sure we have defaults */
-/*
-  $iax_settings['codecs']            =  array(
-    'ulaw'     => '1',
-    'alaw'     => '2',
-    'slin'     => '',
-    'g726'     => '',
-    'gsm'      => '3',
-    'g729'     => '',
-    'ilbc'     => '',
-    'g723'     => '',
-    'g726aal2' => '',
-    'adpcm'    => '',
-    'lpc10'    => '',
-    'speex'    => '',
-    'g722'     => '',
-    'siren7'   => '',
-    'siren14' 	=> '',
-    );
 
-  $iax_settings['video_codecs']      = array(
-    'h261'  => '',
-    'h263'  => '',
-    'h263p' => '',
-    'h264'  => '',
-    );
-  */
   $iax_settings['codecs'] = FreePBX::Codecs()->getAudio(true);
   $iax_settings['video_codecs'] = FreePBX::Codecs()->getVideo(true);
   $iax_settings['codecpriority']     = 'host';
