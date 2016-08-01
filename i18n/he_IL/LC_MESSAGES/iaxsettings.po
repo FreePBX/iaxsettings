@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:28-0700\n"
+"POT-Creation-Date: 2016-08-01 10:10-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid ""
 "priority."
 msgstr ""
 
-#: functions.inc.php:294
+#: functions.inc.php:271
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr ""
@@ -153,7 +153,7 @@ msgstr ""
 msgid "Bind Address"
 msgstr ""
 
-#: functions.inc.php:298
+#: functions.inc.php:275
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr ""
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Bind Port"
 msgstr ""
 
-#: functions.inc.php:303
+#: functions.inc.php:280
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
@@ -229,7 +229,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: functions.inc.php:393
+#: functions.inc.php:370
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -290,7 +290,7 @@ msgstr ""
 msgid "populating default codecs.."
 msgstr ""
 
-#: functions.inc.php:334
+#: functions.inc.php:311
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 

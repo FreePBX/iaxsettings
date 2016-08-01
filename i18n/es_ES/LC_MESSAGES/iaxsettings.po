@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:28-0700\n"
+"POT-Creation-Date: 2016-08-01 10:10-0700\n"
 "PO-Revision-Date: 2015-03-31 08:09+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -30,7 +30,7 @@ msgstr ""
 " Si se desactiva cada codec y luego los agrega uno a uno, aplicando cada "
 "adición, estos se agregarán al final marcando así la prioridad de cada uno."
 
-#: functions.inc.php:294
+#: functions.inc.php:271
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s debe ser un entero no negativo"
@@ -200,7 +200,7 @@ msgstr "Ancho de Banda"
 msgid "Bind Address"
 msgstr "Dirección de Enlace"
 
-#: functions.inc.php:298
+#: functions.inc.php:275
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Dirección Enlace (bindaddr) debe ser una dirección IP."
 
@@ -208,7 +208,7 @@ msgstr "Dirección Enlace (bindaddr) debe ser una dirección IP."
 msgid "Bind Port"
 msgstr "Puerto"
 
-#: functions.inc.php:303
+#: functions.inc.php:280
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr "Puerto (bindport) debe ser entre 1024..65535, por defecto 4569"
 
@@ -276,7 +276,7 @@ msgstr "Reinicio"
 msgid "Settings"
 msgstr "Configuración"
 
-#: functions.inc.php:393
+#: functions.inc.php:370
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -345,7 +345,7 @@ msgstr "ninguna, creando tabla"
 msgid "populating default codecs.."
 msgstr "rellenando códigos por defecto.."
 
-#: functions.inc.php:334
+#: functions.inc.php:311
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr "resyncthreshold debe ser un entero no negativo o -1 para desactivar"
 

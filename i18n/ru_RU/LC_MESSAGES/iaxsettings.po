@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:28-0700\n"
+"POT-Creation-Date: 2016-08-01 10:10-0700\n"
 "PO-Revision-Date: 2015-04-25 18:48+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,7 +45,7 @@ msgstr ""
 "Если очистите таблицу кодеков и затем добавите по одному, они будут "
 "использоваться в таком же порядке в приоритетах выбора кодеков."
 
-#: functions.inc.php:294
+#: functions.inc.php:271
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s должен быть неотрицательным целым числом"
@@ -220,7 +220,7 @@ msgstr "Полоса пропускания"
 msgid "Bind Address"
 msgstr "Связывание с адресом"
 
-#: functions.inc.php:298
+#: functions.inc.php:275
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Адрес (bindaddr) должен быть в виде четырёх октетов ИП адреса"
 
@@ -228,7 +228,7 @@ msgstr "Адрес (bindaddr) должен быть в виде четырёх �
 msgid "Bind Port"
 msgstr "Порт"
 
-#: functions.inc.php:303
+#: functions.inc.php:280
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr "Порт (bindport) должен быть между 1024 и 65535, по умолчанию 4569"
 
@@ -296,7 +296,7 @@ msgstr "Сброс"
 msgid "Settings"
 msgstr "Установки"
 
-#: functions.inc.php:393
+#: functions.inc.php:370
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -371,7 +371,7 @@ msgstr "указание кодеков по умолчанию.."
 #
 # msgid "Bind Port (bindport) must be between 1024..65535, default 5060"
 # msgstr "Порт (bindport) должен быть иметь значение между 1024 и 65535, дефолтное значение - 5060"
-#: functions.inc.php:334
+#: functions.inc.php:311
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold должен быть неотрицательным целым числом или указать -1 для "

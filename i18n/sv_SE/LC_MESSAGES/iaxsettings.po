@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX iaxsettings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:28-0700\n"
+"POT-Creation-Date: 2016-08-01 10:10-0700\n"
 "PO-Revision-Date: 2010-01-23 23:08+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: SWEDISH\n"
@@ -37,7 +37,7 @@ msgid ""
 "priority."
 msgstr ""
 
-#: functions.inc.php:294
+#: functions.inc.php:271
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s måste vara ett positivt heltal"
@@ -204,7 +204,7 @@ msgstr "Bandbredd"
 msgid "Bind Address"
 msgstr "Bindadress"
 
-#: functions.inc.php:298
+#: functions.inc.php:275
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Bindadress (bindaddr) måste vara en IP-adress."
 
@@ -212,7 +212,7 @@ msgstr "Bindadress (bindaddr) måste vara en IP-adress."
 msgid "Bind Port"
 msgstr "Bindport"
 
-#: functions.inc.php:303
+#: functions.inc.php:280
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
@@ -280,7 +280,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: functions.inc.php:393
+#: functions.inc.php:370
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -350,7 +350,7 @@ msgstr "ingen, skapar tabell"
 msgid "populating default codecs.."
 msgstr "skriver standard codecs.."
 
-#: functions.inc.php:334
+#: functions.inc.php:311
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold måste vara ett positivt heltal eller -1 för att avaktivera"

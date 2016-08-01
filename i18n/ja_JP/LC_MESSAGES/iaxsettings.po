@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:28-0700\n"
+"POT-Creation-Date: 2016-08-01 10:10-0700\n"
 "PO-Revision-Date: 2014-06-03 09:48+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/iaxsettings/"
@@ -57,7 +57,7 @@ msgstr ""
 " すべてのコーデックをクリアし、その後一つずつ追加する毎に変更を適用すると、追"
 "加した順番でコーデック優先順位が設定されます。"
 
-#: functions.inc.php:294
+#: functions.inc.php:271
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s は非負の整数でなければなりません。"
@@ -216,7 +216,7 @@ msgstr "帯域幅"
 msgid "Bind Address"
 msgstr "バインドIPアドレス"
 
-#: functions.inc.php:298
+#: functions.inc.php:275
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "バインドアドレス (bindaddr) はIPアドレスでなければなりません。"
 
@@ -224,7 +224,7 @@ msgstr "バインドアドレス (bindaddr) はIPアドレスでなければな�
 msgid "Bind Port"
 msgstr "バインドポート"
 
-#: functions.inc.php:303
+#: functions.inc.php:280
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 "バインドポート (bindport)。1024 ～ 65535 でなければなりません。デフォルト: "
@@ -296,7 +296,7 @@ msgstr ""
 msgid "Settings"
 msgstr "設定"
 
-#: functions.inc.php:393
+#: functions.inc.php:370
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -365,7 +365,7 @@ msgstr "ありません、テーブルを作成しています。"
 msgid "populating default codecs.."
 msgstr "デフォルトのコーデック追加中..."
 
-#: functions.inc.php:334
+#: functions.inc.php:311
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold は非負の整数でなければなりません。無効にするには、-1 に設定し"

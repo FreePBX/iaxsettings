@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>13.0.4</version>
+	<version>13.0.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -12,6 +12,7 @@
 	</menuitems>
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
 	<changelog>
+		*13.0.5* FREEPBX-12707 IAX settings Codecs tab does not list all codecs
 		*13.0.4* FREEPBX-11880 Fix save of video codecs
 		*13.0.3* FREEPBX-9803 IAX Codec settings dont get saved on submit
 		*13.0.2* Version bump Beta
