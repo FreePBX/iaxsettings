@@ -46,7 +46,8 @@ class iaxsettings_validate {
   /* checks if value is valid ip format */
   function is_ip($value, $item, $message) {
     $value = trim($value);
-    if ($value != '' && !preg_match('|^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$|',$value,$matches)) {
+
+    if (!filter_var($value, FILTER_VALIDATE_IP)) {
       $this->errors[] = array('id' => $item, 'value' => $value, 'message' => $message);
     }
     return $value;
