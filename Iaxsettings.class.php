@@ -67,9 +67,10 @@ class Iaxsettings implements \BMO {
 		$integer_msg = _("%s must be a non-negative integer");
 		$errors = array();
 		foreach ($iax_settings as $key => $val) {
+			$val = trim($val);
 			switch ($key) {
 				case 'bindaddr':
-					if($this->v->ip()->validate($val)){
+					if(filter_var($val,FILTER_VALIDATE_IP) !== false){
 						$save_settings[] = array($key,$val,'2',self::IAX_NORMAL);
 					}else{
 						if(!empty($val)){
