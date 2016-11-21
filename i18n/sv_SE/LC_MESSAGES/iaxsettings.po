@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX iaxsettings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-14 14:44+1000\n"
+"POT-Creation-Date: 2016-11-21 13:25+1000\n"
 "PO-Revision-Date: 2010-01-23 23:08+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: SWEDISH\n"
@@ -30,23 +30,23 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: Sweden\n"
 
-#: views/form.php:406
+#: views/form.php:415
 msgid ""
 " If you clear each codec and then add them one at a time, submitting with "
 "each addition, they will be added in order which will effect the codec "
 "priority."
 msgstr ""
 
-#: functions.inc.php:272
+#: Iaxsettings.class.php:67
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s måste vara ett positivt heltal"
 
-#: views/form.php:304
+#: views/form.php:313
 msgid "Add Field"
 msgstr "Lägg till fält"
 
-#: views/form.php:68
+#: views/form.php:77
 msgid "Advanced Settings"
 msgstr ""
 
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Asterisk IAX Settings"
 msgstr ""
 
-#: views/form.php:379
+#: views/form.php:388
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
@@ -62,7 +62,7 @@ msgstr ""
 "Asterisk: bandwidth. Ange bandbredden, låg, mellan eller hög för att "
 "fastställa vilka codecs som generellt ska gälla."
 
-#: views/form.php:234
+#: views/form.php:243
 msgid ""
 "Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
 "Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
@@ -77,7 +77,7 @@ msgstr ""
 "bindaddr=192.168.10.100:4555.<br />  Det är rekommenderat att lämna detta "
 "fält tomt"
 
-#: views/form.php:258
+#: views/form.php:267
 msgid ""
 "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
@@ -87,7 +87,7 @@ msgstr ""
 "och lyssnar efter IAX-meddelanden. Standardporten för IAX är 4569 och i de "
 "flesta fall är vad du vill ha. Det är rekommenderat att lämna detta fält tomt"
 
-#: views/form.php:348
+#: views/form.php:357
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -110,7 +110,7 @@ msgstr ""
 "<br />reqonly  - Samma som disabled, samtal kommer bara att accepteras om "
 "codec finns tillgänglig."
 
-#: views/form.php:285
+#: views/form.php:294
 msgid ""
 "Asterisk: delayreject. For increased security against brute force password "
 "attacks enable this which will delay the sending of authentication reject "
@@ -120,7 +120,7 @@ msgstr ""
 "aktivera denna inställning för att fördröja avslag på autentisering för "
 "REGREQ och AUTHREP om det finns ett lösenord."
 
-#: views/form.php:156
+#: views/form.php:165
 msgid ""
 "Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive "
 "side of an IAX channel. Normally the jitter buffer will not be used if "
@@ -138,7 +138,7 @@ msgstr ""
 "jitterbuffer innan mediaströmmen skickas vidare. Detta används inte normal "
 "då det ökar fördröjningen i mediaströmmen. "
 
-#: views/form.php:128
+#: views/form.php:137
 msgid ""
 "Asterisk: jitterbuffer. You can adjust several parameters relating to the "
 "jitter buffer. The jitter buffer's function is to compensate for varying "
@@ -150,7 +150,7 @@ msgstr ""
 "fördröjningar i nätverket. Jitterbuffrar fungerar för INKOMMANDE ljud - "
 "utgående ljud kommer att avjittras med hjälp av jitterbuffers i andra änden."
 
-#: views/form.php:183
+#: views/form.php:192
 msgid ""
 "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds."
 "<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a "
@@ -168,7 +168,7 @@ msgstr ""
 "som två gånger den uppmätta jittern plus denna spärr för återsynk. Återsynk "
 "kan avaktiveras genom att sätta denna parameter till -1."
 
-#: views/form.php:207
+#: views/form.php:216
 msgid ""
 "Asterisk: maxjitterinterps. The maximum number of interpolation frames the "
 "jitterbuffer should return in a row. Since some clients do not send CNG/DTX "
@@ -182,7 +182,7 @@ msgstr ""
 "tystnad har startars efter att returnerat dessa interpoleringar. Detta "
 "förhindrar interpoleringar under en längre tystnad."
 
-#: views/form.php:101
+#: views/form.php:110
 msgid ""
 "Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
 "that IAX peers can request as a registration expiration interval (in "
@@ -192,87 +192,87 @@ msgstr ""
 "sekunder som IAX peers kan begära registrering vid upphörande av "
 "registrering."
 
-#: views/form.php:319
+#: views/form.php:328
 msgid "Audio Codecs"
 msgstr "Ljud-codecs"
 
-#: views/form.php:360
+#: views/form.php:369
 msgid "Bandwidth"
 msgstr "Bandbredd"
 
-#: views/form.php:222
+#: views/form.php:231
 msgid "Bind Address"
 msgstr "Bindadress"
 
-#: functions.inc.php:276
+#: Iaxsettings.class.php:77
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Bindadress (bindaddr) måste vara en IP-adress."
 
-#: views/form.php:246
+#: views/form.php:255
 msgid "Bind Port"
 msgstr "Bindport"
 
-#: functions.inc.php:281
+#: Iaxsettings.class.php:87
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
-#: views/form.php:406
+#: views/form.php:415
 msgid "Check to enable and then choose allowed codecs."
 msgstr "Markera för att aktivera, välj sedan codecs."
 
-#: views/form.php:329
+#: views/form.php:338
 msgid "Codec Priority"
 msgstr "Codec-prioritering"
 
-#: views/form.php:73
+#: views/form.php:82
 msgid "Codec Settings"
 msgstr ""
 
-#: views/form.php:270
+#: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "Fördröj avslag på autentisering"
 
-#: views/form.php:391
+#: views/form.php:400
 msgid "Enable Video Support"
 msgstr ""
 
-#: views/form.php:141
+#: views/form.php:150
 msgid "Force Jitter Buffer"
 msgstr "Tvinga jitterbuffer"
 
-#: views/form.php:63
+#: views/form.php:72
 msgid "General Settings"
 msgstr ""
 
-#: page.iaxsettings.php:8
+#: views/form.php:63
 msgid "IAX Settings"
 msgstr ""
 
-#: views/form.php:113
+#: views/form.php:122
 msgid "Jitter Buffer Enable"
 msgstr ""
 
-#: views/form.php:168
+#: views/form.php:177
 msgid "Jitter Buffer Size"
 msgstr "Storlek på jitterbuffer"
 
-#: views/form.php:195
+#: views/form.php:204
 msgid "Max Interpolations"
 msgstr "Max interpolation"
 
-#: views/form.php:120 views/form.php:148 views/form.php:277 views/form.php:398
+#: views/form.php:129 views/form.php:157 views/form.php:286 views/form.php:407
 msgid "No"
 msgstr "Nej"
 
-#: views/form.php:297
+#: views/form.php:306
 msgid "Other IAX Settings"
 msgstr "Andra inställningar för IAX"
 
-#: views/form.php:86
+#: views/form.php:95
 msgid "Registration Times"
 msgstr "Registreringstider"
 
-#: Iaxsettings.class.php:119
+#: Iaxsettings.class.php:51
 msgid "Reset"
 msgstr ""
 
@@ -280,14 +280,14 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: functions.inc.php:371
+#: functions.inc.php:277
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "Inställningar i %s kan åsidosätta inställningarna du gör här. Du bör ta bort "
 "dom"
 
-#: Iaxsettings.class.php:114
+#: Iaxsettings.class.php:46
 msgid "Submit"
 msgstr ""
 
@@ -297,11 +297,11 @@ msgid ""
 "conf."
 msgstr ""
 
-#: views/form.php:118 views/form.php:146 views/form.php:275 views/form.php:396
+#: views/form.php:127 views/form.php:155 views/form.php:284 views/form.php:405
 msgid "Yes"
 msgstr "Ja"
 
-#: views/form.php:312
+#: views/form.php:321
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -330,15 +330,15 @@ msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 "allvarligt fel inträffade när standardvärde skrevs, kontrollera modulen"
 
-#: views/form.php:369
+#: views/form.php:378
 msgid "high"
 msgstr "hög"
 
-#: views/form.php:365
+#: views/form.php:374
 msgid "low"
 msgstr "låg"
 
-#: views/form.php:367
+#: views/form.php:376
 msgid "medium"
 msgstr "mellan"
 
@@ -350,7 +350,7 @@ msgstr "ingen, skapar tabell"
 msgid "populating default codecs.."
 msgstr "skriver standard codecs.."
 
-#: functions.inc.php:312
+#: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold måste vara ett positivt heltal eller -1 för att avaktivera"
@@ -359,7 +359,7 @@ msgstr ""
 msgid "ulaw, alaw, gsm added"
 msgstr "la till ulaw, alaw, gsm"
 
-#: views/form.php:371
+#: views/form.php:380
 msgid "unset"
 msgstr "ej definierat"
 
