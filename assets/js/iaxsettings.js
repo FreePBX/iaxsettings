@@ -5,6 +5,24 @@ $(document).ready(function() {
 			ui.item.find('input').val(ui.item.index());
 		},
 	});
+	$('#ajaxsubmit').on('click',function(e){
+		$.ajax({
+			type: 'POST',
+			url: 'ajax.php?module=iaxsettings&command=savesettings',
+			data: $('#editIax').serialize(),
+			success: function (data) {
+				if(data.status === true){
+					location.reload();
+				}else{
+					if(Array.isArray(data.message)){
+						data.message.forEach(function(entry) {
+							fpbxToast(entry,'error','error');
+						});
+					}
+				}
+			}
+		});
+	});
 });
 
 $(document).ready(function(){
@@ -42,6 +60,5 @@ var theForm = document.editIax;
 function addCustomField(key, val) {
 	var idx = $(".iax-custom").size();
 	var idxp = idx - 1;
-
 	$("#iax-custom-buttons").prepend('<div class="form-inline"><input type="text" id="iax_custom_key_'+idx+'" name="iax_custom_key_'+idx+'" class="iax-custom form-control" value="'+key+'"> = <input type="text" id="iax_custom_val_'+idx+'" name="iax_custom_val_'+idx+'" class="form-control" value="'+val+'"></div>');
 }
