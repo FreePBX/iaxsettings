@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-21 13:25+1000\n"
-"PO-Revision-Date: 2016-12-13 00:59+0200\n"
+"PO-Revision-Date: 2016-12-13 01:29+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/iaxsettings/pt_BR/>\n"
@@ -232,66 +232,69 @@ msgstr "Habilitar Suporte a Video"
 
 #: views/form.php:150
 msgid "Force Jitter Buffer"
-msgstr ""
+msgstr "Forçar Jitter Buffer"
 
 #: views/form.php:72
 msgid "General Settings"
-msgstr ""
+msgstr "Configurações Gerais"
 
 #: views/form.php:63
 msgid "IAX Settings"
-msgstr ""
+msgstr "Configurações IAX"
 
 #: views/form.php:122
 msgid "Jitter Buffer Enable"
-msgstr ""
+msgstr "Habilitar Jitter Buffer"
 
 #: views/form.php:177
 msgid "Jitter Buffer Size"
-msgstr ""
+msgstr "Tamanho do Jitter Buffer"
 
 #: views/form.php:204
 msgid "Max Interpolations"
-msgstr ""
+msgstr "Máximo de Interpolações"
 
 #: views/form.php:129 views/form.php:157 views/form.php:286 views/form.php:407
 msgid "No"
-msgstr ""
+msgstr "Yes"
 
 #: views/form.php:306
 msgid "Other IAX Settings"
-msgstr ""
+msgstr "Outras Configurações IAX"
 
 #: views/form.php:95
 msgid "Registration Times"
-msgstr ""
+msgstr "Tempos de Registro"
 
 #: Iaxsettings.class.php:51
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: iaxsettings.i18n.php:6 iaxsettings.i18n.php:12
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 #: functions.inc.php:277
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
+"Configurações em %s podem substituir estes valores. Essas definições devem "
+"ser removidas."
 
 #: Iaxsettings.class.php:46
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: iaxsettings.i18n.php:8
 msgid ""
 "Use to configure Various Asterisk IAX Settings in the General section of iax."
 "conf."
 msgstr ""
+"Use para setar várias configurações Asterisk IAX na seção Geral do iax.conf."
 
 #: views/form.php:127 views/form.php:155 views/form.php:284 views/form.php:405
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: views/form.php:321
 msgid ""
@@ -302,47 +305,53 @@ msgid ""
 "Add Field box to add additional fields. Blank boxes will be deleted when "
 "submitted."
 msgstr ""
+"Você pode definir quaisquer outras configurações IAX não presentes aqui que "
+"podem ser configuradas na seção Geral do iax.conf. Não haverá nenhuma "
+"verificação de erro contra essas configurações, portanto verifique-as "
+"cuidadosamente. Elas devem ser inseridas como: <br/> [setting] = [value]<br/>"
+" nas caixas abaixo. Clique em Adicionar campo para adicionar campos "
+"adicionais. As caixas em branco serão excluídas quando aplicado."
 
 #: install.php:52
 msgid "already exists"
-msgstr ""
+msgstr "já existe"
 
 #: install.php:18
 msgid "checking for iaxsettings table.."
-msgstr ""
+msgstr "verificando por tabela iaxsettings..."
 
 #: install.php:47
 msgid "fatal error occurred populating defaults, check module"
-msgstr ""
+msgstr "erro fatal ao preencher os padrões, verifique o módulo"
 
 #: views/form.php:378
 msgid "high"
-msgstr ""
+msgstr "alto"
 
 #: views/form.php:374
 msgid "low"
-msgstr ""
+msgstr "baixo"
 
 #: views/form.php:376
 msgid "medium"
-msgstr ""
+msgstr "médio"
 
 #: install.php:22
 msgid "none, creating table"
-msgstr ""
+msgstr "nenhuma, criando tabela"
 
 #: install.php:26
 msgid "populating default codecs.."
-msgstr ""
+msgstr "preenchendo codecs padrão..."
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
-msgstr ""
+msgstr "resyncthreshold deve ser um inteiro não negativo ou -1 para desativar"
 
 #: install.php:49
 msgid "ulaw, alaw, gsm added"
-msgstr ""
+msgstr "adicionado ulaw, alaw, gsm"
 
 #: views/form.php:380
 msgid "unset"
-msgstr ""
+msgstr "Sem configurar"
