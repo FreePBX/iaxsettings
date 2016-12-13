@@ -354,4 +354,4 @@ msgstr "adicionado ulaw, alaw, gsm"
 
 #: views/form.php:380
 msgid "unset"
-msgstr "Sem configurar"
+msgstr "sem configurar"
