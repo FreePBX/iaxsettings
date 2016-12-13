@@ -10,13 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-21 13:25+1000\n"
-"PO-Revision-Date: 2016-11-21 13:25+1000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-12-13 00:59+0200\n"
+"Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/iaxsettings/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/form.php:415
 msgid ""
@@ -24,29 +27,33 @@ msgid ""
 "each addition, they will be added in order which will effect the codec "
 "priority."
 msgstr ""
+" Se você limpar cada codec e, em seguida, adiciona-os um de cada vez, eles "
+"serão adicionados na ordem que irá afetar a prioridade do codec."
 
 #: Iaxsettings.class.php:67
 #, php-format
 msgid "%s must be a non-negative integer"
-msgstr ""
+msgstr "%s precisa ser um inteiro não-negativo"
 
 #: views/form.php:313
 msgid "Add Field"
-msgstr ""
+msgstr "Adicionar Campo"
 
 #: views/form.php:77
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Configurações Avançadas"
 
 #: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
 msgid "Asterisk IAX Settings"
-msgstr ""
+msgstr "Configurações IAX Asterisk"
 
 #: views/form.php:388
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
 msgstr ""
+"Asterisk: largura de banda. Especifique a largura de banda baixa, média ou "
+"alta para o controle dos codecs que são geralmente utilizados."
 
 #: views/form.php:243
 msgid ""
@@ -56,6 +63,11 @@ msgid ""
 "you can put settings such as:<br /> bindaddr=192.168.10.100:4555.<br />  It "
 "is recommended to leave this blank."
 msgstr ""
+"Asterisk: bindaddr. O endereço IP para ligar e ouvir chamadas na Porta Bind. "
+"Se definido como 0.0.0.0 o Asterisk irá ouvir em todos os endereços. Para "
+"ligar a vários endereços IP ou portas, use o campo Outros nas 'Configurações "
+"IAX' onde você pode colocar configurações como: <br/> bindaddr = "
+"192.168.10.100:4555. <br/> É recomendável deixar esse campo em branco."
 
 #: views/form.php:267
 msgid ""
@@ -63,6 +75,9 @@ msgid ""
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
 "what you want. It is recommended to leave this blank."
 msgstr ""
+"Asterisk: bindport. Porta UDP de entrada local que o Asterisk irá vincular e "
+"ouvir mensagens IAX. O padrão IAX é 4569 e na maioria dos casos é isso que "
+"se quer. Recomenda-se deixar este campo em branco."
 
 #: views/form.php:357
 msgid ""
@@ -77,6 +92,17 @@ msgid ""
 "requested format is not available the call will only be accepted if the "
 "requested format is available."
 msgstr ""
+"Asterisk: codecpriority. Controla a negociação de codec de uma chamada IAX "
+"de entrada. Esta opção é herdada a todas as entidades do usuário. Ele também "
+"pode ser definido em cada entidade de usuário separadamente, o que "
+"substituirá a configuração aplicada aqui. Os valores válidos são: <br/>host -"
+" Considera a ordem preferencial do host perante usuários chamadores. <br/>"
+"chamador - Considera a ordem preferencial dos chamadores perante o host. <br "
+"/> Desabilitado - Desativa a consideração de preferência do codec "
+"completamente . (Este é o comportamento original antes das preferências "
+"terem sido adicionadas) <br /> reqonly - Mesmo que desativado, só não "
+"considera a capacidade  se o formato solicitado não estiver disponível, a "
+"chamada só será aceita se o formato solicitado estiver disponível."
 
 #: views/form.php:294
 msgid ""
@@ -84,6 +110,9 @@ msgid ""
 "attacks enable this which will delay the sending of authentication reject "
 "for REGREQ or AUTHREP if there is a password."
 msgstr ""
+"Asterisk: delayreject. Para aumentar a segurança contra ataques de força "
+"bruta e senhas, habilite isso e irá atrasar o envio de rejeição de "
+"autenticação para REGREQ ou AUTHREP se houver uma senha."
 
 #: views/form.php:165
 msgid ""
@@ -95,6 +124,13 @@ msgid ""
 "stream on. This is not typically desired as it adds additional latency into "
 "the stream."
 msgstr ""
+"Asterisk: forcejitterbuffer. Força o uso de um jitterbuffer no lado da "
+"recepção de um canal IAX. Normalmente, o jitter buffer não será usado se "
+"receber um canal jittery enviando-o para outro canal, como de um canal SIP "
+"para um ponto de extremidade, uma vez que existe tipicamente um jitter "
+"buffer na extremidade. Isso forçará o uso do jitter buffer antes de enviar o "
+"stream. Isso não é o que se deseja normalmente, pois adiciona latência "
+"adicional ao stream."
 
 #: views/form.php:137
 msgid ""
@@ -103,6 +139,10 @@ msgid ""
 "network delay. The jitter buffer works for INCOMING audio - the outbound "
 "audio will be dejittered by the jitter buffer at the other end."
 msgstr ""
+"Asterisk: jitterbuffer. Você pode ajustar vários parâmetros relacionados ao "
+"jitter buffer. A função do jitter buffer é para compensar a variação no "
+"atraso da rede. O jitter buffer funciona para áudio de ENTRADA - o áudio de "
+"saída será eliminado pelo jitter buffer na outra extremidade."
 
 #: views/form.php:192
 msgid ""
@@ -114,6 +154,13 @@ msgid ""
 "measured jitter plus this resync threshold. Resyncing can be disabled by "
 "setting this parameter to -1."
 msgstr ""
+"Asterisk: maxjitterbuffer. Comprimento máximo do jitterbuffer em "
+"milissegundos. <br/> Asterisk: resyncthreshold. Quando o jitterbuffer notar "
+"uma mudança significativa no atraso contínuo em alguns frames, ele será "
+"ressincronizado, assumindo que a alteração no atraso foi causada por um "
+"timestamp-up mix-up. O limiar para observar uma mudança no atraso é medido "
+"como o dobro da jitter medida mais este limiar de ressincronização. O "
+"ressincronismo pode ser desativado configurando esse parâmetro como -1."
 
 #: views/form.php:216
 msgid ""
@@ -123,6 +170,11 @@ msgid ""
 "after returning this many interpolations. This prevents interpolating "
 "throughout a long silence."
 msgstr ""
+"Asterisk: maxjitterinterps. O número máximo de frames de interpolação que o "
+"jitterbuffer deve retornar em uma linha. Como alguns clientes não enviam "
+"frames CNG/DTX para indicar silêncio, o jitterbuffer assumirá que o silêncio "
+"começou depois de retornar muitas interpolações. Isso impede a interpolação "
+"durante um longo silêncio."
 
 #: views/form.php:110
 msgid ""
@@ -130,50 +182,53 @@ msgid ""
 "that IAX peers can request as a registration expiration interval (in "
 "seconds)."
 msgstr ""
+"Asterisk: minregexpire, maxregexpire. Período mínimo e máximo de tempo que "
+"os pares de IAX podem solicitar um intervalo de expiração de registro (em "
+"segundos)."
 
 #: views/form.php:328
 msgid "Audio Codecs"
-msgstr ""
+msgstr "Codecs de Áudio"
 
 #: views/form.php:369
 msgid "Bandwidth"
-msgstr ""
+msgstr "Largura de Banda"
 
 #: views/form.php:231
 msgid "Bind Address"
-msgstr ""
+msgstr "Endereço Bind"
 
 #: Iaxsettings.class.php:77
 msgid "Bind Address (bindaddr) must be an IP address."
-msgstr ""
+msgstr "Endereço Bind (bindaddr) precisa ser um endereço IP."
 
 #: views/form.php:255
 msgid "Bind Port"
-msgstr ""
+msgstr "Porta Bind"
 
 #: Iaxsettings.class.php:87
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
-msgstr ""
+msgstr "Porta Bind (bindport) precisa estar entre 1024..65535, padrão 4569"
 
 #: views/form.php:415
 msgid "Check to enable and then choose allowed codecs."
-msgstr ""
+msgstr "Selecione para ativar e, em seguida, escolha os codecs permitidos."
 
 #: views/form.php:338
 msgid "Codec Priority"
-msgstr ""
+msgstr "Prioridade de Codec"
 
 #: views/form.php:82
 msgid "Codec Settings"
-msgstr ""
+msgstr "Configurações de Codec"
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
-msgstr ""
+msgstr "Atraso de Autorização Rejeitada"
 
 #: views/form.php:400
 msgid "Enable Video Support"
-msgstr ""
+msgstr "Habilitar Suporte a Video"
 
 #: views/form.php:150
 msgid "Force Jitter Buffer"
