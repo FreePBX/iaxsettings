@@ -52,7 +52,7 @@ foreach ($video_codecs as $codec => $codec_state) {
 	$codec_checked = $codec_state ? 'checked' : '';
 	$vcodeclist .= '<li><a href="#">'
 	. '<b>'.$codec_trans.'&nbsp;</b>'
-	. '<input type="checkbox" name="'.$codec.'" id="'.$codec.'" value="1" '
+	. '<input type="checkbox" name="vcodec['.$codec.']" id="'.$codec.'" value="1" '
 	. ($codec_state?"checked":"")
 	. '>'
 	. '</a></li>';
