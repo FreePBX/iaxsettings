@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>13.0.6.1</version>
+	<version>13.0.6.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -12,6 +12,7 @@
 	</menuitems>
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
 	<changelog>
+		*13.0.6.2* FREEPBX-14263 IAX Setting does not update video codecs
 		*13.0.6.1* FREEPBX-13611 New error handler
 		*13.0.6* FREEPBX-10469 Fix missing error handler
 		*13.0.5* FREEPBX-12707 IAX settings Codecs tab does not list all codecs
