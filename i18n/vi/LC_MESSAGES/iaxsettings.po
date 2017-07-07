@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:47-0800\n"
-"PO-Revision-Date: 2017-07-07 15:50+0200\n"
+"PO-Revision-Date: 2017-07-07 16:51+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/iaxsettings/vi/>\n"
@@ -170,6 +170,11 @@ msgid ""
 "after returning this many interpolations. This prevents interpolating "
 "throughout a long silence."
 msgstr ""
+"Asterisk: maxjitterinterps. Số frame nội suy tối đa, jitterbuffer sẽ trở lại "
+"trong một hàng. Vì một số máy khách không gửi các frame  CNG / DTX để biểu "
+"thị sự im lặng, jitterbuffer sẽ cho rằng im lặng bắt đầu sau khi nhiều nội "
+"suy được trả lại. Điều này sẽ tránh việc nội suy trong suốt quá trình  im "
+"lặng dài."
 
 #: views/form.php:110
 msgid ""
@@ -302,6 +307,12 @@ msgid ""
 "Add Field box to add additional fields. Blank boxes will be deleted when "
 "submitted."
 msgstr ""
+"Bạn có thể cài đặt bất kỳ các cài đặt IAX nào khác mà hiện nó không có ở "
+"đây. Chúng được phép cấu hình trong phần General của iax.conf. Việc kiểm tra "
+"lỗi sẽ không được thực hiện trên các cài đặt này cho nên bạn cần phải kiểm "
+"tra chúng cẩn thận. Chúng phải được nhập dưới dạng: <br /> [setting] = "
+"[value] <br /> trong các hộp thoại dưới đây. Nhấp vào hộp thoại  Add Field ("
+"Thêm trường) để thêm các trường bổ sung. Các hộp thoại khi gửi sẽ bị xóa."
 
 #: install.php:52
 msgid "already exists"
@@ -338,11 +349,12 @@ msgstr "Đang nạp các codec mặc định.."
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
+"resyncthreshold phải là số nguyên không âm hoặc cài đặt là -1 để vô hiệu"
 
 #: install.php:49
 msgid "ulaw, alaw, gsm added"
-msgstr ""
+msgstr "Đã thêm ulaw, alaw, gsm"
 
 #: views/form.php:380
 msgid "unset"
-msgstr ""
+msgstr "Không cài đặt"
