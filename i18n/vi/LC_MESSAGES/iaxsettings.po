@@ -10,13 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:47-0800\n"
-"PO-Revision-Date: 2017-03-07 13:47-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-07-07 10:57+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/iaxsettings/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/form.php:415
 msgid ""
@@ -28,25 +31,27 @@ msgstr ""
 #: Iaxsettings.class.php:67
 #, php-format
 msgid "%s must be a non-negative integer"
-msgstr ""
+msgstr "%s phải là số nguyên không âm"
 
 #: views/form.php:313
 msgid "Add Field"
-msgstr ""
+msgstr "Thêm trường"
 
 #: views/form.php:77
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Cài đặt nâng cao"
 
 #: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
 msgid "Asterisk IAX Settings"
-msgstr ""
+msgstr "Cài đặt IAX Asterisk"
 
 #: views/form.php:388
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
 msgstr ""
+"Asterisk: băng thông. Xác định băng thông thấp, trung bình, hoặc cao để kiểm "
+"soát các codec được sử dụng thông thường."
 
 #: views/form.php:243
 msgid ""
@@ -130,113 +135,121 @@ msgid ""
 "that IAX peers can request as a registration expiration interval (in "
 "seconds)."
 msgstr ""
+"Asterisk: minregexpire, maxregexpire. Khoảng thời gian tối thiểu và tối đa "
+"mà các đồng đẳng IAX có thể yêu cầu như một đăng ký khoảng thời gian hết hạn "
+"(tính bằng giây)."
 
 #: views/form.php:328
 msgid "Audio Codecs"
-msgstr ""
+msgstr "Các codec âm thanh"
 
 #: views/form.php:369
 msgid "Bandwidth"
-msgstr ""
+msgstr "Băng thông"
 
 #: views/form.php:231
 msgid "Bind Address"
-msgstr ""
+msgstr "Địa chỉ liên kết"
 
 #: Iaxsettings.class.php:77
 msgid "Bind Address (bindaddr) must be an IP address."
-msgstr ""
+msgstr "Địa chỉ liên kết (bindaddr) phải là một địa chỉ IP."
 
 #: views/form.php:255
 msgid "Bind Port"
-msgstr ""
+msgstr "Cổng giao tiếp liên kết"
 
 #: Iaxsettings.class.php:87
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
+"Cổng giao tiếp liên kết ( bindport) phải trong khoảng 1024..65535, mặc định "
+"là 4569"
 
 #: views/form.php:415
 msgid "Check to enable and then choose allowed codecs."
-msgstr ""
+msgstr "Kiểm tra để baath và chọn các codecs được cho phép."
 
 #: views/form.php:338
 msgid "Codec Priority"
-msgstr ""
+msgstr "Codec ưu tiên"
 
 #: views/form.php:82
 msgid "Codec Settings"
-msgstr ""
+msgstr "Cài đặt Codec"
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
-msgstr ""
+msgstr "Hoãn Từ chối xác thực"
 
 #: views/form.php:400
 msgid "Enable Video Support"
-msgstr ""
+msgstr "Kích hoạt tính năng hỗ trợ Video"
 
 #: views/form.php:150
 msgid "Force Jitter Buffer"
-msgstr ""
+msgstr "Bắt buộc Jitter Buffer"
 
 #: views/form.php:72
 msgid "General Settings"
-msgstr ""
+msgstr "Cài đặt chung"
 
 #: views/form.php:63
 msgid "IAX Settings"
-msgstr ""
+msgstr "Cài đặt IAX"
 
 #: views/form.php:122
 msgid "Jitter Buffer Enable"
-msgstr ""
+msgstr "Kích hoạt Jitter Buffer"
 
 #: views/form.php:177
 msgid "Jitter Buffer Size"
-msgstr ""
+msgstr "Kich thước Jitter Buffer"
 
 #: views/form.php:204
 msgid "Max Interpolations"
-msgstr ""
+msgstr "Các nội suy tối đa"
 
 #: views/form.php:129 views/form.php:157 views/form.php:286 views/form.php:407
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #: views/form.php:306
 msgid "Other IAX Settings"
-msgstr ""
+msgstr "Các cài đặt IAX khác"
 
 #: views/form.php:95
 msgid "Registration Times"
-msgstr ""
+msgstr "Thời gian đăng ký"
 
 #: Iaxsettings.class.php:51
 msgid "Reset"
-msgstr ""
+msgstr "Cài đặt lại"
 
 #: iaxsettings.i18n.php:6
 msgid "Settings"
-msgstr ""
+msgstr "Cài đặt"
 
 #: functions.inc.php:277
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
+"Các cài đặt trong %s có thể ghi đè lên các cài đặt này. Các cài đặt kia nên "
+"được xóa."
 
 #: Iaxsettings.class.php:46
 msgid "Submit"
-msgstr ""
+msgstr "Gửi đi"
 
 #: iaxsettings.i18n.php:8
 msgid ""
 "Use to configure Various Asterisk IAX Settings in the General section of iax."
 "conf."
 msgstr ""
+"Sử dụng để cấu hình các cài đặt IAX Asterisk trong phần General của iax.conf."
 
 #: views/form.php:127 views/form.php:155 views/form.php:284 views/form.php:405
 msgid "Yes"
-msgstr ""
+msgstr "Có"
 
 #: views/form.php:321
 msgid ""
@@ -250,35 +263,35 @@ msgstr ""
 
 #: install.php:52
 msgid "already exists"
-msgstr ""
+msgstr "Đã tồn tại"
 
 #: install.php:18
 msgid "checking for iaxsettings table.."
-msgstr ""
+msgstr "Đang kiểm tra bảng  iaxsettings.."
 
 #: install.php:47
 msgid "fatal error occurred populating defaults, check module"
-msgstr ""
+msgstr "Lỗi cực nghiêm trọng xảy ra liên quan đến mặc định, kiểm tra mô đun"
 
 #: views/form.php:378
 msgid "high"
-msgstr ""
+msgstr "cao"
 
 #: views/form.php:374
 msgid "low"
-msgstr ""
+msgstr "thấp"
 
 #: views/form.php:376
 msgid "medium"
-msgstr ""
+msgstr "trung bình"
 
 #: install.php:22
 msgid "none, creating table"
-msgstr ""
+msgstr "không có, đang tạo bảng"
 
 #: install.php:26
 msgid "populating default codecs.."
-msgstr ""
+msgstr "Đang nạp các codec mặc định.."
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
