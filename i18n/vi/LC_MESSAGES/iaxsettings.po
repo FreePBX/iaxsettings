@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:47-0800\n"
-"PO-Revision-Date: 2017-07-07 19:29+0200\n"
+"PO-Revision-Date: 2017-07-08 10:02+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/iaxsettings/vi/>\n"
@@ -226,7 +226,7 @@ msgstr "Cài đặt Codec"
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
-msgstr "Trễ Từ chối xác thực"
+msgstr "Hoãn Từ chối xác thực"
 
 #: views/form.php:400
 msgid "Enable Video Support"
