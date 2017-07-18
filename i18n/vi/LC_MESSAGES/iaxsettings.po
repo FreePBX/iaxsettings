@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:47-0800\n"
-"PO-Revision-Date: 2017-07-08 10:02+0200\n"
+"PO-Revision-Date: 2017-07-17 21:55+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/iaxsettings/vi/>\n"
@@ -324,7 +324,7 @@ msgstr "Đang kiểm tra bảng  iaxsettings.."
 
 #: install.php:47
 msgid "fatal error occurred populating defaults, check module"
-msgstr "Lỗi cực nghiêm trọng xảy ra liên quan đến mặc định, kiểm tra mô đun"
+msgstr "Lỗi cực nghiêm trọng xảy ra khi gắn các mặc định, kiểm tra mô đun"
 
 #: views/form.php:378
 msgid "high"
