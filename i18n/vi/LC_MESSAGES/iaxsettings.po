@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:47-0800\n"
-"PO-Revision-Date: 2017-07-17 21:55+0200\n"
+"PO-Revision-Date: 2017-07-19 11:02+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/iaxsettings/vi/>\n"
@@ -170,11 +170,11 @@ msgid ""
 "after returning this many interpolations. This prevents interpolating "
 "throughout a long silence."
 msgstr ""
-"Asterisk: maxjitterinterps. Số frame nội suy tối đa, jitterbuffer sẽ trở lại "
-"trong một hàng. Vì một số máy khách không gửi các frame  CNG / DTX để biểu "
-"thị sự im lặng, jitterbuffer sẽ cho rằng im lặng bắt đầu sau khi nhiều nội "
-"suy được trả lại. Điều này sẽ tránh việc nội suy trong suốt quá trình  im "
-"lặng dài."
+"Asterisk: maxjitterinterps. Số khung hình (frame) nội suy tối đa, "
+"jitterbuffer sẽ trở lại trong một hàng. Vì một số máy khách không gửi các "
+"frame CNG / DTX để biểu thị sự im lặng, jitterbuffer sẽ cho rằng im lặng bắt "
+"đầu sau khi nhiều nội suy được trả lại. Điều này sẽ tránh việc nội suy trong "
+"suốt quá trình  im lặng dài."
 
 #: views/form.php:110
 msgid ""
@@ -324,7 +324,7 @@ msgstr "Đang kiểm tra bảng  iaxsettings.."
 
 #: install.php:47
 msgid "fatal error occurred populating defaults, check module"
-msgstr "Lỗi cực nghiêm trọng xảy ra khi gắn các mặc định, kiểm tra mô đun"
+msgstr "Lỗi cực nghiêm trọng xảy ra khi mở rộng các mặc định, kiểm tra mô đun"
 
 #: views/form.php:378
 msgid "high"
@@ -344,7 +344,7 @@ msgstr "không có, đang tạo bảng"
 
 #: install.php:26
 msgid "populating default codecs.."
-msgstr "Đang nạp các codec mặc định.."
+msgstr "Đang mở rộng các codec mặc định.."
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
