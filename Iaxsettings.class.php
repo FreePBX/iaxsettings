@@ -121,7 +121,7 @@ class Iaxsettings implements \BMO {
 				break;
 
 				case 'resyncthreshold':
-					if($this->v->IntVal()->validate($val)){
+					if($this->v->IntVal()->validate($val) || $val == -1){
 						$save_settings[] = array($key,$val,'5',self::IAX_NORMAL);
 					}else{
 						$errors = _("resyncthreshold must be a non-negative integer or -1 to disable");
