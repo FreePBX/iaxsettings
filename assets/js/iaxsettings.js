@@ -7,9 +7,9 @@ $(document).ready(function() {
 	});
 	$('#ajaxsubmit').on('click',function(e){
 //validate minregexpire maxregexpire
-		if($('#minregexpire').val() > $('#maxregexpire').val()){
-		alert(" Minregexpire is greter then Maxregexpire");
-		return false;
+		if(parseInt($('#minregexpire').val()) > parseInt($('#maxregexpire').val())){
+			alert("Minregexpire is Greater than Maxregexpire");
+			return false;
 		}
 
 		$.ajax({
