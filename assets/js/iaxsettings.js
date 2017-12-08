@@ -6,6 +6,12 @@ $(document).ready(function() {
 		},
 	});
 	$('#ajaxsubmit').on('click',function(e){
+//validate minregexpire maxregexpire
+		if(parseInt($('#minregexpire').val()) > parseInt($('#maxregexpire').val())){
+			alert("Minregexpire is Greater than Maxregexpire");
+			return false;
+		}
+
 		$.ajax({
 			type: 'POST',
 			url: 'ajax.php?module=iaxsettings&command=savesettings',
