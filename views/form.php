@@ -64,7 +64,7 @@ $vcodeclist .=  '</ul>';
   <div class="fpbx-container">
 		<?php echo $errordisplay;?>
     <div class="display no-border">
-		<form autocomplete="off" name="editIax" id="editIax" action="" method="post" role="form">
+		<form autocomplete="off" class="fpbx-submit" name="editIax" id="editIax" action="" method="post" role="form">
 		  <input type="hidden" name="action" value="edit">
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation" data-name="general" class="active">
