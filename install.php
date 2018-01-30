@@ -57,3 +57,43 @@ $sql = "SELECT MAX(seq) FROM iaxsettings WHERE type = 9";
 $seq = sql($sql,'getOne');
 $sql = "UPDATE iaxsettings SET keyword = 'language', type = 9, seq = " . ($seq !== NULL ? $seq + 1 : 0) . " WHERE keyword = 'iax_language'";
 sql($sql);
+
+// Setting up default value.
+$iax_settings['codecpriority']     = 'host';
+$iax_settings['bandwidth']         = 'unset';
+$iax_settings['videosupport']      = 'no';
+$iax_settings['maxregexpire']      = '3600';
+$iax_settings['minregexpire']      = '60';
+$iax_settings['jitterbuffer']      = 'no';
+$iax_settings['forcejitterbuffer'] = 'no';
+$iax_settings['maxjitterbuffer']   = '200';
+$iax_settings['resyncthreshold']   = '1000';
+$iax_settings['maxjitterinterps']  = '10';
+$iax_settings['bindaddr']          = '';
+$iax_settings['bindport']          = '';
+$iax_settings['delayreject']       = 'yes';
+$codecs = array(		'ulaw'     => '1',
+						'alaw'     => '2',
+						'slin'     => '',
+						'g726'     => '',
+						'gsm'      => '3',
+						'g729'     => '',
+						'ilbc'     => '',
+						'g723'     => '',
+						'g726aal2' => '',
+						'adpcm'    => '',
+						'lpc10'    => '',
+						'speex'    => '',
+						'g722'     => '',
+						'siren7'   => '',
+						'siren14'  => '',
+				);
+$iax_settings['codecs']			   = $codecs;
+$video_codecs = array(	'h261'     => '',
+						'h263'     => '',
+						'h263p'    => '',
+						'h264'     => '',
+					);
+$iax_settings['video_codecs']      = $video_codecs;
+
+Freepbx::Iaxsettings()->edit($iax_settings);
