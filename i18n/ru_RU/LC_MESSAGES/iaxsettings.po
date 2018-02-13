@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-28 17:10-0700\n"
+"POT-Creation-Date: 2018-02-12 19:18-0500\n"
 "PO-Revision-Date: 2015-04-25 18:48+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -244,6 +244,10 @@ msgstr "Приоритет кодеков"
 msgid "Codec Settings"
 msgstr "Настройки кодеков"
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "Задержка ответа отвергнутой аутентификации"
@@ -333,15 +337,15 @@ msgstr ""
 "поле ниже. Кликните на Добавить поле чтобы указать ещё параметры. Пустые "
 "поля будут удалены при применении."
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr "уже существует"
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr "проверка таблицы iaxsettings.."
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 "произошла неустранимая ошибка при указании дефолтных значений, проверьте "
@@ -359,13 +363,13 @@ msgstr "узкая"
 msgid "medium"
 msgstr "средняя"
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr "отсутствует, содание таблицы"
 
-#: install.php:26
-msgid "populating default codecs.."
-msgstr "указание кодеков по умолчанию.."
+#: install.php:64
+msgid "populating default settings.."
+msgstr ""
 
 # This message is mistake. Probably penetrated from sipsettings (5060)
 #
@@ -377,13 +381,15 @@ msgstr ""
 "resyncthreshold должен быть неотрицательным целым числом или указать -1 для "
 "отключения"
 
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
-msgstr "добавлены ulaw, alaw, gsm"
-
 #: views/form.php:380
 msgid "unset"
 msgstr "не указано"
+
+#~ msgid "populating default codecs.."
+#~ msgstr "указание кодеков по умолчанию.."
+
+#~ msgid "ulaw, alaw, gsm added"
+#~ msgstr "добавлены ulaw, alaw, gsm"
 
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "Дефолтный язык в канале, параметр Asterisk: language"

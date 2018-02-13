@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX iaxsettings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-28 17:10-0700\n"
+"POT-Creation-Date: 2018-02-12 19:18-0500\n"
 "PO-Revision-Date: 2010-01-23 23:08+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: SWEDISH\n"
@@ -229,6 +229,10 @@ msgstr "Codec-prioritering"
 msgid "Codec Settings"
 msgstr ""
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "Fördröj avslag på autentisering"
@@ -318,15 +322,15 @@ msgstr ""
 "på Lägg till fält för att lägga till fler. Tomma fält kommer att tas bort "
 "när sidan sparas"
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr "finns redan"
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr "kontrollerar tabellen iaxsettings.."
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 "allvarligt fel inträffade när standardvärde skrevs, kontrollera modulen"
@@ -343,26 +347,28 @@ msgstr "låg"
 msgid "medium"
 msgstr "mellan"
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr "ingen, skapar tabell"
 
-#: install.php:26
-msgid "populating default codecs.."
-msgstr "skriver standard codecs.."
+#: install.php:64
+msgid "populating default settings.."
+msgstr ""
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold måste vara ett positivt heltal eller -1 för att avaktivera"
 
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
-msgstr "la till ulaw, alaw, gsm"
-
 #: views/form.php:380
 msgid "unset"
 msgstr "ej definierat"
+
+#~ msgid "populating default codecs.."
+#~ msgstr "skriver standard codecs.."
+
+#~ msgid "ulaw, alaw, gsm added"
+#~ msgstr "la till ulaw, alaw, gsm"
 
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "Standardspråk för en kanal. Asterisk: language"

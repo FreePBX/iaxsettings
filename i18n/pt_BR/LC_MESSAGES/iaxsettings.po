@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-28 17:10-0700\n"
+"POT-Creation-Date: 2018-02-12 19:18-0500\n"
 "PO-Revision-Date: 2017-03-08 21:00+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -222,6 +222,10 @@ msgstr "Prioridade de Codec"
 msgid "Codec Settings"
 msgstr "Configurações de Codec"
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "Atraso de Autorização Rejeitada"
@@ -312,15 +316,15 @@ msgstr ""
 "> nas caixas abaixo. Clique em Adicionar campo para adicionar campos "
 "adicionais. As caixas em branco serão excluídas quando aplicado."
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr "já existe"
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr "verificando por tabela iaxsettings..."
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr "erro fatal ao preencher os padrões, verifique o módulo"
 
@@ -336,22 +340,24 @@ msgstr "baixo"
 msgid "medium"
 msgstr "médio"
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr "nenhuma, criando tabela"
 
-#: install.php:26
-msgid "populating default codecs.."
-msgstr "preenchendo codecs padrão..."
+#: install.php:64
+msgid "populating default settings.."
+msgstr ""
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr "resyncthreshold deve ser um inteiro não negativo ou -1 para desativar"
 
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
-msgstr "adicionado ulaw, alaw, gsm"
-
 #: views/form.php:380
 msgid "unset"
 msgstr "sem configurar"
+
+#~ msgid "populating default codecs.."
+#~ msgstr "preenchendo codecs padrão..."
+
+#~ msgid "ulaw, alaw, gsm added"
+#~ msgstr "adicionado ulaw, alaw, gsm"

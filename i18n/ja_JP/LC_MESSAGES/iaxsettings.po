@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-28 17:10-0700\n"
+"POT-Creation-Date: 2018-02-12 19:18-0500\n"
 "PO-Revision-Date: 2014-06-03 09:48+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/iaxsettings/"
@@ -244,6 +244,10 @@ msgstr "コーデックの優先順位"
 msgid "Codec Settings"
 msgstr ""
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "認証否定応答を遅延する"
@@ -331,15 +335,15 @@ msgstr ""
 "を追加するには、「フィールド追加」ボタンをクリックしてください。空のボックス"
 "は設定適用時に削除されます。"
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr "既に存在しています。"
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr "iaxsettingsテーブルの存在をチェック中.."
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 "コーデック追加中に致命的なエラーが発生しました。モジュールを確認してくださ"
@@ -357,13 +361,13 @@ msgstr "低"
 msgid "medium"
 msgstr "中"
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr "ありません、テーブルを作成しています。"
 
-#: install.php:26
-msgid "populating default codecs.."
-msgstr "デフォルトのコーデック追加中..."
+#: install.php:64
+msgid "populating default settings.."
+msgstr ""
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
@@ -371,13 +375,15 @@ msgstr ""
 "resyncthreshold は非負の整数でなければなりません。無効にするには、-1 に設定し"
 "ます。"
 
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
-msgstr "ulaw, alaw, gsm を追加しました。"
-
 #: views/form.php:380
 msgid "unset"
 msgstr "未設定"
+
+#~ msgid "populating default codecs.."
+#~ msgstr "デフォルトのコーデック追加中..."
+
+#~ msgid "ulaw, alaw, gsm added"
+#~ msgstr "ulaw, alaw, gsm を追加しました。"
 
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "チャネルのデフォルト言語。対応するAsterisk設定: language。"
