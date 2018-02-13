@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-07 13:47-0800\n"
+"POT-Creation-Date: 2018-02-12 19:17-0500\n"
 "PO-Revision-Date: 2017-07-20 13:18+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/iaxsettings/vi/>\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"iaxsettings/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -88,21 +88,21 @@ msgid ""
 "valid values are:<br />host - Consider the host's preferred order ahead of "
 "the caller's.<br />caller - Consider the callers preferred order ahead of "
 "the host's.<br /> disabled - Disable the consideration of codec preference "
-"altogether. (this is the original behavior before preferences were added)"
-"<br />reqonly  - Same as disabled, only do not consider capabilities if the "
-"requested format is not available the call will only be accepted if the "
-"requested format is available."
+"altogether. (this is the original behavior before preferences were "
+"added)<br />reqonly  - Same as disabled, only do not consider capabilities "
+"if the requested format is not available the call will only be accepted if "
+"the requested format is available."
 msgstr ""
 "Asterisk: codecpriority. Kiểm soát codec phụ của cuộc gọi IAX gửi đến. Tùy "
 "chọn này được kế thừa cho tất cả các đối tượng người dùng. Nó cũng có thể "
 "được xác định trong mỗi đối tượng người dùng riêng biệt mà sẽ ghi đè cài đặt "
 "ở đây. Các giá trị hợp lệ là: :<br />host - Xem xét thứ tự ưu tiên của host "
 "trước người gọi. <br />Caller - Xem xét thứ tự ưu tiên người gọi trước host. "
-"<br /> disabled - Vô hiệu hoá việc xem xét các codec tùy thích hoàn toàn . ("
-"Đây là hành vi ban đầu trước khi các tùy thích được thêm vào) <br /> reqonly "
-"- Tương tự như bị vô hiệu hoá, không xem xét các khả năng nếu định dạng được "
-"yêu cầu không có sẵn; Cuộc gọi sẽ chỉ được chấp nhận nếu định dạng yêu cầu "
-"có sẵn."
+"<br /> disabled - Vô hiệu hoá việc xem xét các codec tùy thích hoàn toàn . "
+"(Đây là hành vi ban đầu trước khi các tùy thích được thêm vào) <br /> "
+"reqonly - Tương tự như bị vô hiệu hoá, không xem xét các khả năng nếu định "
+"dạng được yêu cầu không có sẵn; Cuộc gọi sẽ chỉ được chấp nhận nếu định dạng "
+"yêu cầu có sẵn."
 
 #: views/form.php:294
 msgid ""
@@ -224,6 +224,10 @@ msgstr "Codec ưu tiên"
 msgid "Codec Settings"
 msgstr "Cài đặt Codec"
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "Hoãn Từ chối xác thực"
@@ -315,15 +319,15 @@ msgstr ""
 "vào hộp thoại  Add Field (Thêm trường) để thêm các trường bổ sung. Các hộp "
 "thoại khi gửi sẽ bị xóa."
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr "Đã tồn tại"
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr "Đang kiểm tra bảng  iaxsettings.."
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 "Lỗi cực nghiêm trọng xảy ra khi populating các mặc định, kiểm tra mô đun"
@@ -340,23 +344,25 @@ msgstr "thấp"
 msgid "medium"
 msgstr "trung bình"
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr "không có, đang tạo bảng"
 
-#: install.php:26
-msgid "populating default codecs.."
-msgstr "Đang populating các codec mặc định.."
+#: install.php:64
+msgid "populating default settings.."
+msgstr ""
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold phải là số nguyên không âm hoặc cài đặt là -1 để vô hiệu"
 
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
-msgstr "Đã thêm ulaw, alaw, gsm"
-
 #: views/form.php:380
 msgid "unset"
 msgstr "Không cài đặt"
+
+#~ msgid "populating default codecs.."
+#~ msgstr "Đang populating các codec mặc định.."
+
+#~ msgid "ulaw, alaw, gsm added"
+#~ msgstr "Đã thêm ulaw, alaw, gsm"
