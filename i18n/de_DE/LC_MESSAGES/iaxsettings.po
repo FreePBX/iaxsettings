@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-08 18:19-0500\n"
+"POT-Creation-Date: 2018-02-12 19:17-0500\n"
 "PO-Revision-Date: 2017-12-08 18:19-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -73,10 +73,10 @@ msgid ""
 "valid values are:<br />host - Consider the host's preferred order ahead of "
 "the caller's.<br />caller - Consider the callers preferred order ahead of "
 "the host's.<br /> disabled - Disable the consideration of codec preference "
-"altogether. (this is the original behavior before preferences were added)"
-"<br />reqonly  - Same as disabled, only do not consider capabilities if the "
-"requested format is not available the call will only be accepted if the "
-"requested format is available."
+"altogether. (this is the original behavior before preferences were "
+"added)<br />reqonly  - Same as disabled, only do not consider capabilities "
+"if the requested format is not available the call will only be accepted if "
+"the requested format is available."
 msgstr ""
 
 #: views/form.php:294
@@ -168,6 +168,10 @@ msgstr ""
 msgid "Codec Settings"
 msgstr ""
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr ""
@@ -249,15 +253,15 @@ msgid ""
 "submitted."
 msgstr ""
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr ""
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr ""
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 
@@ -273,20 +277,16 @@ msgstr ""
 msgid "medium"
 msgstr ""
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr ""
 
-#: install.php:26
-msgid "populating default codecs.."
+#: install.php:64
+msgid "populating default settings.."
 msgstr ""
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
-msgstr ""
-
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
 msgstr ""
 
 #: views/form.php:380

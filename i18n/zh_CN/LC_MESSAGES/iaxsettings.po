@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-08 18:19-0500\n"
+"POT-Creation-Date: 2018-02-12 19:17-0500\n"
 "PO-Revision-Date: 2015-02-20 19:35-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -167,6 +167,10 @@ msgstr "编码优先级"
 msgid "Codec Settings"
 msgstr ""
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "延迟认证拒绝"
@@ -248,15 +252,15 @@ msgid ""
 "submitted."
 msgstr ""
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr "已存在"
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr "检查IAX设置表"
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
 
@@ -272,25 +276,24 @@ msgstr "低"
 msgid "medium"
 msgstr "中"
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr "无，创建表"
 
-#: install.php:26
-msgid "populating default codecs.."
+#: install.php:64
+msgid "populating default settings.."
 msgstr ""
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
-msgstr "添加的ulaw, alaw, gsm"
-
 #: views/form.php:380
 msgid "unset"
 msgstr "未设置"
+
+#~ msgid "ulaw, alaw, gsm added"
+#~ msgstr "添加的ulaw, alaw, gsm"
 
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "通道的默认语言，asterisk：language"

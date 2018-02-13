@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-08 18:19-0500\n"
+"POT-Creation-Date: 2018-02-12 19:17-0500\n"
 "PO-Revision-Date: 2016-12-11 05:28+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -224,6 +224,10 @@ msgstr "Prioridad de Codec"
 msgid "Codec Settings"
 msgstr "Configuración  de Codec"
 
+#: install.php:69
+msgid "Default Settings added."
+msgstr ""
+
 #: views/form.php:279
 msgid "Delay Auth Rejects"
 msgstr "Retardo Autenticación Rechazada"
@@ -315,15 +319,15 @@ msgstr ""
 "clic en Agregar Campo para agregar campos adicionales. Casillas en blanco se "
 "eliminarán cuando sea aplicado."
 
-#: install.php:52
+#: install.php:73
 msgid "already exists"
 msgstr "ya existe"
 
-#: install.php:18
+#: install.php:56
 msgid "checking for iaxsettings table.."
 msgstr "verificando para tabla iaxsettings.."
 
-#: install.php:47
+#: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr "ha ocurrido un error fatal, verifique módulo"
 
@@ -339,25 +343,27 @@ msgstr "bajo"
 msgid "medium"
 msgstr "medio"
 
-#: install.php:22
+#: install.php:60
 msgid "none, creating table"
 msgstr "ninguna, creando tabla"
 
-#: install.php:26
-msgid "populating default codecs.."
-msgstr "rellenando códigos por defecto.."
+#: install.php:64
+msgid "populating default settings.."
+msgstr ""
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr "resyncthreshold debe ser un entero no negativo o -1 para desactivar"
 
-#: install.php:49
-msgid "ulaw, alaw, gsm added"
-msgstr "agregado ulaw, alaw, gsm"
-
 #: views/form.php:380
 msgid "unset"
 msgstr "Sin configurar"
+
+#~ msgid "populating default codecs.."
+#~ msgstr "rellenando códigos por defecto.."
+
+#~ msgid "ulaw, alaw, gsm added"
+#~ msgstr "agregado ulaw, alaw, gsm"
 
 #~ msgid "Default Language for a channel, Asterisk: language"
 #~ msgstr "Lenguaje por defecto para este canal, Asterisk: language"
