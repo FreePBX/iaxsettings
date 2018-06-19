@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 19:17-0500\n"
-"PO-Revision-Date: 2018-02-16 18:06+0200\n"
-"Last-Translator: Nils <Nils@heckenkamp.info>\n"
-"Language-Team: German "
-"<http://weblate.freepbx.org/projects/freepbx/iaxsettings/de_DE/>\n"
+"PO-Revision-Date: 2018-07-18 19:13+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/iaxsettings/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: views/form.php:415
 msgid ""
@@ -35,21 +34,23 @@ msgstr ""
 
 #: views/form.php:313
 msgid "Add Field"
-msgstr ""
+msgstr "Feld hinzufügen"
 
 #: views/form.php:77
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Erweiterte Einstellungen"
 
 #: iaxsettings.i18n.php:4 iaxsettings.i18n.php:10
 msgid "Asterisk IAX Settings"
-msgstr ""
+msgstr "Asterisk-IAX-Einstellungen"
 
 #: views/form.php:388
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
 msgstr ""
+"Asterisk: Bandbreite. Geben Sie eine Bandbreite (niedrig, mittel oder hoch) "
+"an, um zu steuern, welche Codecs im Allgemeinen genutzt werden."
 
 #: views/form.php:243
 msgid ""
@@ -136,11 +137,11 @@ msgstr ""
 
 #: views/form.php:328
 msgid "Audio Codecs"
-msgstr ""
+msgstr "Audio-Codecs"
 
 #: views/form.php:369
 msgid "Bandwidth"
-msgstr ""
+msgstr "Bandbreite"
 
 #: views/form.php:231
 msgid "Bind Address"
@@ -164,15 +165,15 @@ msgstr ""
 
 #: views/form.php:338
 msgid "Codec Priority"
-msgstr ""
+msgstr "Codec-Priorität"
 
 #: views/form.php:82
 msgid "Codec Settings"
-msgstr ""
+msgstr "Codec-Einstellungen"
 
 #: install.php:69
 msgid "Default Settings added."
-msgstr ""
+msgstr "Standardeinstellungen hinzugefügt."
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
@@ -180,27 +181,27 @@ msgstr ""
 
 #: views/form.php:400
 msgid "Enable Video Support"
-msgstr ""
+msgstr "Video-Unterstützung aktivieren"
 
 #: views/form.php:150
 msgid "Force Jitter Buffer"
-msgstr ""
+msgstr "Jitter-Puffer erzwingen"
 
 #: views/form.php:72
 msgid "General Settings"
-msgstr ""
+msgstr "Allgemeine Einstellungen"
 
 #: views/form.php:63
 msgid "IAX Settings"
-msgstr ""
+msgstr "IAX-Einstellungen"
 
 #: views/form.php:122
 msgid "Jitter Buffer Enable"
-msgstr ""
+msgstr "Jitter-Puffer aktivieren"
 
 #: views/form.php:177
 msgid "Jitter Buffer Size"
-msgstr ""
+msgstr "Größe des Jitter-Puffers"
 
 #: views/form.php:204
 msgid "Max Interpolations"
@@ -208,11 +209,11 @@ msgstr ""
 
 #: views/form.php:129 views/form.php:157 views/form.php:286 views/form.php:407
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: views/form.php:306
 msgid "Other IAX Settings"
-msgstr ""
+msgstr "Andere IAX-Einstellungen"
 
 #: views/form.php:95
 msgid "Registration Times"
@@ -230,6 +231,8 @@ msgstr "Einstellungen"
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
+"Einstellungen in %s dürfen diese überschreiben. Jene Einstellungen sollten "
+"entfernt werden."
 
 #: Iaxsettings.class.php:46
 msgid "Submit"
@@ -257,7 +260,7 @@ msgstr ""
 
 #: install.php:73
 msgid "already exists"
-msgstr ""
+msgstr "bereits vorhanden"
 
 #: install.php:56
 msgid "checking for iaxsettings table.."
@@ -269,15 +272,15 @@ msgstr ""
 
 #: views/form.php:378
 msgid "high"
-msgstr ""
+msgstr "hoch"
 
 #: views/form.php:374
 msgid "low"
-msgstr ""
+msgstr "niedrig"
 
 #: views/form.php:376
 msgid "medium"
-msgstr ""
+msgstr "mittel"
 
 #: install.php:60
 msgid "none, creating table"
