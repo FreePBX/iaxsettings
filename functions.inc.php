@@ -84,7 +84,7 @@ function iaxsettings_hookGet_config($engine) {
   switch($engine) {
     case "asterisk":
       if (isset($core_conf) && is_a($core_conf, "core_conf")) {
-        $raw_settings = iaxsettings_get(true);
+        $raw_settings = FreePBX::Iaxsettings()->getConfig(true);;
 
         /* TODO: This is example concept code
 
@@ -195,69 +195,13 @@ function iaxsettings_hookGet_config($engine) {
 }
 
 function iaxsettings_get($raw=false) {
-
-  $sql = "SELECT `keyword`, `data`, `type`, `seq` FROM `iaxsettings` ORDER BY `type`, `seq`";
-  $raw_settings = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
-
-  /* Just give the SQL table if more convenient (such as in hookGet_config */
-  if ($raw) {
-    return $raw_settings;
-  }
-
-  /* Initialize first, then replace with DB, to make sure we have defaults */
-
-  $iax_settings['codecs'] = FreePBX::Codecs()->getAudio(true);
-  $iax_settings['video_codecs'] = FreePBX::Codecs()->getVideo(true);
-  $iax_settings['codecpriority']     = 'host';
-  $iax_settings['bandwidth']         = 'unset';
-  $iax_settings['videosupport']      = 'no';
-
-  $iax_settings['minregexpire']      = '60';
-  $iax_settings['maxregexpire']      = '3600';
-
-  $iax_settings['jitterbuffer']      = 'no';
-  $iax_settings['forcejitterbuffer'] = 'no';
-  $iax_settings['maxjitterbuffer']   = '200';
-  $iax_settings['resyncthreshold']   = '1000';
-  $iax_settings['maxjitterinterps']  = '10';
-
-  $iax_settings['bindaddr']          = '';
-  $iax_settings['bindport']          = '';
-  $iax_settings['delayreject']       = 'yes';
-
-  $iax_settings['iax_custom_key_0']  = '';
-  $iax_settings['iax_custom_val_0']  = '';
-
-  foreach ($raw_settings as $var) {
-    switch ($var['type']) {
-      case IAX_NORMAL:
-        $iax_settings[$var['keyword']]                 = $var['data'];
-      break;
-
-      case IAX_CODEC:
-        $iax_settings['codecs'][$var['keyword']]       = $var['data'];
-      break;
-
-      case IAX_VIDEO_CODEC:
-        $iax_settings['video_codecs'][$var['keyword']] = $var['data'];
-      break;
-
-      case IAX_CUSTOM:
-        $iax_settings['iax_custom_key_'.$var['seq']]   = $var['keyword'];
-        $iax_settings['iax_custom_val_'.$var['seq']]   = $var['data'];
-      break;
-
-    default:
-      // Error should be above
-    }
-  }
-  unset($raw_settings);
-
-  return $iax_settings;
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Iaxsettings()->getConfigs($raw);
 }
 
 // Add a iaxsettings
 function iaxsettings_edit($iax_settings) {
+  FreePBX::Modules()->deprecatedFunction();
   return FreePBX::Iaxsettings()->edit($iax_settings);
 }
 function iaxsettings_check_custom_files() {

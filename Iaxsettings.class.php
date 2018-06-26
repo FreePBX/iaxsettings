@@ -3,7 +3,10 @@ namespace FreePBX\modules;
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 //
-class Iaxsettings implements \BMO {
+use BMO;
+use PDO;
+use \Respect\Validation\Validator;
+class Iaxsettings implements BMO {
 	/* Field Values for type field */
 	const IAX_NORMAL      = '0';
 	const IAX_CODEC       = '1';
@@ -17,7 +20,7 @@ class Iaxsettings implements \BMO {
 		$this->errors = array();
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
-		$this->v = new \Respect\Validation\Validator();
+		$this->v = new Validator();
 	}
 
 	public function doConfigPageInit($page) {
@@ -25,17 +28,35 @@ class Iaxsettings implements \BMO {
 	}
 
 	public function install() {
-
+        outn(_("populating default settings.."));
+        $this->edit($this->getDefaults());
 	}
 	public function uninstall() {
 
-	}
-	public function backup(){
+    }
+    
+    public function getDefaults(){
+        return [
+            'codecs' => $this->FreePBX->Codecs->getAudio(true),
+            'video_codecs' => $this->FreePBX->Codecs->getVideo(true),
+            'codecpriority' =>'host',
+            'bandwidth' =>'unset',
+            'videosupport' =>'no',
+            'minregexpire' =>'60',
+            'maxregexpire' =>'3600',
+            'jitterbuffer' =>'no',
+            'forcejitterbuffer' =>'no',
+            'maxjitterbuffer' =>'200',
+            'resyncthreshold' =>'1000',
+            'maxjitterinterps' =>'10',
+            'bindaddr' =>'',
+            'bindport' =>'',
+            'delayreject' =>'yes',
+            'iax_custom_key_0' =>'',
+            'iax_custom_val_0' =>'',
+        ];
+    }
 
-	}
-	public function restore($backup){
-
-	}
 	public function getActionBar($request) {
 		switch ($request['display']) {
 			case 'iaxsettings':
@@ -56,7 +77,7 @@ class Iaxsettings implements \BMO {
 		}
 	}
 	public function showPage(){
-		return \load_view(__DIR__.'/views/form.php', array('request' => $_REQUEST, $errors = $this->errors));
+		return load_view(__DIR__.'/views/form.php', array('request' => $_REQUEST, $errors = $this->errors));
 	}
 	public function edit($iax_settings, $validateonly = false){
 		$save_settings = array();
@@ -267,5 +288,46 @@ class Iaxsettings implements \BMO {
 				}
 			break;
 		}
-	}
+    }
+
+    function getConfigs($raw = false){
+
+        $sql = "SELECT `keyword`, `data`, `type`, `seq` FROM `iaxsettings` ORDER BY `type`, `seq`";
+        $raw_settings = $this->db->query($sql,PDO::FETCH_ASSOC);
+
+          /* Just give the SQL table if more convenient (such as in hookGet_config */
+        if ($raw) {
+            return $raw_settings;
+        }
+
+        /* Initialize first, then replace with DB, to make sure we have defaults */
+        $iax_settings = $this->getDefaults();
+
+        foreach ($raw_settings as $var) {
+            switch ($var['type']) {
+                case IAX_NORMAL:
+                    $iax_settings[$var['keyword']] = $var['data'];
+                    break;
+
+                case IAX_CODEC:
+                    $iax_settings['codecs'][$var['keyword']] = $var['data'];
+                    break;
+
+                case IAX_VIDEO_CODEC:
+                    $iax_settings['video_codecs'][$var['keyword']] = $var['data'];
+                    break;
+
+                case IAX_CUSTOM:
+                    $iax_settings['iax_custom_key_' . $var['seq']] = $var['keyword'];
+                    $iax_settings['iax_custom_val_' . $var['seq']] = $var['data'];
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        unset($raw_settings);
+
+        return $iax_settings;
+    }
 }
