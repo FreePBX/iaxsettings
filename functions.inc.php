@@ -84,7 +84,7 @@ function iaxsettings_hookGet_config($engine) {
   switch($engine) {
     case "asterisk":
       if (isset($core_conf) && is_a($core_conf, "core_conf")) {
-        $raw_settings = FreePBX::Iaxsettings()->getConfig(true);;
+        $raw_settings = FreePBX::Iaxsettings()->getConfigs(true);;
 
         /* TODO: This is example concept code
 
