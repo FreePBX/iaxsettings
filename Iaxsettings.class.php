@@ -86,7 +86,7 @@ class Iaxsettings implements BMO {
 		unset($iax_settings['codecs']);
 		unset($iax_settings['video_codecs']);
 		$integer_msg = _("%s must be a non-negative integer");
-		$errors = array();
+		$errors = [];
 		foreach ($iax_settings as $key => $val) {
 			$val = trim($val);
 			switch ($key) {
@@ -145,7 +145,7 @@ class Iaxsettings implements BMO {
 					if($this->v->IntVal()->validate($val) || $val == -1){
 						$save_settings[] = array($key,$val,'5',self::IAX_NORMAL);
 					}else{
-						$errors = _("resyncthreshold must be a non-negative integer or -1 to disable");
+						$errors[] = _("resyncthreshold must be a non-negative integer or -1 to disable");
 					}
 				break;
 
