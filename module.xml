@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>13.0.6.6</version>
+	<version>14.0.1.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -12,35 +12,13 @@
 	</menuitems>
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
 	<changelog>
-		*13.0.6.6* FREEPBX-16717
-		*13.0.6.5* FREEPBX-15724 Reset button under Asterisk IAX Settings is broken. 
-		*13.0.6.4* FREEPBX-15722 IAX Settings allows to set minregexpire greater than maxregexpire value. 
-		*13.0.6.3* FREEPBX-14263 again
-		*13.0.6.2* FREEPBX-14263 IAX Setting does not update video codecs
-		*13.0.6.1* FREEPBX-13611 New error handler
-		*13.0.6* FREEPBX-10469 Fix missing error handler
-		*13.0.5* FREEPBX-12707 IAX settings Codecs tab does not list all codecs
-		*13.0.4* FREEPBX-11880 Fix save of video codecs
-		*13.0.3* FREEPBX-9803 IAX Codec settings dont get saved on submit
-		*13.0.2* Version bump Beta
-		*13.0.1alpha2* Move language to custom fields
-		*13.0.1alpha1* Visual Changes
-		*2.11.0.3* Include license file
-		*2.11.0.1* Updated CSS to look decent
-		*2.11.0.0* bump version
-		*2.10.0.3* #5867
-		*2.10.0.2* #5478 
-		*2.10.0.1* new codecs, misc bugs
-		*2.10.0.0* new version changes
-		*2.9.0.4* #5010
-		*2.9.0.3* #5000
-		*2.9.0.2* #3976
-		*2.9.0.1* removed duplicate functions
-		*2.9.0.0* #4681
+		*14.0.1.4* FREEPBX-16717
+		*14.0.1.3* FREEPBX-15724
+		*14.0.1.2* FREEPBX-15722 IAX Settings allows to set minregexpire greater than maxregexpire value
+		*14.0.1.1* FREEPBX-15723 FREEPBX-15722 IAX Settings
+		*14.0.1* FREEPBX-14263 for 14
 	</changelog>
 	<supported>
-		<version>13.0</version>
+		<version>14.0</version>
 	</supported>
-	<location>release/2.11/iaxsettings-2.11.0.0.tgz</location>
-	<md5sum>cb70c12fe397182a6a27dd785c90e0c4</md5sum>
 </module>

@@ -80,7 +80,7 @@ class Iaxsettings implements \BMO {
 				break;
 
 				case 'bindport':
-					if($this->v->Int()->between(1024, 65535)->validate($val)){
+					if($this->v->IntVal()->between(1024, 65535)->validate($val)){
 						$save_settings[] = array($key,$val,'1',self::IAX_NORMAL);
 					}else{
 						if(!empty($val)){
@@ -91,7 +91,7 @@ class Iaxsettings implements \BMO {
 
 				case 'minregexpire':
 				case 'maxregexpire':
-					if($this->v->Int()->positive()->validate($val)){
+					if($this->v->IntVal()->positive()->validate($val)){
 						$save_settings[] = array($key,$val,'10',self::IAX_NORMAL);
 					}else{
 						$errors[] = sprintf($integer_msg,$key);
@@ -113,7 +113,7 @@ class Iaxsettings implements \BMO {
 
 				case 'maxjitterbuffer':
 				case 'maxjitterinterps':
-					if($this->v->Int()->positive()->validate($val)){
+					if($this->v->IntVal()->positive()->validate($val)){
 						$save_settings[] = array($key,$val,'5',self::IAX_NORMAL);
 					}else{
 						$errors[] = sprintf($integer_msg,$key);
@@ -121,7 +121,7 @@ class Iaxsettings implements \BMO {
 				break;
 
 				case 'resyncthreshold':
-					if($this->v->Int()->validate($val)){
+					if($this->v->IntVal()->validate($val) || $val == -1){
 						$save_settings[] = array($key,$val,'5',self::IAX_NORMAL);
 					}else{
 						$errors = _("resyncthreshold must be a non-negative integer or -1 to disable");
