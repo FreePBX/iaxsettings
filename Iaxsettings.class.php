@@ -1,7 +1,7 @@
 <?php
 namespace FreePBX\modules;
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2015 Sangoma Technologies.
+//	Copyright 2015-2018 Sangoma Technologies.
 //
 use BMO;
 use PDO;
@@ -33,7 +33,15 @@ class Iaxsettings implements BMO {
 	}
 	public function uninstall() {
 
-    }
+	}
+	public function setDatabase($database){
+		$this->db = $database;
+		return $this;
+	}
+	public function resetDatabase(){
+		$this->db = $this->FreePBX->Database;
+		return this;
+	}
     
     public function getDefaults(){
         return [
