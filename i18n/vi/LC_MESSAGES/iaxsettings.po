@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-12 19:17-0500\n"
+"POT-Creation-Date: 2018-08-20 14:25-0400\n"
 "PO-Revision-Date: 2017-07-20 13:18+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -31,7 +31,7 @@ msgstr ""
 "mỗi bổ sung, chúng sẽ được thêm vào lần lượt và điều này sẽ khiến codec ưu "
 "tiên có hiệu lực."
 
-#: Iaxsettings.class.php:67
+#: Iaxsettings.class.php:96
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s phải là số nguyên không âm"
@@ -198,7 +198,7 @@ msgstr "Băng thông"
 msgid "Bind Address"
 msgstr "Địa chỉ liên kết"
 
-#: Iaxsettings.class.php:77
+#: Iaxsettings.class.php:106
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Địa chỉ liên kết (bindaddr) phải là một địa chỉ IP."
 
@@ -206,7 +206,7 @@ msgstr "Địa chỉ liên kết (bindaddr) phải là một địa chỉ IP."
 msgid "Bind Port"
 msgstr "Cổng giao tiếp liên kết"
 
-#: Iaxsettings.class.php:87
+#: Iaxsettings.class.php:116
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 "Cổng giao tiếp liên kết ( bindport) phải trong khoảng 1024..65535, mặc định "
@@ -223,10 +223,6 @@ msgstr "Codec ưu tiên"
 #: views/form.php:82
 msgid "Codec Settings"
 msgstr "Cài đặt Codec"
-
-#: install.php:69
-msgid "Default Settings added."
-msgstr ""
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
@@ -272,7 +268,7 @@ msgstr "Các cài đặt IAX khác"
 msgid "Registration Times"
 msgstr "Thời gian đăng ký"
 
-#: Iaxsettings.class.php:51
+#: Iaxsettings.class.php:80
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -280,14 +276,14 @@ msgstr "Cài đặt lại"
 msgid "Settings"
 msgstr "Cài đặt"
 
-#: functions.inc.php:277
+#: functions.inc.php:221
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "Các cài đặt trong %s có thể ghi đè lên các cài đặt này. Các cài đặt kia nên "
 "được xóa."
 
-#: Iaxsettings.class.php:46
+#: Iaxsettings.class.php:75
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -319,19 +315,6 @@ msgstr ""
 "vào hộp thoại  Add Field (Thêm trường) để thêm các trường bổ sung. Các hộp "
 "thoại khi gửi sẽ bị xóa."
 
-#: install.php:73
-msgid "already exists"
-msgstr "Đã tồn tại"
-
-#: install.php:56
-msgid "checking for iaxsettings table.."
-msgstr "Đang kiểm tra bảng  iaxsettings.."
-
-#: install.php:67
-msgid "fatal error occurred populating defaults, check module"
-msgstr ""
-"Lỗi cực nghiêm trọng xảy ra khi populating các mặc định, kiểm tra mô đun"
-
 #: views/form.php:378
 msgid "high"
 msgstr "cao"
@@ -344,15 +327,11 @@ msgstr "thấp"
 msgid "medium"
 msgstr "trung bình"
 
-#: install.php:60
-msgid "none, creating table"
-msgstr "không có, đang tạo bảng"
-
-#: install.php:64
+#: Iaxsettings.class.php:31
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:127
+#: Iaxsettings.class.php:156
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold phải là số nguyên không âm hoặc cài đặt là -1 để vô hiệu"
@@ -360,6 +339,19 @@ msgstr ""
 #: views/form.php:380
 msgid "unset"
 msgstr "Không cài đặt"
+
+#~ msgid "already exists"
+#~ msgstr "Đã tồn tại"
+
+#~ msgid "checking for iaxsettings table.."
+#~ msgstr "Đang kiểm tra bảng  iaxsettings.."
+
+#~ msgid "fatal error occurred populating defaults, check module"
+#~ msgstr ""
+#~ "Lỗi cực nghiêm trọng xảy ra khi populating các mặc định, kiểm tra mô đun"
+
+#~ msgid "none, creating table"
+#~ msgstr "không có, đang tạo bảng"
 
 #~ msgid "populating default codecs.."
 #~ msgstr "Đang populating các codec mặc định.."

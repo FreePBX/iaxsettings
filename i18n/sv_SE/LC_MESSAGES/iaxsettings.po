@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX iaxsettings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-12 19:18-0500\n"
+"POT-Creation-Date: 2018-08-20 14:25-0400\n"
 "PO-Revision-Date: 2010-01-23 23:08+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: SWEDISH\n"
@@ -38,7 +38,7 @@ msgid ""
 "priority."
 msgstr ""
 
-#: Iaxsettings.class.php:67
+#: Iaxsettings.class.php:96
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s måste vara ett positivt heltal"
@@ -205,7 +205,7 @@ msgstr "Bandbredd"
 msgid "Bind Address"
 msgstr "Bindadress"
 
-#: Iaxsettings.class.php:77
+#: Iaxsettings.class.php:106
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Bindadress (bindaddr) måste vara en IP-adress."
 
@@ -213,7 +213,7 @@ msgstr "Bindadress (bindaddr) måste vara en IP-adress."
 msgid "Bind Port"
 msgstr "Bindport"
 
-#: Iaxsettings.class.php:87
+#: Iaxsettings.class.php:116
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
@@ -227,10 +227,6 @@ msgstr "Codec-prioritering"
 
 #: views/form.php:82
 msgid "Codec Settings"
-msgstr ""
-
-#: install.php:69
-msgid "Default Settings added."
 msgstr ""
 
 #: views/form.php:279
@@ -277,7 +273,7 @@ msgstr "Andra inställningar för IAX"
 msgid "Registration Times"
 msgstr "Registreringstider"
 
-#: Iaxsettings.class.php:51
+#: Iaxsettings.class.php:80
 msgid "Reset"
 msgstr ""
 
@@ -285,14 +281,14 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: functions.inc.php:277
+#: functions.inc.php:221
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "Inställningar i %s kan åsidosätta inställningarna du gör här. Du bör ta bort "
 "dom"
 
-#: Iaxsettings.class.php:46
+#: Iaxsettings.class.php:75
 msgid "Submit"
 msgstr ""
 
@@ -322,19 +318,6 @@ msgstr ""
 "på Lägg till fält för att lägga till fler. Tomma fält kommer att tas bort "
 "när sidan sparas"
 
-#: install.php:73
-msgid "already exists"
-msgstr "finns redan"
-
-#: install.php:56
-msgid "checking for iaxsettings table.."
-msgstr "kontrollerar tabellen iaxsettings.."
-
-#: install.php:67
-msgid "fatal error occurred populating defaults, check module"
-msgstr ""
-"allvarligt fel inträffade när standardvärde skrevs, kontrollera modulen"
-
 #: views/form.php:378
 msgid "high"
 msgstr "hög"
@@ -347,15 +330,11 @@ msgstr "låg"
 msgid "medium"
 msgstr "mellan"
 
-#: install.php:60
-msgid "none, creating table"
-msgstr "ingen, skapar tabell"
-
-#: install.php:64
+#: Iaxsettings.class.php:31
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:127
+#: Iaxsettings.class.php:156
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold måste vara ett positivt heltal eller -1 för att avaktivera"
@@ -363,6 +342,19 @@ msgstr ""
 #: views/form.php:380
 msgid "unset"
 msgstr "ej definierat"
+
+#~ msgid "already exists"
+#~ msgstr "finns redan"
+
+#~ msgid "checking for iaxsettings table.."
+#~ msgstr "kontrollerar tabellen iaxsettings.."
+
+#~ msgid "fatal error occurred populating defaults, check module"
+#~ msgstr ""
+#~ "allvarligt fel inträffade när standardvärde skrevs, kontrollera modulen"
+
+#~ msgid "none, creating table"
+#~ msgstr "ingen, skapar tabell"
 
 #~ msgid "populating default codecs.."
 #~ msgstr "skriver standard codecs.."

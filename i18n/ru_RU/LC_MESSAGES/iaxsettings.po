@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-12 19:18-0500\n"
+"POT-Creation-Date: 2018-08-20 14:25-0400\n"
 "PO-Revision-Date: 2015-04-25 18:48+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,7 +45,7 @@ msgstr ""
 "Если очистите таблицу кодеков и затем добавите по одному, они будут "
 "использоваться в таком же порядке в приоритетах выбора кодеков."
 
-#: Iaxsettings.class.php:67
+#: Iaxsettings.class.php:96
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s должен быть неотрицательным целым числом"
@@ -220,7 +220,7 @@ msgstr "Полоса пропускания"
 msgid "Bind Address"
 msgstr "Связывание с адресом"
 
-#: Iaxsettings.class.php:77
+#: Iaxsettings.class.php:106
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Адрес (bindaddr) должен быть в виде четырёх октетов ИП адреса"
 
@@ -228,7 +228,7 @@ msgstr "Адрес (bindaddr) должен быть в виде четырёх �
 msgid "Bind Port"
 msgstr "Порт"
 
-#: Iaxsettings.class.php:87
+#: Iaxsettings.class.php:116
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr "Порт (bindport) должен быть между 1024 и 65535, по умолчанию 4569"
 
@@ -243,10 +243,6 @@ msgstr "Приоритет кодеков"
 #: views/form.php:82
 msgid "Codec Settings"
 msgstr "Настройки кодеков"
-
-#: install.php:69
-msgid "Default Settings added."
-msgstr ""
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
@@ -292,7 +288,7 @@ msgstr "Другие установки IAX"
 msgid "Registration Times"
 msgstr "Время регистрации"
 
-#: Iaxsettings.class.php:51
+#: Iaxsettings.class.php:80
 msgid "Reset"
 msgstr "Сброс"
 
@@ -300,14 +296,14 @@ msgstr "Сброс"
 msgid "Settings"
 msgstr "Установки"
 
-#: functions.inc.php:277
+#: functions.inc.php:221
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "Параметры, указанные в %s могут перебить эти. Такие параметры должны быть "
 "удалены."
 
-#: Iaxsettings.class.php:46
+#: Iaxsettings.class.php:75
 msgid "Submit"
 msgstr "Сохранить"
 
@@ -337,20 +333,6 @@ msgstr ""
 "поле ниже. Кликните на Добавить поле чтобы указать ещё параметры. Пустые "
 "поля будут удалены при применении."
 
-#: install.php:73
-msgid "already exists"
-msgstr "уже существует"
-
-#: install.php:56
-msgid "checking for iaxsettings table.."
-msgstr "проверка таблицы iaxsettings.."
-
-#: install.php:67
-msgid "fatal error occurred populating defaults, check module"
-msgstr ""
-"произошла неустранимая ошибка при указании дефолтных значений, проверьте "
-"модуль"
-
 #: views/form.php:378
 msgid "high"
 msgstr "широкая"
@@ -363,11 +345,7 @@ msgstr "узкая"
 msgid "medium"
 msgstr "средняя"
 
-#: install.php:60
-msgid "none, creating table"
-msgstr "отсутствует, содание таблицы"
-
-#: install.php:64
+#: Iaxsettings.class.php:31
 msgid "populating default settings.."
 msgstr ""
 
@@ -375,7 +353,7 @@ msgstr ""
 #
 # msgid "Bind Port (bindport) must be between 1024..65535, default 5060"
 # msgstr "Порт (bindport) должен быть иметь значение между 1024 и 65535, дефолтное значение - 5060"
-#: Iaxsettings.class.php:127
+#: Iaxsettings.class.php:156
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold должен быть неотрицательным целым числом или указать -1 для "
@@ -384,6 +362,20 @@ msgstr ""
 #: views/form.php:380
 msgid "unset"
 msgstr "не указано"
+
+#~ msgid "already exists"
+#~ msgstr "уже существует"
+
+#~ msgid "checking for iaxsettings table.."
+#~ msgstr "проверка таблицы iaxsettings.."
+
+#~ msgid "fatal error occurred populating defaults, check module"
+#~ msgstr ""
+#~ "произошла неустранимая ошибка при указании дефолтных значений, проверьте "
+#~ "модуль"
+
+#~ msgid "none, creating table"
+#~ msgstr "отсутствует, содание таблицы"
 
 #~ msgid "populating default codecs.."
 #~ msgstr "указание кодеков по умолчанию.."

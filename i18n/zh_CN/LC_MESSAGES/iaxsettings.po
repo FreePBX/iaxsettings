@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-12 19:18-0500\n"
+"POT-Creation-Date: 2018-08-20 14:25-0400\n"
 "PO-Revision-Date: 2015-02-20 19:35-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -25,7 +25,7 @@ msgid ""
 "priority."
 msgstr ""
 
-#: Iaxsettings.class.php:67
+#: Iaxsettings.class.php:96
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr ""
@@ -143,7 +143,7 @@ msgstr "带宽"
 msgid "Bind Address"
 msgstr "绑定地址"
 
-#: Iaxsettings.class.php:77
+#: Iaxsettings.class.php:106
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr ""
 
@@ -151,7 +151,7 @@ msgstr ""
 msgid "Bind Port"
 msgstr "绑定端口"
 
-#: Iaxsettings.class.php:87
+#: Iaxsettings.class.php:116
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
@@ -165,10 +165,6 @@ msgstr "编码优先级"
 
 #: views/form.php:82
 msgid "Codec Settings"
-msgstr ""
-
-#: install.php:69
-msgid "Default Settings added."
 msgstr ""
 
 #: views/form.php:279
@@ -215,7 +211,7 @@ msgstr "其他IAX设置"
 msgid "Registration Times"
 msgstr "注册时间"
 
-#: Iaxsettings.class.php:51
+#: Iaxsettings.class.php:80
 msgid "Reset"
 msgstr ""
 
@@ -223,12 +219,12 @@ msgstr ""
 msgid "Settings"
 msgstr "设置"
 
-#: functions.inc.php:277
+#: functions.inc.php:221
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 
-#: Iaxsettings.class.php:46
+#: Iaxsettings.class.php:75
 msgid "Submit"
 msgstr ""
 
@@ -252,18 +248,6 @@ msgid ""
 "submitted."
 msgstr ""
 
-#: install.php:73
-msgid "already exists"
-msgstr "已存在"
-
-#: install.php:56
-msgid "checking for iaxsettings table.."
-msgstr "检查IAX设置表"
-
-#: install.php:67
-msgid "fatal error occurred populating defaults, check module"
-msgstr ""
-
 #: views/form.php:378
 msgid "high"
 msgstr "高"
@@ -276,21 +260,26 @@ msgstr "低"
 msgid "medium"
 msgstr "中"
 
-#: install.php:60
-msgid "none, creating table"
-msgstr "无，创建表"
-
-#: install.php:64
+#: Iaxsettings.class.php:31
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:127
+#: Iaxsettings.class.php:156
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 
 #: views/form.php:380
 msgid "unset"
 msgstr "未设置"
+
+#~ msgid "already exists"
+#~ msgstr "已存在"
+
+#~ msgid "checking for iaxsettings table.."
+#~ msgstr "检查IAX设置表"
+
+#~ msgid "none, creating table"
+#~ msgstr "无，创建表"
 
 #~ msgid "ulaw, alaw, gsm added"
 #~ msgstr "添加的ulaw, alaw, gsm"

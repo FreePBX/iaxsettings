@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-12 19:18-0500\n"
+"POT-Creation-Date: 2018-08-20 14:25-0400\n"
 "PO-Revision-Date: 2017-03-08 21:00+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -30,7 +30,7 @@ msgstr ""
 " Se você limpar cada codec e, em seguida, adiciona-os um de cada vez, eles "
 "serão adicionados na ordem que irá afetar a prioridade do codec."
 
-#: Iaxsettings.class.php:67
+#: Iaxsettings.class.php:96
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s precisa ser um inteiro não-negativo"
@@ -198,7 +198,7 @@ msgstr "Largura de Banda"
 msgid "Bind Address"
 msgstr "Endereço Bind"
 
-#: Iaxsettings.class.php:77
+#: Iaxsettings.class.php:106
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Endereço Bind (bindaddr) precisa ser um endereço IP."
 
@@ -206,7 +206,7 @@ msgstr "Endereço Bind (bindaddr) precisa ser um endereço IP."
 msgid "Bind Port"
 msgstr "Porta Bind"
 
-#: Iaxsettings.class.php:87
+#: Iaxsettings.class.php:116
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr "Porta Bind (bindport) precisa estar entre 1024..65535, padrão 4569"
 
@@ -221,10 +221,6 @@ msgstr "Prioridade de Codec"
 #: views/form.php:82
 msgid "Codec Settings"
 msgstr "Configurações de Codec"
-
-#: install.php:69
-msgid "Default Settings added."
-msgstr ""
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
@@ -270,7 +266,7 @@ msgstr "Outras Configurações IAX"
 msgid "Registration Times"
 msgstr "Tempos de Registro"
 
-#: Iaxsettings.class.php:51
+#: Iaxsettings.class.php:80
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -278,14 +274,14 @@ msgstr "Reiniciar"
 msgid "Settings"
 msgstr "Configurações"
 
-#: functions.inc.php:277
+#: functions.inc.php:221
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "Configurações em %s podem substituir estes valores. Essas definições devem "
 "ser removidas."
 
-#: Iaxsettings.class.php:46
+#: Iaxsettings.class.php:75
 msgid "Submit"
 msgstr "Enviar"
 
@@ -316,18 +312,6 @@ msgstr ""
 "> nas caixas abaixo. Clique em Adicionar campo para adicionar campos "
 "adicionais. As caixas em branco serão excluídas quando aplicado."
 
-#: install.php:73
-msgid "already exists"
-msgstr "já existe"
-
-#: install.php:56
-msgid "checking for iaxsettings table.."
-msgstr "verificando por tabela iaxsettings..."
-
-#: install.php:67
-msgid "fatal error occurred populating defaults, check module"
-msgstr "erro fatal ao preencher os padrões, verifique o módulo"
-
 #: views/form.php:378
 msgid "high"
 msgstr "alto"
@@ -340,21 +324,29 @@ msgstr "baixo"
 msgid "medium"
 msgstr "médio"
 
-#: install.php:60
-msgid "none, creating table"
-msgstr "nenhuma, criando tabela"
-
-#: install.php:64
+#: Iaxsettings.class.php:31
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:127
+#: Iaxsettings.class.php:156
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr "resyncthreshold deve ser um inteiro não negativo ou -1 para desativar"
 
 #: views/form.php:380
 msgid "unset"
 msgstr "sem configurar"
+
+#~ msgid "already exists"
+#~ msgstr "já existe"
+
+#~ msgid "checking for iaxsettings table.."
+#~ msgstr "verificando por tabela iaxsettings..."
+
+#~ msgid "fatal error occurred populating defaults, check module"
+#~ msgstr "erro fatal ao preencher os padrões, verifique o módulo"
+
+#~ msgid "none, creating table"
+#~ msgstr "nenhuma, criando tabela"
 
 #~ msgid "populating default codecs.."
 #~ msgstr "preenchendo codecs padrão..."
