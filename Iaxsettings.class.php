@@ -179,12 +179,16 @@ class Iaxsettings implements BMO {
 				return true;
 			}
 	    $seq = 0;
-	    foreach ($codecs as $key => $val) {
-	      $save_settings[] = array($key,$val,$seq++,self::IAX_CODEC);
+	    if (!empty($codecs)) {
+	        foreach ($codecs as $key => $val) {
+	          $save_settings[] = array($key,$val,$seq++,self::IAX_CODEC);
+	        }
 	    }
 	    $seq = 0;
-	    foreach ($video_codecs as $key => $val) {
-	      $save_settings[] = array($key,$val,$seq++,self::IAX_VIDEO_CODEC);
+	    if (!empty($video_codecs)) {
+	        foreach ($video_codecs as $key => $val) {
+	          $save_settings[] = array($key,$val,$seq++,self::IAX_VIDEO_CODEC);
+	        }
 	    }
 
 	    // TODO: normally don't like doing delete/insert but otherwise we would have do update for each

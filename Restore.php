@@ -20,7 +20,8 @@ class Restore Extends Base\RestoreBase{
     $bmo = $this->FreePBX->Iaxsettings;
     $bmo->setDatabase($pdo);
     $data = $bmo->getConfigs();
-    $this->transformNamespacedKV($pdo, 'iaxsettings', $this->FreePBX);
+    $this->transformLegacyKV($pdo, 'iaxsettings', $this->FreePBX)
+      ->transformNamespacedKV($pdo, 'iaxsettings', $this->FreePBX);
     $bmo->resetDatabase();
     $bmo->edit(reset($data));
     return $this;
