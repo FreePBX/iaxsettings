@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 19:17-0500\n"
-"PO-Revision-Date: 2018-07-18 19:13+0000\n"
+"PO-Revision-Date: 2018-08-25 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/iaxsettings/de/>\n"
 "Language: de_DE\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/form.php:415
 msgid ""
@@ -26,11 +26,14 @@ msgid ""
 "each addition, they will be added in order which will effect the codec "
 "priority."
 msgstr ""
+" Wenn Sie jeden Codec löschen und sie dann einen nach dem anderen hinzufügen "
+"und jedes Mal speichern, werden Sie der Reihe nach hinzugefügt, was die "
+"Priorität der Codecs beinflusst."
 
 #: Iaxsettings.class.php:67
 #, php-format
 msgid "%s must be a non-negative integer"
-msgstr ""
+msgstr "%s muss eine nichtnegative ganze Zahl sein"
 
 #: views/form.php:313
 msgid "Add Field"
@@ -162,6 +165,7 @@ msgstr ""
 #: views/form.php:415
 msgid "Check to enable and then choose allowed codecs."
 msgstr ""
+"Zum Aktivieren markieren, wählen Sie anschließend die zugelassenen Codecs."
 
 #: views/form.php:338
 msgid "Codec Priority"
@@ -236,7 +240,7 @@ msgstr ""
 
 #: Iaxsettings.class.php:46
 msgid "Submit"
-msgstr ""
+msgstr "Absenden"
 
 #: iaxsettings.i18n.php:8
 msgid ""
@@ -269,6 +273,8 @@ msgstr ""
 #: install.php:67
 msgid "fatal error occurred populating defaults, check module"
 msgstr ""
+"ein schwerwiegender Fehler trat beim Erzeugen der Standardwerte auf, prüfen "
+"Sie das Modul"
 
 #: views/form.php:378
 msgid "high"
