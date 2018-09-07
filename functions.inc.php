@@ -84,8 +84,8 @@ function iaxsettings_hookGet_config($engine) {
   switch($engine) {
     case "asterisk":
       if (isset($core_conf) && is_a($core_conf, "core_conf")) {
-        $raw_settings = FreePBX::Iaxsettings()->getConfigs(true);;
-
+        $raw_settings = FreePBX::Iaxsettings()->getConfigs(true);
+        $codecs = [];
         /* TODO: This is example concept code
 
            The only real conflicts are codecs (mainly cause
@@ -128,7 +128,6 @@ function iaxsettings_hookGet_config($engine) {
           }
         }
         unset($raw_settings);
-
         /* Codecs First */
         $core_conf->addIaxGeneral('disallow','all');
         asort($codecs);
