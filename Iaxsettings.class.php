@@ -305,7 +305,7 @@ class Iaxsettings implements BMO {
     function getConfigs($raw = false){
 
         $sql = "SELECT `keyword`, `data`, `type`, `seq` FROM `iaxsettings` ORDER BY `type`, `seq`";
-        $raw_settings = $this->db->query($sql,PDO::FETCH_ASSOC);
+        $raw_settings = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
           /* Just give the SQL table if more convenient (such as in hookGet_config */
         if ($raw) {
