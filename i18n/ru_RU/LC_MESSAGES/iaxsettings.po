@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 14:25-0400\n"
+"POT-Creation-Date: 2018-09-07 13:07-0400\n"
 "PO-Revision-Date: 2015-04-25 18:48+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -296,7 +296,7 @@ msgstr "Сброс"
 msgid "Settings"
 msgstr "Установки"
 
-#: functions.inc.php:221
+#: functions.inc.php:220
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""

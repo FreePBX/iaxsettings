@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 14:25-0400\n"
+"POT-Creation-Date: 2018-09-07 13:07-0400\n"
 "PO-Revision-Date: 2016-02-04 23:07+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -222,7 +222,7 @@ msgstr "Réinitialiser"
 msgid "Settings"
 msgstr ""
 
-#: functions.inc.php:221
+#: functions.inc.php:220
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
