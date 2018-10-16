@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 19:17-0500\n"
-"PO-Revision-Date: 2018-08-25 13:00+0000\n"
+"PO-Revision-Date: 2018-10-17 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/iaxsettings/de/>\n"
 "Language: de_DE\n"
@@ -247,6 +247,8 @@ msgid ""
 "Use to configure Various Asterisk IAX Settings in the General section of iax."
 "conf."
 msgstr ""
+"Verwenden, um verschiedene Asterisk-IAX-Einstellungen im Abschnitt 'General' "
+"der 'iax.conf' zu konfigurieren."
 
 #: views/form.php:127 views/form.php:155 views/form.php:284 views/form.php:405
 msgid "Yes"
@@ -294,7 +296,7 @@ msgstr ""
 
 #: install.php:64
 msgid "populating default settings.."
-msgstr ""
+msgstr "Bestücke Standardeinstellungen.."
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
