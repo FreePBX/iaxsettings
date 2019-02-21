@@ -8,22 +8,11 @@ namespace FreePBX\modules\Iaxsettings;
 
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
-  public function runRestore($jobid){
-    $this->FreePBX->Iaxsettings->edit(reset($this->getConfigs()));
-  }
+	public function runRestore($jobid){
+		$this->FreePBX->Iaxsettings->edit(reset($this->getConfigs()));
+	}
 
-  public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
-    $tables = array_flip($tables + $unknownTables);
-    if (!isset($tables['iaxsettings'])) {
-      return $this;
-    }
-    $bmo = $this->FreePBX->Iaxsettings;
-    $bmo->setDatabase($pdo);
-    $data = $bmo->getConfigs();
-    $this->transformLegacyKV($pdo, 'iaxsettings', $this->FreePBX)
-      ->transformNamespacedKV($pdo, 'iaxsettings', $this->FreePBX);
-    $bmo->resetDatabase();
-    $bmo->edit(reset($data));
-    return $this;
-  }
+	public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
+		$this->restoreLegacyDatabase($pdo);
+	}
 }
