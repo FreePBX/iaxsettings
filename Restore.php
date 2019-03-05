@@ -12,7 +12,7 @@ class Restore Extends Base\RestoreBase{
 		$this->FreePBX->Iaxsettings->edit(reset($this->getConfigs()));
 	}
 
-	public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
+	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$this->restoreLegacyDatabase($pdo);
 	}
 }

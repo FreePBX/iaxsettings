@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>15.0.4</version>
+	<version>15.0.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>https://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -20,6 +20,7 @@
     </database>
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
 	<changelog>
+		*15.0.5* Fixing legacy restore 
 		*15.0.4* fixing legacy restore 
 		*15.0.3* Bugfix/FREEPBX-18149 
 		*15.0.2* Packaging of ver 15.0.2
