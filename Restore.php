@@ -8,7 +8,7 @@ namespace FreePBX\modules\Iaxsettings;
 
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
-	public function runRestore($jobid){
+	public function runRestore(){
 		$this->FreePBX->Iaxsettings->edit(reset($this->getConfigs()));
 	}
 
