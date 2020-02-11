@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 19:17-0500\n"
-"PO-Revision-Date: 2020-02-04 17:00+0000\n"
+"PO-Revision-Date: 2020-02-11 13:03+0000\n"
 "Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/iaxsettings/de/>\n"
 "Language: de_DE\n"
@@ -113,6 +113,10 @@ msgid ""
 "attacks enable this which will delay the sending of authentication reject "
 "for REGREQ or AUTHREP if there is a password."
 msgstr ""
+"Asterisk: Verspätung ablehnen. Aktivieren Sie diese Option, um die "
+"Sicherheit gegen Brute-Force-Kennwortangriffe zu erhöhen. Dadurch wird das "
+"Senden einer Zurückweisung der Authentifizierung für REGREQ oder AUTHREP "
+"verzögert, wenn ein Kennwort vorhanden ist."
 
 #: views/form.php:165
 msgid ""
@@ -187,6 +191,9 @@ msgid ""
 "that IAX peers can request as a registration expiration interval (in "
 "seconds)."
 msgstr ""
+"Asterisk: minregexpire, maxregexpire. Minimale und maximale Zeitdauer, die "
+"IAX-Peers als Ablaufintervall für die Registrierung anfordern können (in "
+"Sekunden)."
 
 #: views/form.php:328
 msgid "Audio Codecs"
@@ -198,19 +205,19 @@ msgstr "Bandbreite"
 
 #: views/form.php:231
 msgid "Bind Address"
-msgstr ""
+msgstr "Adressbindung"
 
 #: Iaxsettings.class.php:77
 msgid "Bind Address (bindaddr) must be an IP address."
-msgstr ""
+msgstr "Bindungsadresse (bindaddr) muss eine IP-Adresse sein."
 
 #: views/form.php:255
 msgid "Bind Port"
-msgstr ""
+msgstr "Portbindung"
 
 #: Iaxsettings.class.php:87
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
-msgstr ""
+msgstr "Bindeport (bindport) muss zwischen 1024..65535 und 4569 liegen"
 
 #: views/form.php:415
 msgid "Check to enable and then choose allowed codecs."
@@ -231,7 +238,7 @@ msgstr "Standardeinstellungen hinzugefügt."
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
-msgstr ""
+msgstr "Auth-Ablehnungen verzögern"
 
 #: views/form.php:400
 msgid "Enable Video Support"
@@ -259,7 +266,7 @@ msgstr "Größe des Jitter-Puffers"
 
 #: views/form.php:204
 msgid "Max Interpolations"
-msgstr ""
+msgstr "Max. Interpolationen"
 
 #: views/form.php:129 views/form.php:157 views/form.php:286 views/form.php:407
 msgid "No"
@@ -271,7 +278,7 @@ msgstr "Andere IAX-Einstellungen"
 
 #: views/form.php:95
 msgid "Registration Times"
-msgstr ""
+msgstr "Anmeldezeiten"
 
 #: Iaxsettings.class.php:51
 msgid "Reset"
@@ -327,7 +334,7 @@ msgstr "bereits vorhanden"
 
 #: install.php:56
 msgid "checking for iaxsettings table.."
-msgstr ""
+msgstr "iaxsettings-Tabelle prüfen.."
 
 #: install.php:67
 msgid "fatal error occurred populating defaults, check module"
@@ -349,7 +356,7 @@ msgstr "mittel"
 
 #: install.php:60
 msgid "none, creating table"
-msgstr ""
+msgstr "nichts, Tabelle erstellen"
 
 #: install.php:64
 msgid "populating default settings.."
@@ -358,7 +365,9 @@ msgstr "Bestücke Standardeinstellungen.."
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
+"resyncthreshold muss eine nicht negative Ganzzahl oder -1 sein, um "
+"deaktiviert zu werden"
 
 #: views/form.php:380
 msgid "unset"
-msgstr ""
+msgstr "nicht setzen"
