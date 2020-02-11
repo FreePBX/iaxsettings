@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 19:17-0500\n"
-"PO-Revision-Date: 2020-02-11 13:03+0000\n"
+"PO-Revision-Date: 2020-02-12 14:00+0000\n"
 "Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/iaxsettings/de/>\n"
 "Language: de_DE\n"
@@ -217,7 +217,7 @@ msgstr "Portbindung"
 
 #: Iaxsettings.class.php:87
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
-msgstr "Bindeport (bindport) muss zwischen 1024..65535 und 4569 liegen"
+msgstr "Portbindung (bindport) muss zwischen 1024..65535 und 4569 liegen"
 
 #: views/form.php:415
 msgid "Check to enable and then choose allowed codecs."
