@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>13.0.6.6</version>
+	<version>13.0.6.7</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -13,6 +13,7 @@
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
   	<more-info>https://wiki.freepbx.org/display/F2/Asterisk+IAX+Settings</more-info>
 	<changelog>
+		*13.0.6.7* Packaging of ver 13.0.6.7
 		*13.0.6.6* FREEPBX-16717
 		*13.0.6.5* FREEPBX-15724 Reset button under Asterisk IAX Settings is broken. 
 		*13.0.6.4* FREEPBX-15722 IAX Settings allows to set minregexpire greater than maxregexpire value. 
