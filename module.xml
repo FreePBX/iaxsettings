@@ -11,6 +11,7 @@
 		<iaxsettings>Asterisk IAX Settings</iaxsettings>
 	</menuitems>
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/Asterisk+IAX+Settings</more-info>
 	<changelog>
 		*13.0.6.6* FREEPBX-16717
 		*13.0.6.5* FREEPBX-15724 Reset button under Asterisk IAX Settings is broken. 
