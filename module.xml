@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>15.0.7</version>
+	<version>15.0.8</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>https://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -19,8 +19,9 @@
         </table>
     </database>
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
-  	<more-info>https://wiki.freepbx.org/display/F2/Asterisk+IAX+Settings</more-info>
+  	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+IAX+Settings</more-info>
 	<changelog>
+		*15.0.8* Packaging of ver 15.0.8
 		*15.0.7* Packaging of ver 15.0.7
 		*15.0.6* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.5* Fixing legacy restore 
