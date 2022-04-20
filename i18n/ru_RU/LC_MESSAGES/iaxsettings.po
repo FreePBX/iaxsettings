@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 19:18-0500\n"
-"PO-Revision-Date: 2021-12-06 18:45+0000\n"
+"PO-Revision-Date: 2022-04-21 09:01+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "iaxsettings/ru/>\n"
@@ -298,14 +298,14 @@ msgstr "Сброс"
 
 #: iaxsettings.i18n.php:6
 msgid "Settings"
-msgstr "Установки"
+msgstr "Настройки"
 
 #: functions.inc.php:277
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
-"Параметры, указанные в %s могут перебить эти. Такие параметры должны быть "
-"удалены."
+"Параметры, указанные в %s могут переопределить эти. Такие параметры должны "
+"быть удалены."
 
 #: Iaxsettings.class.php:46
 msgid "Submit"
