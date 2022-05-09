@@ -67,18 +67,18 @@ $vcodeclist .=  '</ul>';
 		<form autocomplete="off" class="fpbx-submit" name="editIax" id="editIax" action="" method="post" role="form">
 		  <input type="hidden" name="action" value="edit">
 			<ul class="nav nav-tabs" role="tablist">
-				<li role="presentation" data-name="general" class="active">
-					<a href="#general" aria-controls="general" role="tab" data-toggle="tab">
+				<li role="presentation" data-name="general" >
+					<a href="#general" aria-controls="general" role="tab" data-toggle="tab" class="active nav-link">
 						<?php echo _("General Settings")?>
 					</a>
 				</li>
 				<li role="presentation" data-name="advanced" class="change-tab">
-					<a href="#advanced" aria-controls="advanced" role="tab" data-toggle="tab">
+					<a href="#advanced" aria-controls="advanced" role="tab" data-toggle="tab" class="nav-link">
 						<?php echo _("Advanced Settings")?>
 					</a>
 				</li>
 				<li role="presentation" data-name="codec" class="change-tab">
-					<a href="#codec" aria-controls="codec" role="tab" data-toggle="tab">
+					<a href="#codec" aria-controls="codec" role="tab" data-toggle="tab" class="nav-link">
 						<?php echo _("Codec Settings")?>
 					</a>
 				</li>
@@ -89,8 +89,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="regw"><?php echo _("Registration Times") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="regw"></i>
@@ -116,8 +116,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="jitterbuffer"><?php echo _("Jitter Buffer Enable") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="jitterbuffer"></i>
@@ -144,8 +144,8 @@ $vcodeclist .=  '</ul>';
 						<div class="element-container">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="row">
-										<div class="form-group">
+									<div class="">
+										<div class="row form-group">
 											<div class="col-md-3">
 												<label class="control-label" for="forcejitterbuffer"><?php echo _("Force Jitter Buffer") ?></label>
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="forcejitterbuffer"></i>
@@ -171,8 +171,8 @@ $vcodeclist .=  '</ul>';
 						<div class="element-container">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="row">
-										<div class="form-group">
+									<div class="">
+										<div class="row form-group">
 											<div class="col-md-3">
 												<label class="control-label" for="jbsw"><?php echo _("Jitter Buffer Size") ?></label>
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="jbsw"></i>
@@ -198,8 +198,8 @@ $vcodeclist .=  '</ul>';
 						<div class="element-container">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="row">
-										<div class="form-group">
+									<div class="">
+										<div class="row form-group">
 											<div class="col-md-3">
 												<label class="control-label" for="maxjitterinterps"><?php echo _("Max Interpolations") ?></label>
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="maxjitterinterps"></i>
@@ -225,8 +225,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="bindaddr"><?php echo _("Bind Address") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="bindaddr"></i>
@@ -249,8 +249,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="bindport"><?php echo _("Bind Port") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="bindport"></i>
@@ -273,8 +273,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="delayreject"><?php echo _("Delay Auth Rejects") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="delayreject"></i>
@@ -300,8 +300,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="iaxcustomw"><?php echo _("Other IAX Settings") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="iaxcustomw"></i>
@@ -332,8 +332,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="codecpriority"><?php echo _("Codec Priority") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="codecpriority"></i>
@@ -363,8 +363,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="bandwidth"><?php echo _("Bandwidth") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="bandwidth"></i>
@@ -394,8 +394,8 @@ $vcodeclist .=  '</ul>';
 					<div class="element-container">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="form-group">
+								<div class="">
+									<div class="row form-group">
 										<div class="col-md-3">
 											<label class="control-label" for="videosupport"><?php echo _("Enable Video Support") ?></label>
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="videosupport"></i>
