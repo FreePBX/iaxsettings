@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 19:18-0500\n"
-"PO-Revision-Date: 2016-12-11 05:28+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"PO-Revision-Date: 2023-02-10 19:05+0000\n"
+"Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
-"iaxsettings/es_ES/>\n"
+"iaxsettings/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/form.php:415
 msgid ""
@@ -226,7 +226,7 @@ msgstr "Configuración  de Codec"
 
 #: install.php:69
 msgid "Default Settings added."
-msgstr ""
+msgstr "Configuración predeterminada agregada."
 
 #: views/form.php:279
 msgid "Delay Auth Rejects"
@@ -349,7 +349,7 @@ msgstr "ninguna, creando tabla"
 
 #: install.php:64
 msgid "populating default settings.."
-msgstr ""
+msgstr "Rellenando configuraciones predeterminadas..."
 
 #: Iaxsettings.class.php:127
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
