@@ -7,12 +7,15 @@ namespace FreePBX\modules\Iaxsettings;
  */
 
 use FreePBX\modules\Backup as Base;
-class Restore Extends Base\RestoreBase{
-	public function runRestore(){
+class Restore Extends Base\RestoreBase
+{
+	public function runRestore()
+	{
 		$this->FreePBX->Iaxsettings->edit(reset($this->getConfigs()));
 	}
 
-	public function processLegacy($pdo, $data, $tables, $unknownTables){
+	public function processLegacy($pdo, $data, $tables, $unknownTables)
+	{
 		$this->restoreLegacyDatabase($pdo);
 	}
 }
