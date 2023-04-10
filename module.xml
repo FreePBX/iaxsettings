@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>16.0.3</version>
+	<version>16.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>https://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -21,6 +21,7 @@
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
   	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+IAX+Settings</more-info>
 	<changelog>
+		*16.0.4* FREEPBX-24067 
 		*16.0.3* Reverting Bootstrap and dependent libs fixes 
 		*16.0.2* FREEI-4793 
 		*16.0.1*  16.0
