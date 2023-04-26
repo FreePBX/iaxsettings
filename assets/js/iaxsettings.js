@@ -5,29 +5,40 @@ $(document).ready(function() {
 			ui.item.find('input').val(ui.item.index());
 		},
 	});
-	$('#ajaxsubmit').on('click',function(e){
-//validate minregexpire maxregexpire
-		if(parseInt($('#minregexpire').val()) > parseInt($('#maxregexpire').val())){
-			alert("Minregexpire is Greater than Maxregexpire");
+	$('#ajaxsubmit').on('click',function(e)
+	{
+		//validate minregexpire maxregexpire
+		if(parseInt($('#minregexpire').val()) > parseInt($('#maxregexpire').val()))
+		{
+			fpbxToast(_("Minregexpire is Greater than Maxregexpire"),'error', 'error');
 			return false;
 		}
 
 		$.ajax({
 			type: 'POST',
-			url: 'ajax.php?module=iaxsettings&command=savesettings',
+			url: window.FreePBX.ajaxurl + '?module=iaxsettings&command=savesettings',
 			data: $('#editIax').serialize(),
 			success: function (data) {
-				if(data.status === true){
-					location.reload();
-				}else{
-					if(Array.isArray(data.message)){
-						data.message.forEach(function(entry) {
-							fpbxToast(entry,'error','error');
+				if(data.status === true)
+				{
+					if (data.needreload === true)
+					{
+						location.reload();
+					}
+				}
+				else
+				{
+					if(Array.isArray(data.message))
+					{
+						data.message.forEach(function(entry)
+						{
+							fpbxToast(entry,'error', 'error');
 						});
 					}
 				}
 			}
 		});
+
 	});
 });
 
@@ -64,7 +75,36 @@ $(document).ready(function(){
 var theForm = document.editIax;
 /* Insert a iax_setting/iax_value pair of text boxes */
 function addCustomField(key, val) {
-	var idx = $(".iax-custom").size();
-	var idxp = idx - 1;
-	$("#iax-custom-buttons").prepend('<div class="form-inline"><input type="text" id="iax_custom_key_'+idx+'" name="iax_custom_key_'+idx+'" class="iax-custom form-control" value="'+key+'"> = <input type="text" id="iax_custom_val_'+idx+'" name="iax_custom_val_'+idx+'" class="form-control" value="'+val+'"></div>');
+	var idx = getMaxCustomSetting() + 1;
+	$("#iax-custom-buttons").prepend(`
+		<div class="row" id="iax_custom_row_${idx}">
+			<div class="col-md-5">
+				<input type="text" id="iax_custom_key_${idx}" name="iax_custom_key_${idx}" class="form-control iax-custom" value="${key}">
+			</div>
+			<div class="col-md-6">
+				<input type="text" id="iax_custom_val_${idx}" name="iax_custom_val_${idx}" class="form-control" value="${val}">
+			</div>
+			<div class="col-md-1">
+				<button type="button" class="btn btn-danger btn-block btn-remove-iax-custom" data-iax_custom="${idx}" title="` + _("Remove Setting") + `"><i class="fa fa-trash" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	`);
+}
+
+$(document).ready(function(){
+	$("#iax-custom-buttons").on("click", ".btn-remove-iax-custom", function() {
+		var idx = $(this).data("iax_custom");
+		var selector = `#iax_custom_row_${idx}`;
+		$(selector).remove();
+	});
+});
+
+function getMaxCustomSetting()
+{
+	var divs = $("#iax-custom-buttons [id^='iax_custom_row_']");
+	var maxId = Math.max.apply(null, divs.map(function() {
+		return parseInt(this.id.match(/\d+/)[0]) || 0;
+	}).get());
+	maxId = (isNaN(maxId) || maxId === -Infinity) ? -1 : maxId;
+	return maxId;
 }

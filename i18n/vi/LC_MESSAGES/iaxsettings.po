@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-07 13:07-0400\n"
+"POT-Creation-Date: 2023-04-10 04:22+0000\n"
 "PO-Revision-Date: 2017-07-20 13:18+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: views/form.php:415
+#: views/view.form_options.php:437
 msgid ""
 " If you clear each codec and then add them one at a time, submitting with "
 "each addition, they will be added in order which will effect the codec "
@@ -31,16 +31,16 @@ msgstr ""
 "mỗi bổ sung, chúng sẽ được thêm vào lần lượt và điều này sẽ khiến codec ưu "
 "tiên có hiệu lực."
 
-#: Iaxsettings.class.php:96
+#: Iaxsettings.class.php:140
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s phải là số nguyên không âm"
 
-#: views/form.php:313
-msgid "Add Field"
-msgstr "Thêm trường"
+#: views/view.form_options.php:307
+msgid "Add New Setting"
+msgstr ""
 
-#: views/form.php:77
+#: views/view.form_options.php:66
 msgid "Advanced Settings"
 msgstr "Cài đặt nâng cao"
 
@@ -48,7 +48,7 @@ msgstr "Cài đặt nâng cao"
 msgid "Asterisk IAX Settings"
 msgstr "Cài đặt IAX Asterisk"
 
-#: views/form.php:388
+#: views/view.form_options.php:389
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
@@ -56,7 +56,7 @@ msgstr ""
 "Asterisk: băng thông. Xác định băng thông thấp, trung bình, hoặc cao để kiểm "
 "soát các codec được sử dụng thông thường."
 
-#: views/form.php:243
+#: views/view.form_options.php:234
 msgid ""
 "Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
 "Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
@@ -70,7 +70,7 @@ msgstr ""
 "trường ' Cài đặt IAX ' khác, nơi bạn có thể để các cài đặt như: <br /> "
 "bindaddr = 192.168.10.100: 4555. <br /> Bạn nên để trống trường này."
 
-#: views/form.php:267
+#: views/view.form_options.php:258
 msgid ""
 "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
@@ -80,7 +80,7 @@ msgstr ""
 "tin nhắn của IAX. Tiêu chuẩn IAX là 4569 và trong hầu hết các trường hợp đây "
 "là những gì bạn muốn. Nên để trống trường này."
 
-#: views/form.php:357
+#: views/view.form_options.php:358
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -104,7 +104,7 @@ msgstr ""
 "dạng được yêu cầu không có sẵn; Cuộc gọi sẽ chỉ được chấp nhận nếu định dạng "
 "yêu cầu có sẵn."
 
-#: views/form.php:294
+#: views/view.form_options.php:285
 msgid ""
 "Asterisk: delayreject. For increased security against brute force password "
 "attacks enable this which will delay the sending of authentication reject "
@@ -114,7 +114,7 @@ msgstr ""
 "khẩu brute force, điều này sẽ làm chậm việc gửi từ chối xác thực đối với  "
 "REGREQ hoặc AUTHREP nếu có một mật khẩu."
 
-#: views/form.php:165
+#: views/view.form_options.php:155
 msgid ""
 "Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive "
 "side of an IAX channel. Normally the jitter buffer will not be used if "
@@ -131,7 +131,7 @@ msgstr ""
 "buộc phải sử dụng jitter buffer trước khi gửi luồng. Vì điều này sẽ thêm độ "
 "trễ bổ sung vào luồng nên nó không phải là điều mong muốn."
 
-#: views/form.php:137
+#: views/view.form_options.php:127
 msgid ""
 "Asterisk: jitterbuffer. You can adjust several parameters relating to the "
 "jitter buffer. The jitter buffer's function is to compensate for varying "
@@ -143,7 +143,7 @@ msgstr ""
 "âm thanh đến sẽ hoạt động dựa trên Jitter buffer  - âm thanh đi ra sẽ bị "
 "tráo đổi bởi jitter buffer ở đầu kia."
 
-#: views/form.php:192
+#: views/view.form_options.php:182
 msgid ""
 "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds."
 "<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a "
@@ -162,7 +162,7 @@ msgstr ""
 "hóa ( resync). Có thể vô hiệu việc tái đồng bộ hóa (resync) bằng cách đặt "
 "tham số này là -1."
 
-#: views/form.php:216
+#: views/view.form_options.php:206
 msgid ""
 "Asterisk: maxjitterinterps. The maximum number of interpolation frames the "
 "jitterbuffer should return in a row. Since some clients do not send CNG/DTX "
@@ -176,7 +176,7 @@ msgstr ""
 "đầu sau khi nhiều nội suy được trả lại. Điều này sẽ tránh việc nội suy trong "
 "suốt quá trình  im lặng dài."
 
-#: views/form.php:110
+#: views/view.form_options.php:100
 msgid ""
 "Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
 "that IAX peers can request as a registration expiration interval (in "
@@ -186,104 +186,126 @@ msgstr ""
 "mà các đồng đẳng IAX có thể yêu cầu như một đăng ký khoảng thời gian hết hạn "
 "(tính bằng giây)."
 
-#: views/form.php:328
+#: views/view.form_options.php:406
 msgid "Audio Codecs"
 msgstr "Các codec âm thanh"
 
-#: views/form.php:369
+#: views/view.form_options.php:370
 msgid "Bandwidth"
 msgstr "Băng thông"
 
-#: views/form.php:231
+#: views/view.form_options.php:222
 msgid "Bind Address"
 msgstr "Địa chỉ liên kết"
 
-#: Iaxsettings.class.php:106
+#: Iaxsettings.class.php:157
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Địa chỉ liên kết (bindaddr) phải là một địa chỉ IP."
 
-#: views/form.php:255
+#: views/view.form_options.php:246
 msgid "Bind Port"
 msgstr "Cổng giao tiếp liên kết"
 
-#: Iaxsettings.class.php:116
+#: Iaxsettings.class.php:171
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 "Cổng giao tiếp liên kết ( bindport) phải trong khoảng 1024..65535, mặc định "
 "là 4569"
 
-#: views/form.php:415
+#: views/view.form_options.php:437
 msgid "Check to enable and then choose allowed codecs."
 msgstr "Đánh dấu check để bật và chọn các codecs được cho phép."
 
-#: views/form.php:338
+#: views/view.form_options.php:339
 msgid "Codec Priority"
 msgstr "Codec ưu tiên"
 
-#: views/form.php:82
+#: views/view.form_options.php:71
 msgid "Codec Settings"
 msgstr "Cài đặt Codec"
 
-#: views/form.php:279
+#: Iaxsettings.class.php:410
+msgid "Command not found!"
+msgstr ""
+
+#: views/view.form_options.php:270
 msgid "Delay Auth Rejects"
 msgstr "Hoãn Từ chối xác thực"
 
-#: views/form.php:400
+#: views/view.form_options.php:422
 msgid "Enable Video Support"
 msgstr "Kích hoạt tính năng hỗ trợ Video"
 
-#: views/form.php:150
+#: views/view.form_options.php:140
 msgid "Force Jitter Buffer"
 msgstr "Bắt buộc Jitter Buffer"
 
-#: views/form.php:72
+#: views/view.form_options.php:61
 msgid "General Settings"
 msgstr "Cài đặt chung"
 
-#: views/form.php:63
+#: views/page.main.php:13
 msgid "IAX Settings"
 msgstr "Cài đặt IAX"
 
-#: views/form.php:122
+#: views/view.form_options.php:112
 msgid "Jitter Buffer Enable"
 msgstr "Kích hoạt Jitter Buffer"
 
-#: views/form.php:177
+#: views/view.form_options.php:167
 msgid "Jitter Buffer Size"
 msgstr "Kich thước Jitter Buffer"
 
-#: views/form.php:204
+#: views/view.form_options.php:194
 msgid "Max Interpolations"
 msgstr "Các nội suy tối đa"
 
-#: views/form.php:129 views/form.php:157 views/form.php:286 views/form.php:407
+#: assets/js/iaxsettings.js:13
+msgid "Minregexpire is Greater than Maxregexpire"
+msgstr ""
+
+#: views/view.form_options.php:119 views/view.form_options.php:147
+#: views/view.form_options.php:277 views/view.form_options.php:429
 msgid "No"
 msgstr "Không"
 
-#: views/form.php:306
+#: views/view.form_options.php:297
 msgid "Other IAX Settings"
 msgstr "Các cài đặt IAX khác"
 
-#: views/form.php:95
+#: Iaxsettings.class.php:128
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: views/view.form_options.php:85
 msgid "Registration Times"
 msgstr "Thời gian đăng ký"
 
-#: Iaxsettings.class.php:80
+#: assets/js/iaxsettings.js:88
+msgid "Remove Setting"
+msgstr ""
+
+#: Iaxsettings.class.php:97
 msgid "Reset"
 msgstr "Cài đặt lại"
+
+#: views/view.form_options.php:304
+msgid "Setting"
+msgstr ""
 
 #: iaxsettings.i18n.php:6
 msgid "Settings"
 msgstr "Cài đặt"
 
-#: functions.inc.php:220
+#: Iaxsettings.class.php:479
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
 "Các cài đặt trong %s có thể ghi đè lên các cài đặt này. Các cài đặt kia nên "
 "được xóa."
 
-#: Iaxsettings.class.php:75
+#: Iaxsettings.class.php:92
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -294,11 +316,16 @@ msgid ""
 msgstr ""
 "Sử dụng để cấu hình các cài đặt IAX Asterisk trong phần General của iax.conf."
 
-#: views/form.php:127 views/form.php:155 views/form.php:284 views/form.php:405
+#: views/view.form_options.php:305
+msgid "Value"
+msgstr ""
+
+#: views/view.form_options.php:117 views/view.form_options.php:145
+#: views/view.form_options.php:275 views/view.form_options.php:427
 msgid "Yes"
 msgstr "Có"
 
-#: views/form.php:321
+#: views/view.form_options.php:324
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -315,30 +342,33 @@ msgstr ""
 "vào hộp thoại  Add Field (Thêm trường) để thêm các trường bổ sung. Các hộp "
 "thoại khi gửi sẽ bị xóa."
 
-#: views/form.php:378
+#: views/view.form_options.php:379
 msgid "high"
 msgstr "cao"
 
-#: views/form.php:374
+#: views/view.form_options.php:375
 msgid "low"
 msgstr "thấp"
 
-#: views/form.php:376
+#: views/view.form_options.php:377
 msgid "medium"
 msgstr "trung bình"
 
-#: Iaxsettings.class.php:31
+#: Iaxsettings.class.php:42
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:156
+#: Iaxsettings.class.php:220
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold phải là số nguyên không âm hoặc cài đặt là -1 để vô hiệu"
 
-#: views/form.php:380
+#: views/view.form_options.php:381
 msgid "unset"
 msgstr "Không cài đặt"
+
+#~ msgid "Add Field"
+#~ msgstr "Thêm trường"
 
 #~ msgid "already exists"
 #~ msgstr "Đã tồn tại"
