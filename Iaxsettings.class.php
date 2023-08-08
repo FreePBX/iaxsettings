@@ -129,12 +129,19 @@ class Iaxsettings implements BMO
 		}
 		return $data_return;
 	}
+<<<<<<< Updated upstream
 
 	public function edit($iax_settings, $validateonly = false)
 	{
 		$save_settings 	= array();
 		$codecs 		= $iax_settings['codecs'];
 		$video_codecs 	= $iax_settings['video_codecs'];
+=======
+	public function edit($iax_settings, $validateonly = false){
+		$save_settings = array();
+		$codecs = $iax_settings['codecs'] ?? '';
+		$video_codecs = $iax_settings['video_codecs'] ?? '';
+>>>>>>> Stashed changes
 		unset($iax_settings['codecs']);
 		unset($iax_settings['video_codecs']);
 		$integer_msg = _("%s must be a non-negative integer");
