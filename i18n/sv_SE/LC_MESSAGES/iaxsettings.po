@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX iaxsettings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-10 04:22+0000\n"
+"POT-Creation-Date: 2024-03-12 02:31-0400\n"
 "PO-Revision-Date: 2010-01-23 23:08+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: SWEDISH\n"
@@ -38,7 +38,7 @@ msgid ""
 "priority."
 msgstr ""
 
-#: Iaxsettings.class.php:140
+#: Iaxsettings.class.php:139
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s måste vara ett positivt heltal"
@@ -205,7 +205,7 @@ msgstr "Bandbredd"
 msgid "Bind Address"
 msgstr "Bindadress"
 
-#: Iaxsettings.class.php:157
+#: Iaxsettings.class.php:156
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Bindadress (bindaddr) måste vara en IP-adress."
 
@@ -213,7 +213,7 @@ msgstr "Bindadress (bindaddr) måste vara en IP-adress."
 msgid "Bind Port"
 msgstr "Bindport"
 
-#: Iaxsettings.class.php:171
+#: Iaxsettings.class.php:170
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
@@ -229,7 +229,7 @@ msgstr "Codec-prioritering"
 msgid "Codec Settings"
 msgstr ""
 
-#: Iaxsettings.class.php:410
+#: Iaxsettings.class.php:409
 msgid "Command not found!"
 msgstr ""
 
@@ -303,7 +303,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Iaxsettings.class.php:479
+#: Iaxsettings.class.php:478
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -361,7 +361,7 @@ msgstr "mellan"
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:220
+#: Iaxsettings.class.php:219
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold måste vara ett positivt heltal eller -1 för att avaktivera"

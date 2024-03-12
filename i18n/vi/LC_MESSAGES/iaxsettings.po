@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-10 04:22+0000\n"
+"POT-Creation-Date: 2024-03-12 02:31-0400\n"
 "PO-Revision-Date: 2017-07-20 13:18+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -31,7 +31,7 @@ msgstr ""
 "mỗi bổ sung, chúng sẽ được thêm vào lần lượt và điều này sẽ khiến codec ưu "
 "tiên có hiệu lực."
 
-#: Iaxsettings.class.php:140
+#: Iaxsettings.class.php:139
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s phải là số nguyên không âm"
@@ -198,7 +198,7 @@ msgstr "Băng thông"
 msgid "Bind Address"
 msgstr "Địa chỉ liên kết"
 
-#: Iaxsettings.class.php:157
+#: Iaxsettings.class.php:156
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Địa chỉ liên kết (bindaddr) phải là một địa chỉ IP."
 
@@ -206,7 +206,7 @@ msgstr "Địa chỉ liên kết (bindaddr) phải là một địa chỉ IP."
 msgid "Bind Port"
 msgstr "Cổng giao tiếp liên kết"
 
-#: Iaxsettings.class.php:171
+#: Iaxsettings.class.php:170
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 "Cổng giao tiếp liên kết ( bindport) phải trong khoảng 1024..65535, mặc định "
@@ -224,7 +224,7 @@ msgstr "Codec ưu tiên"
 msgid "Codec Settings"
 msgstr "Cài đặt Codec"
 
-#: Iaxsettings.class.php:410
+#: Iaxsettings.class.php:409
 msgid "Command not found!"
 msgstr ""
 
@@ -298,7 +298,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Cài đặt"
 
-#: Iaxsettings.class.php:479
+#: Iaxsettings.class.php:478
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -358,7 +358,7 @@ msgstr "trung bình"
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:220
+#: Iaxsettings.class.php:219
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 "resyncthreshold phải là số nguyên không âm hoặc cài đặt là -1 để vô hiệu"

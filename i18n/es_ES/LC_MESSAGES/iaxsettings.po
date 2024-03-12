@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-10 04:22+0000\n"
+"POT-Creation-Date: 2024-03-12 02:31-0400\n"
 "PO-Revision-Date: 2016-12-11 05:28+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -30,7 +30,7 @@ msgstr ""
 " Si se desactiva cada codec y luego los agrega uno a uno, aplicando cada "
 "adición, estos se agregarán al final marcando así la prioridad de cada uno."
 
-#: Iaxsettings.class.php:140
+#: Iaxsettings.class.php:139
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s debe ser un entero no negativo"
@@ -200,7 +200,7 @@ msgstr "Ancho de Banda"
 msgid "Bind Address"
 msgstr "Dirección de Enlace"
 
-#: Iaxsettings.class.php:157
+#: Iaxsettings.class.php:156
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Dirección Enlace (bindaddr) debe ser una dirección IP."
 
@@ -208,7 +208,7 @@ msgstr "Dirección Enlace (bindaddr) debe ser una dirección IP."
 msgid "Bind Port"
 msgstr "Puerto"
 
-#: Iaxsettings.class.php:171
+#: Iaxsettings.class.php:170
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr "Puerto (bindport) debe ser entre 1024..65535, por defecto 4569"
 
@@ -224,7 +224,7 @@ msgstr "Prioridad de Codec"
 msgid "Codec Settings"
 msgstr "Configuración  de Codec"
 
-#: Iaxsettings.class.php:410
+#: Iaxsettings.class.php:409
 msgid "Command not found!"
 msgstr ""
 
@@ -298,7 +298,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Configuración"
 
-#: Iaxsettings.class.php:479
+#: Iaxsettings.class.php:478
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -358,7 +358,7 @@ msgstr "medio"
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:220
+#: Iaxsettings.class.php:219
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr "resyncthreshold debe ser un entero no negativo o -1 para desactivar"
 

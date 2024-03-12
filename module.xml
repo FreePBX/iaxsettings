@@ -19,7 +19,7 @@
         </table>
     </database>
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
-  	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+IAX+Settings</more-info>
+  	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/25824096/Asterisk+IAX+Settings</more-info>
 	<changelog>
 		*17.0.1*  17.0
 	</changelog>
