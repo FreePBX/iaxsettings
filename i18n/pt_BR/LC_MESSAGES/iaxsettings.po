@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-10 04:22+0000\n"
+"POT-Creation-Date: 2024-03-12 02:31-0400\n"
 "PO-Revision-Date: 2017-03-08 21:00+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -30,7 +30,7 @@ msgstr ""
 " Se você limpar cada codec e, em seguida, adiciona-os um de cada vez, eles "
 "serão adicionados na ordem que irá afetar a prioridade do codec."
 
-#: Iaxsettings.class.php:140
+#: Iaxsettings.class.php:139
 #, php-format
 msgid "%s must be a non-negative integer"
 msgstr "%s precisa ser um inteiro não-negativo"
@@ -198,7 +198,7 @@ msgstr "Largura de Banda"
 msgid "Bind Address"
 msgstr "Endereço Bind"
 
-#: Iaxsettings.class.php:157
+#: Iaxsettings.class.php:156
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr "Endereço Bind (bindaddr) precisa ser um endereço IP."
 
@@ -206,7 +206,7 @@ msgstr "Endereço Bind (bindaddr) precisa ser um endereço IP."
 msgid "Bind Port"
 msgstr "Porta Bind"
 
-#: Iaxsettings.class.php:171
+#: Iaxsettings.class.php:170
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr "Porta Bind (bindport) precisa estar entre 1024..65535, padrão 4569"
 
@@ -222,7 +222,7 @@ msgstr "Prioridade de Codec"
 msgid "Codec Settings"
 msgstr "Configurações de Codec"
 
-#: Iaxsettings.class.php:410
+#: Iaxsettings.class.php:409
 msgid "Command not found!"
 msgstr ""
 
@@ -296,7 +296,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Configurações"
 
-#: Iaxsettings.class.php:479
+#: Iaxsettings.class.php:478
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
@@ -355,7 +355,7 @@ msgstr "médio"
 msgid "populating default settings.."
 msgstr ""
 
-#: Iaxsettings.class.php:220
+#: Iaxsettings.class.php:219
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr "resyncthreshold deve ser um inteiro não negativo ou -1 para desativar"
 
