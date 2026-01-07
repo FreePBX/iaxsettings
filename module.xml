@@ -2,7 +2,7 @@
 	<rawname>iaxsettings</rawname>
 	<repo>standard</repo>
 	<name>Asterisk IAX Settings</name>
-	<version>17.0.1</version>
+	<version>17.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<licenselink>https://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<license>AGPLv3</license>
@@ -21,6 +21,7 @@
 	<description>Use to configure Various Asterisk IAX Settings in the General section of iax.conf.</description>
   	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/25824096/Asterisk+IAX+Settings</more-info>
 	<changelog>
+		*17.0.2* #941 uncheck all codecs in the iaxsettings 
 		*17.0.1*  17.0
 	</changelog>
 	<supported>

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-12 02:31-0400\n"
+"POT-Creation-Date: 2026-01-07 05:26-0500\n"
 "PO-Revision-Date: 2015-02-20 19:35-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: views/view.form_options.php:437
+#: views/view.form_options.php:439
 msgid ""
 " If you clear each codec and then add them one at a time, submitting with "
 "each addition, they will be added in order which will effect the codec "
@@ -30,11 +30,11 @@ msgstr ""
 msgid "%s must be a non-negative integer"
 msgstr ""
 
-#: views/view.form_options.php:307
+#: views/view.form_options.php:309
 msgid "Add New Setting"
 msgstr ""
 
-#: views/view.form_options.php:66
+#: views/view.form_options.php:68
 msgid "Advanced Settings"
 msgstr ""
 
@@ -42,13 +42,13 @@ msgstr ""
 msgid "Asterisk IAX Settings"
 msgstr "Asterisk IAX设置"
 
-#: views/view.form_options.php:389
+#: views/view.form_options.php:391
 msgid ""
 "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control "
 "which codecs are used in general."
 msgstr ""
 
-#: views/view.form_options.php:234
+#: views/view.form_options.php:236
 msgid ""
 "Asterisk: bindaddr. The IP address to bind to and listen for calls on the "
 "Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind "
@@ -57,14 +57,14 @@ msgid ""
 "is recommended to leave this blank."
 msgstr ""
 
-#: views/view.form_options.php:258
+#: views/view.form_options.php:260
 msgid ""
 "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and "
 "listen for IAX messages. The IAX standard is 4569 and in most cases this is "
 "what you want. It is recommended to leave this blank."
 msgstr ""
 
-#: views/view.form_options.php:358
+#: views/view.form_options.php:360
 msgid ""
 "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX "
 "call. This option is inherited to all user entities.  It can also be defined "
@@ -78,14 +78,14 @@ msgid ""
 "the requested format is available."
 msgstr ""
 
-#: views/view.form_options.php:285
+#: views/view.form_options.php:287
 msgid ""
 "Asterisk: delayreject. For increased security against brute force password "
 "attacks enable this which will delay the sending of authentication reject "
 "for REGREQ or AUTHREP if there is a password."
 msgstr ""
 
-#: views/view.form_options.php:155
+#: views/view.form_options.php:157
 msgid ""
 "Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive "
 "side of an IAX channel. Normally the jitter buffer will not be used if "
@@ -96,7 +96,7 @@ msgid ""
 "the stream."
 msgstr ""
 
-#: views/view.form_options.php:127
+#: views/view.form_options.php:129
 msgid ""
 "Asterisk: jitterbuffer. You can adjust several parameters relating to the "
 "jitter buffer. The jitter buffer's function is to compensate for varying "
@@ -104,7 +104,7 @@ msgid ""
 "audio will be dejittered by the jitter buffer at the other end."
 msgstr ""
 
-#: views/view.form_options.php:182
+#: views/view.form_options.php:184
 msgid ""
 "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds."
 "<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a "
@@ -115,7 +115,7 @@ msgid ""
 "setting this parameter to -1."
 msgstr ""
 
-#: views/view.form_options.php:206
+#: views/view.form_options.php:208
 msgid ""
 "Asterisk: maxjitterinterps. The maximum number of interpolation frames the "
 "jitterbuffer should return in a row. Since some clients do not send CNG/DTX "
@@ -124,22 +124,22 @@ msgid ""
 "throughout a long silence."
 msgstr ""
 
-#: views/view.form_options.php:100
+#: views/view.form_options.php:102
 msgid ""
 "Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time "
 "that IAX peers can request as a registration expiration interval (in "
 "seconds)."
 msgstr ""
 
-#: views/view.form_options.php:406
+#: views/view.form_options.php:408
 msgid "Audio Codecs"
 msgstr "语音编码"
 
-#: views/view.form_options.php:370
+#: views/view.form_options.php:372
 msgid "Bandwidth"
 msgstr "带宽"
 
-#: views/view.form_options.php:222
+#: views/view.form_options.php:224
 msgid "Bind Address"
 msgstr "绑定地址"
 
@@ -147,7 +147,7 @@ msgstr "绑定地址"
 msgid "Bind Address (bindaddr) must be an IP address."
 msgstr ""
 
-#: views/view.form_options.php:246
+#: views/view.form_options.php:248
 msgid "Bind Port"
 msgstr "绑定端口"
 
@@ -155,15 +155,15 @@ msgstr "绑定端口"
 msgid "Bind Port (bindport) must be between 1024..65535, default 4569"
 msgstr ""
 
-#: views/view.form_options.php:437
+#: views/view.form_options.php:439
 msgid "Check to enable and then choose allowed codecs."
 msgstr "开启选项，选择支持的语音编码"
 
-#: views/view.form_options.php:339
+#: views/view.form_options.php:341
 msgid "Codec Priority"
 msgstr "编码优先级"
 
-#: views/view.form_options.php:71
+#: views/view.form_options.php:73
 msgid "Codec Settings"
 msgstr ""
 
@@ -171,19 +171,19 @@ msgstr ""
 msgid "Command not found!"
 msgstr ""
 
-#: views/view.form_options.php:270
+#: views/view.form_options.php:272
 msgid "Delay Auth Rejects"
 msgstr "延迟认证拒绝"
 
-#: views/view.form_options.php:422
+#: views/view.form_options.php:424
 msgid "Enable Video Support"
 msgstr ""
 
-#: views/view.form_options.php:140
+#: views/view.form_options.php:142
 msgid "Force Jitter Buffer"
 msgstr "强制使用缓存"
 
-#: views/view.form_options.php:61
+#: views/view.form_options.php:63
 msgid "General Settings"
 msgstr ""
 
@@ -191,15 +191,15 @@ msgstr ""
 msgid "IAX Settings"
 msgstr ""
 
-#: views/view.form_options.php:112
+#: views/view.form_options.php:114
 msgid "Jitter Buffer Enable"
 msgstr ""
 
-#: views/view.form_options.php:167
+#: views/view.form_options.php:169
 msgid "Jitter Buffer Size"
 msgstr "缓存大小"
 
-#: views/view.form_options.php:194
+#: views/view.form_options.php:196
 msgid "Max Interpolations"
 msgstr ""
 
@@ -207,12 +207,12 @@ msgstr ""
 msgid "Minregexpire is Greater than Maxregexpire"
 msgstr ""
 
-#: views/view.form_options.php:119 views/view.form_options.php:147
-#: views/view.form_options.php:277 views/view.form_options.php:429
+#: views/view.form_options.php:121 views/view.form_options.php:149
+#: views/view.form_options.php:279 views/view.form_options.php:431
 msgid "No"
 msgstr "否"
 
-#: views/view.form_options.php:297
+#: views/view.form_options.php:299
 msgid "Other IAX Settings"
 msgstr "其他IAX设置"
 
@@ -221,7 +221,7 @@ msgstr "其他IAX设置"
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
 
-#: views/view.form_options.php:85
+#: views/view.form_options.php:87
 msgid "Registration Times"
 msgstr "注册时间"
 
@@ -233,7 +233,7 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: views/view.form_options.php:304
+#: views/view.form_options.php:306
 msgid "Setting"
 msgstr ""
 
@@ -256,16 +256,16 @@ msgid ""
 "conf."
 msgstr ""
 
-#: views/view.form_options.php:305
+#: views/view.form_options.php:307
 msgid "Value"
 msgstr ""
 
-#: views/view.form_options.php:117 views/view.form_options.php:145
-#: views/view.form_options.php:275 views/view.form_options.php:427
+#: views/view.form_options.php:119 views/view.form_options.php:147
+#: views/view.form_options.php:277 views/view.form_options.php:429
 msgid "Yes"
 msgstr "是"
 
-#: views/view.form_options.php:324
+#: views/view.form_options.php:326
 msgid ""
 "You may set any other IAX settings not present here that are allowed to be "
 "configured in the General section of iax.conf. There will be no error "
@@ -275,15 +275,15 @@ msgid ""
 "submitted."
 msgstr ""
 
-#: views/view.form_options.php:379
+#: views/view.form_options.php:381
 msgid "high"
 msgstr "高"
 
-#: views/view.form_options.php:375
+#: views/view.form_options.php:377
 msgid "low"
 msgstr "低"
 
-#: views/view.form_options.php:377
+#: views/view.form_options.php:379
 msgid "medium"
 msgstr "中"
 
@@ -295,7 +295,7 @@ msgstr ""
 msgid "resyncthreshold must be a non-negative integer or -1 to disable"
 msgstr ""
 
-#: views/view.form_options.php:381
+#: views/view.form_options.php:383
 msgid "unset"
 msgstr "未设置"
 
