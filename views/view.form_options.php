@@ -23,7 +23,8 @@ while (isset(${$var_iax_custom_key}))
 
 
 $rows = array();
-$c = (max(array_values($codecs)) + 1);
+$numericValues = array_filter(array_values($codecs), 'is_numeric');
+$c = !empty($numericValues) ? max($numericValues) + 1 : 1;
 $c++;
 foreach ($codecs as $codec => $codec_state)
 {
@@ -38,7 +39,8 @@ unset($rows);
 
 
 $rows = array();
-$c = (max(array_values($video_codecs)) + 1);
+$numericValues = array_filter(array_values($video_codecs), 'is_numeric');
+$c = !empty($numericValues) ? max($numericValues) + 1 : 1;
 $c++;
 foreach ($video_codecs as $codec => $codec_state)
 {
