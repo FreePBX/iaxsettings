@@ -141,7 +141,7 @@ class Iaxsettings implements BMO
 		$errors = [];
 		foreach ($iax_settings as $key => $val)
 		{
-			$val = trim($val);
+			$val = is_scalar($val) ? trim((string)$val) : '';
 			switch ($key)
 			{
 				case 'bindaddr':
@@ -228,7 +228,7 @@ class Iaxsettings implements BMO
 				if (substr($key,0,15) == "iax_custom_key_")
 				{
 					$seq = substr($key,15);
-					$save_settings[] = array($val, $iax_settings["iax_custom_val_$seq"], ($seq), self::IAX_CUSTOM);
+					$save_settings[] = array($val, $iax_settings["iax_custom_val_$seq"] ?? '', ($seq), self::IAX_CUSTOM);
 				}
 				else if (substr($key,0,15) == "iax_custom_val_")
 				{
@@ -316,6 +316,7 @@ class Iaxsettings implements BMO
 	{
 		$request = $_REQUEST;
 		$command = isset($request['command']) ? trim($request['command']) : '';
+		$retrun_data = array("status" => false, "message" => _("Invalid request"), "command" => $command);
 
 		switch ($command)
 		{
@@ -347,10 +348,6 @@ class Iaxsettings implements BMO
 					foreach ($ls_settins as $key => $val)
 					{
 						$iax_settings[$key] = isset($request[$key]) ? $request[$key] : $default_settings[$key];
-						if ($val == true)
-						{
-							htmlspecialchars($iax_settings[$key]);
-						}
 					}
 					
 					// With the new sorting, the vars should come to us in the sorted order so just use that
@@ -386,8 +383,8 @@ class Iaxsettings implements BMO
 						if (preg_match('/^iax_custom_key_(\d+)$/', $k, $matches))
 						{
 							$idx = $matches[1];
-							$iax_settings["iax_custom_key_$n_idx"] = htmlspecialchars($request["iax_custom_key_$idx"]);
-							$iax_settings["iax_custom_val_$n_idx"] = htmlspecialchars($request["iax_custom_val_$idx"]);
+							$iax_settings["iax_custom_key_$n_idx"] = htmlspecialchars((string)($request["iax_custom_key_$idx"] ?? ''));
+							$iax_settings["iax_custom_val_$n_idx"] = htmlspecialchars((string)($request["iax_custom_val_$idx"] ?? ''));
 							$n_idx++;
 						}
 					}
@@ -469,6 +466,10 @@ class Iaxsettings implements BMO
 			if (file_exists($fullpath))
 			{
 				$iax_conf = @parse_ini_file($fullpath, true);
+				if (!is_array($iax_conf))
+				{
+					continue;
+				}
 				foreach ($iax_conf as $section => $item)
 				{
 					// If setting is an array, then it is a subsection
@@ -507,6 +508,9 @@ class Iaxsettings implements BMO
 		{
         	$raw_settings = $this->getConfigs(true);
         	$codecs = [];
+			$video_codecs = [];
+			$interim_settings = [];
+			$iax_settings = [];
         	/* TODO: This is example concept code
            			 The only real conflicts are codecs (mainly cause
            			 it will look ugly. So we should strip those but

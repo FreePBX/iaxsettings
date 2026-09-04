@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 	/* Initialize Jitter Buffer settings and show/hide */
 	if (document.getElementById("jitterbuffer-no").checked) {
-		$(".jitter-buffer").hide();
+		$("#jitterbuffer").addClass("hidden");
 	}
 	$("#jitterbuffer-yes").click(function(){
 		$("#jitterbuffer").removeClass("hidden");

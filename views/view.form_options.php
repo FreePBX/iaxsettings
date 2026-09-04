@@ -59,17 +59,17 @@ unset($rows);
 	<input type="hidden" name="action" value="edit">
 	<ul class="nav nav-tabs" role="tablist">
 		<li role="presentation" data-name="general" class="active">
-			<a href="#general" aria-controls="general" role="tab" data-toggle="tab">
+			<a href="#general" aria-controls="general" role="tab" data-bs-toggle="tab" class="active">
 				<?php echo _("General Settings")?>
 			</a>
 		</li>
 		<li role="presentation" data-name="advanced" class="change-tab">
-			<a href="#advanced" aria-controls="advanced" role="tab" data-toggle="tab">
+			<a href="#advanced" aria-controls="advanced" role="tab" data-bs-toggle="tab">
 				<?php echo _("Advanced Settings")?>
 			</a>
 		</li>
 		<li role="presentation" data-name="codec" class="change-tab">
-			<a href="#codec" aria-controls="codec" role="tab" data-toggle="tab">
+			<a href="#codec" aria-controls="codec" role="tab" data-bs-toggle="tab">
 				<?php echo _("Codec Settings")?>
 			</a>
 		</li>
