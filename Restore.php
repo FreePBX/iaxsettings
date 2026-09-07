@@ -11,7 +11,7 @@ class Restore Extends Base\RestoreBase
 {
 	public function runRestore()
 	{
-		$this->FreePBX->Iaxsettings->edit(reset($this->getConfigs()));
+		$this->FreePBX->Iaxsettings->edit($this->getConfigs());
 	}
 
 	public function processLegacy($pdo, $data, $tables, $unknownTables)
