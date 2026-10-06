@@ -147,7 +147,7 @@ msgstr ""
 msgid "Codec Settings"
 msgstr ""
 
-#: Iaxsettings.class.php:409
+#: Iaxsettings.class.php:406
 msgid "Command not found!"
 msgstr ""
 
@@ -169,6 +169,10 @@ msgstr ""
 
 #: views/page.main.php:13
 msgid "IAX Settings"
+msgstr ""
+
+#: Iaxsettings.class.php:319
+msgid "Invalid request"
 msgstr ""
 
 #: views/view.form_options.php:114
@@ -221,7 +225,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Iaxsettings.class.php:478
+#: Iaxsettings.class.php:479
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""

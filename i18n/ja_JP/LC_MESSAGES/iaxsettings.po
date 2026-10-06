@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 05:26-0500\n"
+"POT-Creation-Date: 2026-10-06 07:18-0400\n"
 "PO-Revision-Date: 2014-06-03 09:48+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/iaxsettings/"
@@ -244,7 +244,7 @@ msgstr "コーデックの優先順位"
 msgid "Codec Settings"
 msgstr ""
 
-#: Iaxsettings.class.php:409
+#: Iaxsettings.class.php:406
 msgid "Command not found!"
 msgstr ""
 
@@ -266,6 +266,10 @@ msgstr ""
 
 #: views/page.main.php:13
 msgid "IAX Settings"
+msgstr ""
+
+#: Iaxsettings.class.php:319
+msgid "Invalid request"
 msgstr ""
 
 #: views/view.form_options.php:114
@@ -318,7 +322,7 @@ msgstr ""
 msgid "Settings"
 msgstr "設定"
 
-#: Iaxsettings.class.php:478
+#: Iaxsettings.class.php:479
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 05:26-0500\n"
+"POT-Creation-Date: 2026-10-06 07:18-0400\n"
 "PO-Revision-Date: 2017-07-20 13:18+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -224,7 +224,7 @@ msgstr "Codec ưu tiên"
 msgid "Codec Settings"
 msgstr "Cài đặt Codec"
 
-#: Iaxsettings.class.php:409
+#: Iaxsettings.class.php:406
 msgid "Command not found!"
 msgstr ""
 
@@ -247,6 +247,10 @@ msgstr "Cài đặt chung"
 #: views/page.main.php:13
 msgid "IAX Settings"
 msgstr "Cài đặt IAX"
+
+#: Iaxsettings.class.php:319
+msgid "Invalid request"
+msgstr ""
 
 #: views/view.form_options.php:114
 msgid "Jitter Buffer Enable"
@@ -298,7 +302,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Cài đặt"
 
-#: Iaxsettings.class.php:478
+#: Iaxsettings.class.php:479
 #, php-format
 msgid "Settings in %s may override these. Those settings should be removed."
 msgstr ""
